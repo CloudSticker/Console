@@ -1,0 +1,16 @@
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.exe
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.deps.json
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.runtimeconfig.json
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.runtimeconfig.dev.json
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.dll
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.pdb
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.csprojAssemblyReference.cache
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.AddingUserData_Form.resources
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.Properties.Resources.resources
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.csproj.GenerateResource.cache
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.AssemblyInfoInputs.cache
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.AssemblyInfo.cs
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.csproj.CoreCompileInputs.cache
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.dll
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.pdb
+C:\Users\dan91\Source\Repos\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.genruntimeconfig.cache
