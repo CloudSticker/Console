@@ -46,6 +46,8 @@ namespace Console_app
         private void Cancel_Button_Click(object sender, EventArgs e)
         {
             this.Close();
+            StudentListForm StartNewForm = new StudentListForm();
+            StartNewForm.Show();
         }
     }
 }
