@@ -22,7 +22,6 @@ C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Conso
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.pdb
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.csprojAssemblyReference.cache
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.AddingUserData_Form.resources
-C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.Form2.resources
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.Properties.Resources.resources
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.csproj.GenerateResource.cache
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.AssemblyInfoInputs.cache
@@ -31,3 +30,4 @@ C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Conso
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.dll
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.pdb
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.genruntimeconfig.cache
+C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.StudentListForm.resources
