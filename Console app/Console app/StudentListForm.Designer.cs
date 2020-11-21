@@ -132,12 +132,6 @@ namespace Console_app
             this.SearchButton.Text = "Найти";
             this.SearchButton.UseVisualStyleBackColor = false;
             // 
-            // StudentListForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 561);
-            // 
             // DataGridList
             // 
             this.DataGridList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -155,6 +149,12 @@ namespace Console_app
             this.DataGridList.TabIndex = 4;
             this.DataGridList.Text = "dataGridView1";
             this.DataGridList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // StudentListForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DataGridList);
             this.Controls.Add(this.FilterGroupBox);
