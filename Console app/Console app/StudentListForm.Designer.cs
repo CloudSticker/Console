@@ -29,8 +29,8 @@ namespace Console_app
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AddStudentButton = new System.Windows.Forms.Button();
+            this.FilterGroupBox = new System.Windows.Forms.GroupBox();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BirthDayDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,31 +38,32 @@ namespace Console_app
             this.Cource = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Group = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MidCertificateScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.DataGridList = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // AddStudentButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(12, 494);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Добавить студента";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AddStudentButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.AddStudentButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddStudentButton.Location = new System.Drawing.Point(7, 495);
+            this.AddStudentButton.Name = "AddStudentButton";
+            this.AddStudentButton.Size = new System.Drawing.Size(140, 60);
+            this.AddStudentButton.TabIndex = 0;
+            this.AddStudentButton.Text = "Добавить студента";
+            this.AddStudentButton.UseVisualStyleBackColor = false;
+            this.AddStudentButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // groupBox1
+            // FilterGroupBox
             // 
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(254, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(618, 67);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Фильтры";
+            this.FilterGroupBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FilterGroupBox.Location = new System.Drawing.Point(153, 12);
+            this.FilterGroupBox.Name = "FilterGroupBox";
+            this.FilterGroupBox.Size = new System.Drawing.Size(719, 67);
+            this.FilterGroupBox.TabIndex = 1;
+            this.FilterGroupBox.TabStop = false;
+            this.FilterGroupBox.Text = "Фильтры";
             // 
             // StudentID
             // 
@@ -120,16 +121,27 @@ namespace Console_app
             this.MidCertificateScore.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.MidCertificateScore.Width = 150;
             // 
+            // SearchButton
+            // 
+            this.SearchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.SearchButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SearchButton.Location = new System.Drawing.Point(7, 19);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(140, 60);
+            this.SearchButton.TabIndex = 5;
+            this.SearchButton.Text = "Найти";
+            this.SearchButton.UseVisualStyleBackColor = false;
+            // 
             // StudentListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
             // 
-            // dataGridView1
+            // DataGridList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DataGridList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StudentID,
             this.FullName,
             this.BirthDayDate,
@@ -137,30 +149,31 @@ namespace Console_app
             this.Cource,
             this.Group,
             this.MidCertificateScore});
-            this.dataGridView1.Location = new System.Drawing.Point(153, 85);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(719, 464);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.Text = "dataGridView1";
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.DataGridList.Location = new System.Drawing.Point(153, 85);
+            this.DataGridList.Name = "DataGridList";
+            this.DataGridList.Size = new System.Drawing.Size(719, 470);
+            this.DataGridList.TabIndex = 4;
+            this.DataGridList.Text = "dataGridView1";
+            this.DataGridList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.DataGridList);
+            this.Controls.Add(this.FilterGroupBox);
+            this.Controls.Add(this.AddStudentButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StudentListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Поиск";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button AddStudentButton;
+        private System.Windows.Forms.GroupBox FilterGroupBox;
+        private System.Windows.Forms.DataGridView DataGridList;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BirthDayDate;
@@ -168,5 +181,7 @@ namespace Console_app
         private System.Windows.Forms.DataGridViewTextBoxColumn Cource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Group;
         private System.Windows.Forms.DataGridViewTextBoxColumn MidCertificateScore;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SearchButton;
     }
 }

@@ -13,6 +13,36 @@ namespace Console_app
         public StudentListForm()
         {
             InitializeComponent();
+            Fill_List();
+
+
+        }
+
+        private void Fill_List()
+        {
+            int n = 3;
+            string str = "";
+
+            List<string[]> data = new List<string[]>();
+            for(int i = 0; i < n; i++)
+            {
+                data.Add(new string[7]);
+ 
+                for (int j = 0; j < 7; j++)
+                {
+                    str = "[" + i.ToString() + ", " + j.ToString() + "]";
+                    data[i][j] = str;
+
+
+                }
+
+            }
+
+            foreach (string[] s in data)
+            {
+                DataGridList.Rows.Add(s);
+            }
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
