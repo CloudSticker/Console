@@ -31,6 +31,7 @@ namespace Console_app
         {
             this.AddStudentButton = new System.Windows.Forms.Button();
             this.FilterGroupBox = new System.Windows.Forms.GroupBox();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BirthDayDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,7 +39,6 @@ namespace Console_app
             this.Cource = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Group = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MidCertificateScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SearchButton = new System.Windows.Forms.Button();
             this.DataGridList = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,17 @@ namespace Console_app
             this.FilterGroupBox.TabIndex = 1;
             this.FilterGroupBox.TabStop = false;
             this.FilterGroupBox.Text = "Фильтры";
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.SearchButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SearchButton.Location = new System.Drawing.Point(7, 19);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(140, 60);
+            this.SearchButton.TabIndex = 5;
+            this.SearchButton.Text = "Найти";
+            this.SearchButton.UseVisualStyleBackColor = false;
             // 
             // StudentID
             // 
@@ -104,7 +115,7 @@ namespace Console_app
             this.Cource.Name = "Cource";
             this.Cource.ReadOnly = true;
             this.Cource.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Cource.Width = 30;
+            this.Cource.Width = 150;
             // 
             // Group
             // 
@@ -121,16 +132,11 @@ namespace Console_app
             this.MidCertificateScore.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.MidCertificateScore.Width = 150;
             // 
-            // SearchButton
+            // StudentListForm
             // 
-            this.SearchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
-            this.SearchButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SearchButton.Location = new System.Drawing.Point(7, 19);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(140, 60);
-            this.SearchButton.TabIndex = 5;
-            this.SearchButton.Text = "Найти";
-            this.SearchButton.UseVisualStyleBackColor = false;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(884, 561);
             // 
             // DataGridList
             // 
@@ -149,12 +155,6 @@ namespace Console_app
             this.DataGridList.TabIndex = 4;
             this.DataGridList.Text = "dataGridView1";
             this.DataGridList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // StudentListForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DataGridList);
             this.Controls.Add(this.FilterGroupBox);
@@ -174,6 +174,8 @@ namespace Console_app
         private System.Windows.Forms.Button AddStudentButton;
         private System.Windows.Forms.GroupBox FilterGroupBox;
         private System.Windows.Forms.DataGridView DataGridList;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BirthDayDate;
@@ -181,7 +183,5 @@ namespace Console_app
         private System.Windows.Forms.DataGridViewTextBoxColumn Cource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Group;
         private System.Windows.Forms.DataGridViewTextBoxColumn MidCertificateScore;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button SearchButton;
     }
 }
