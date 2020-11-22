@@ -1,15 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class Student
 {
-	public Student()
-	{
-		int ID = 322;
-		string FullName = "Daniel";
-		string BirthDay = "Kuznecov";
-		string Institute = "MISiS";
-		string Group = "0";
-		string Course = "0";
-		int MidCertificateScore = 0;
+	public int ID = 322;
+	public string FullName = "Daniel";
+	public string BirthDay = "Kuznecov";
+	public string Institute = "MISiS";
+	public string Group = "0";
+	public string Course = "0";
+	public int MidCertificateScore = 0;
+
+	void ListAdd()
+    {
+
 	}
+
 }
