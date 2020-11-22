@@ -14,7 +14,7 @@ namespace Console_app
     {
         List<string> Months = new List<string>
         {
-           // new DayS { Id=1, "Январь" },
+           //new DayS { Id=1, "Январь" },
         };
         public AddingUserData_Form()
         {
