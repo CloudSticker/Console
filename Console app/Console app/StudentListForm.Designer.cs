@@ -31,15 +31,22 @@ namespace Console_app
         {
             this.AddStudentButton = new System.Windows.Forms.Button();
             this.FilterGroupBox = new System.Windows.Forms.GroupBox();
+            this.FullNamelbl = new System.Windows.Forms.Label();
+            this.BirthdayDatelbl = new System.Windows.Forms.Label();
+            this.FullNameTextBox = new System.Windows.Forms.TextBox();
             this.SearchButton = new System.Windows.Forms.Button();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BirthDayDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Institute = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cource = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Group = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cource = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MidCertificateScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridList = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.FilterGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,13 +64,45 @@ namespace Console_app
             // 
             // FilterGroupBox
             // 
+            this.FilterGroupBox.Controls.Add(this.comboBox3);
+            this.FilterGroupBox.Controls.Add(this.comboBox2);
+            this.FilterGroupBox.Controls.Add(this.comboBox1);
+            this.FilterGroupBox.Controls.Add(this.FullNamelbl);
+            this.FilterGroupBox.Controls.Add(this.BirthdayDatelbl);
+            this.FilterGroupBox.Controls.Add(this.FullNameTextBox);
             this.FilterGroupBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FilterGroupBox.Location = new System.Drawing.Point(153, 12);
+            this.FilterGroupBox.Location = new System.Drawing.Point(172, 12);
             this.FilterGroupBox.Name = "FilterGroupBox";
-            this.FilterGroupBox.Size = new System.Drawing.Size(719, 67);
+            this.FilterGroupBox.Size = new System.Drawing.Size(700, 100);
             this.FilterGroupBox.TabIndex = 1;
             this.FilterGroupBox.TabStop = false;
             this.FilterGroupBox.Text = "Фильтры";
+            this.FilterGroupBox.Enter += new System.EventHandler(this.FilterGroupBox_Enter);
+            // 
+            // FullNamelbl
+            // 
+            this.FullNamelbl.AutoSize = true;
+            this.FullNamelbl.Location = new System.Drawing.Point(118, 36);
+            this.FullNamelbl.Name = "FullNamelbl";
+            this.FullNamelbl.Size = new System.Drawing.Size(57, 23);
+            this.FullNamelbl.TabIndex = 1;
+            this.FullNamelbl.Text = "ФИО";
+            // 
+            // BirthdayDatelbl
+            // 
+            this.BirthdayDatelbl.AutoSize = true;
+            this.BirthdayDatelbl.Location = new System.Drawing.Point(437, 36);
+            this.BirthdayDatelbl.Name = "BirthdayDatelbl";
+            this.BirthdayDatelbl.Size = new System.Drawing.Size(141, 23);
+            this.BirthdayDatelbl.TabIndex = 1;
+            this.BirthdayDatelbl.Text = "Дата рождения";
+            // 
+            // FullNameTextBox
+            // 
+            this.FullNameTextBox.Location = new System.Drawing.Point(26, 62);
+            this.FullNameTextBox.Name = "FullNameTextBox";
+            this.FullNameTextBox.Size = new System.Drawing.Size(250, 32);
+            this.FullNameTextBox.TabIndex = 0;
             // 
             // SearchButton
             // 
@@ -75,6 +114,7 @@ namespace Console_app
             this.SearchButton.TabIndex = 5;
             this.SearchButton.Text = "Найти";
             this.SearchButton.UseVisualStyleBackColor = false;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // StudentID
             // 
@@ -109,14 +149,6 @@ namespace Console_app
             this.Institute.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Institute.Width = 300;
             // 
-            // Cource
-            // 
-            this.Cource.HeaderText = "Курс";
-            this.Cource.Name = "Cource";
-            this.Cource.ReadOnly = true;
-            this.Cource.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Cource.Width = 150;
-            // 
             // Group
             // 
             this.Group.HeaderText = "Группа";
@@ -125,18 +157,20 @@ namespace Console_app
             this.Group.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Group.Width = 150;
             // 
+            // Cource
+            // 
+            this.Cource.HeaderText = "Курс";
+            this.Cource.Name = "Cource";
+            this.Cource.ReadOnly = true;
+            this.Cource.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Cource.Width = 150;
+            // 
             // MidCertificateScore
             // 
             this.MidCertificateScore.HeaderText = "Ср.Балл";
             this.MidCertificateScore.Name = "MidCertificateScore";
             this.MidCertificateScore.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.MidCertificateScore.Width = 150;
-            // 
-            // StudentListForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 561);
             // 
             // DataGridList
             // 
@@ -146,15 +180,50 @@ namespace Console_app
             this.FullName,
             this.BirthDayDate,
             this.Institute,
-            this.Cource,
             this.Group,
+            this.Cource,
             this.MidCertificateScore});
-            this.DataGridList.Location = new System.Drawing.Point(153, 85);
+            this.DataGridList.Location = new System.Drawing.Point(172, 126);
             this.DataGridList.Name = "DataGridList";
-            this.DataGridList.Size = new System.Drawing.Size(719, 470);
+            this.DataGridList.Size = new System.Drawing.Size(700, 429);
             this.DataGridList.TabIndex = 4;
             this.DataGridList.Text = "dataGridView1";
-            this.DataGridList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(574, 63);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(120, 31);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.Text = "Год";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(322, 62);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(120, 31);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.Text = "День";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(448, 63);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(120, 31);
+            this.comboBox3.TabIndex = 1;
+            this.comboBox3.Text = "Месяц";
+            // 
+            // StudentListForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DataGridList);
             this.Controls.Add(this.FilterGroupBox);
@@ -163,7 +232,8 @@ namespace Console_app
             this.Name = "StudentListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Поиск";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.FilterGroupBox.ResumeLayout(false);
+            this.FilterGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).EndInit();
             this.ResumeLayout(false);
 
@@ -174,14 +244,20 @@ namespace Console_app
         private System.Windows.Forms.Button AddStudentButton;
         private System.Windows.Forms.GroupBox FilterGroupBox;
         private System.Windows.Forms.DataGridView DataGridList;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BirthDayDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Institute;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Group;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cource;
         private System.Windows.Forms.DataGridViewTextBoxColumn MidCertificateScore;
+        private System.Windows.Forms.ComboBox FilterComboBox;
+        private System.Windows.Forms.TextBox FullNameTextBox;
+        private System.Windows.Forms.Label FullNamelbl;
+        private System.Windows.Forms.Label BirthdayDatelbl;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
