@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Console_app
@@ -68,11 +70,10 @@ namespace Console_app
 
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void ComparisonCells() //Нахождение определённых студентов по функциям поиска
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             //Application.Run(new AddingUserData_Form());
@@ -82,15 +83,71 @@ namespace Console_app
             
         }
 
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void FilterGroupBox_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void FilterButton1_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            DataGridList.Rows.Clear();
+            string path = @"StudentList.txt";
+            List<string[]> data = new List<string[]>();
+            string FullNameINPUT = FullNameTextBox.Text;
+            string BirthdayDateINPUT = BirthdayDateTextBox.Text;
+
+            if (File.Exists(path))
+            {
+                int k = 0;
+                string[] LineElements = new string[7];
+                string[] l = File.ReadAllLines(path);
+                for (int i = 0; i < l.Length; i++)
+                {
+                    
+                        
+                        LineElements = l[i].Split(' ');
+                        string[] str = LineElements[1].Split('_');
+                        string s = str[0] + ' ' + str[1] + ' ' + str[2] + ' ';
+                        LineElements[1] = s;
+                    
+                    if (((FullNameINPUT + ' ') == s) || (str[0] == FullNameINPUT) || (str[1] == FullNameINPUT) || (str[2] == FullNameINPUT))
+                    {
+                        data.Add(new string[7]);
+                        data[k] = LineElements;
+                        k++;
+                    }
+                    else if(str[0] + ' ' + str[1] == FullNameINPUT) 
+                    {
+                        data.Add(new string[7]);
+                        data[k] = LineElements;
+                        k++;
+                    }
+                    else if (str[0] + ' ' + str[2] == FullNameINPUT)
+                    {
+                        data.Add(new string[7]);
+                        data[k] = LineElements;
+                        k++;
+                    }
+                    else if (str[1] + ' ' + str[2] == FullNameINPUT)
+                    {
+                        data.Add(new string[7]);
+                        data[k] = LineElements;
+                        k++;
+                    }
+                }
+               
+                foreach (string[] s in data)
+                {
+                    DataGridList.Rows.Add(s);
+                }
+            }
+        
+            
         }
     }
 }
