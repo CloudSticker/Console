@@ -34,16 +34,19 @@
             this.FirstNameInput = new System.Windows.Forms.TextBox();
             this.SecondNameInput = new System.Windows.Forms.TextBox();
             this.BirthDayPanel = new System.Windows.Forms.Panel();
+            this.debug = new System.Windows.Forms.Label();
             this.BirthDateInputYear = new System.Windows.Forms.ComboBox();
             this.BirthDateInputMonth = new System.Windows.Forms.ComboBox();
             this.BirthDateInputDay = new System.Windows.Forms.ComboBox();
             this.BirthDayLabel = new System.Windows.Forms.Label();
             this.InstitutPanel = new System.Windows.Forms.Panel();
+            this.Get_GroupID = new System.Windows.Forms.TextBox();
             this.gpaInput = new System.Windows.Forms.TextBox();
             this.get_IDInstitutionList = new System.Windows.Forms.ComboBox();
             this.get_IDYearOfStudyList = new System.Windows.Forms.ComboBox();
-            this.get_IDgroupList = new System.Windows.Forms.ComboBox();
             this.ButtonPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Clear_Button = new System.Windows.Forms.Button();
             this.Add_Button = new System.Windows.Forms.Button();
             this.Cancel_Button = new System.Windows.Forms.Button();
@@ -80,22 +83,75 @@
             // BirthDayPanel
             // 
             resources.ApplyResources(this.BirthDayPanel, "BirthDayPanel");
+            this.BirthDayPanel.Controls.Add(this.debug);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputYear);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputMonth);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputDay);
             this.BirthDayPanel.Controls.Add(this.BirthDayLabel);
             this.BirthDayPanel.Name = "BirthDayPanel";
             // 
+            // debug
+            // 
+            resources.ApplyResources(this.debug, "debug");
+            this.debug.Name = "debug";
+            // 
             // BirthDateInputYear
             // 
             resources.ApplyResources(this.BirthDateInputYear, "BirthDateInputYear");
             this.BirthDateInputYear.FormattingEnabled = true;
+            this.BirthDateInputYear.Items.AddRange(new object[] {
+            resources.GetString("BirthDateInputYear.Items"),
+            resources.GetString("BirthDateInputYear.Items1"),
+            resources.GetString("BirthDateInputYear.Items2"),
+            resources.GetString("BirthDateInputYear.Items3"),
+            resources.GetString("BirthDateInputYear.Items4"),
+            resources.GetString("BirthDateInputYear.Items5"),
+            resources.GetString("BirthDateInputYear.Items6"),
+            resources.GetString("BirthDateInputYear.Items7"),
+            resources.GetString("BirthDateInputYear.Items8"),
+            resources.GetString("BirthDateInputYear.Items9"),
+            resources.GetString("BirthDateInputYear.Items10"),
+            resources.GetString("BirthDateInputYear.Items11"),
+            resources.GetString("BirthDateInputYear.Items12"),
+            resources.GetString("BirthDateInputYear.Items13"),
+            resources.GetString("BirthDateInputYear.Items14"),
+            resources.GetString("BirthDateInputYear.Items15"),
+            resources.GetString("BirthDateInputYear.Items16"),
+            resources.GetString("BirthDateInputYear.Items17"),
+            resources.GetString("BirthDateInputYear.Items18"),
+            resources.GetString("BirthDateInputYear.Items19"),
+            resources.GetString("BirthDateInputYear.Items20"),
+            resources.GetString("BirthDateInputYear.Items21"),
+            resources.GetString("BirthDateInputYear.Items22"),
+            resources.GetString("BirthDateInputYear.Items23"),
+            resources.GetString("BirthDateInputYear.Items24"),
+            resources.GetString("BirthDateInputYear.Items25"),
+            resources.GetString("BirthDateInputYear.Items26"),
+            resources.GetString("BirthDateInputYear.Items27"),
+            resources.GetString("BirthDateInputYear.Items28"),
+            resources.GetString("BirthDateInputYear.Items29"),
+            resources.GetString("BirthDateInputYear.Items30"),
+            resources.GetString("BirthDateInputYear.Items31"),
+            resources.GetString("BirthDateInputYear.Items32")});
             this.BirthDateInputYear.Name = "BirthDateInputYear";
             // 
             // BirthDateInputMonth
             // 
             resources.ApplyResources(this.BirthDateInputMonth, "BirthDateInputMonth");
             this.BirthDateInputMonth.FormattingEnabled = true;
+            this.BirthDateInputMonth.Items.AddRange(new object[] {
+            resources.GetString("BirthDateInputMonth.Items"),
+            resources.GetString("BirthDateInputMonth.Items1"),
+            resources.GetString("BirthDateInputMonth.Items2"),
+            resources.GetString("BirthDateInputMonth.Items3"),
+            resources.GetString("BirthDateInputMonth.Items4"),
+            resources.GetString("BirthDateInputMonth.Items5"),
+            resources.GetString("BirthDateInputMonth.Items6"),
+            resources.GetString("BirthDateInputMonth.Items7"),
+            resources.GetString("BirthDateInputMonth.Items8"),
+            resources.GetString("BirthDateInputMonth.Items9"),
+            resources.GetString("BirthDateInputMonth.Items10"),
+            resources.GetString("BirthDateInputMonth.Items11")});
             this.BirthDateInputMonth.Name = "BirthDateInputMonth";
             // 
             // BirthDateInputDay
@@ -112,12 +168,17 @@
             // InstitutPanel
             // 
             resources.ApplyResources(this.InstitutPanel, "InstitutPanel");
+            this.InstitutPanel.Controls.Add(this.Get_GroupID);
             this.InstitutPanel.Controls.Add(this.gpaInput);
             this.InstitutPanel.Controls.Add(this.get_IDInstitutionList);
             this.InstitutPanel.Controls.Add(this.get_IDYearOfStudyList);
-            this.InstitutPanel.Controls.Add(this.get_IDgroupList);
             this.InstitutPanel.Name = "InstitutPanel";
             this.InstitutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // Get_GroupID
+            // 
+            resources.ApplyResources(this.Get_GroupID, "Get_GroupID");
+            this.Get_GroupID.Name = "Get_GroupID";
             // 
             // gpaInput
             // 
@@ -128,32 +189,51 @@
             // 
             resources.ApplyResources(this.get_IDInstitutionList, "get_IDInstitutionList");
             this.get_IDInstitutionList.FormattingEnabled = true;
+            this.get_IDInstitutionList.Items.AddRange(new object[] {
+            resources.GetString("get_IDInstitutionList.Items"),
+            resources.GetString("get_IDInstitutionList.Items1"),
+            resources.GetString("get_IDInstitutionList.Items2"),
+            resources.GetString("get_IDInstitutionList.Items3")});
             this.get_IDInstitutionList.Name = "get_IDInstitutionList";
             // 
             // get_IDYearOfStudyList
             // 
             resources.ApplyResources(this.get_IDYearOfStudyList, "get_IDYearOfStudyList");
             this.get_IDYearOfStudyList.FormattingEnabled = true;
+            this.get_IDYearOfStudyList.Items.AddRange(new object[] {
+            resources.GetString("get_IDYearOfStudyList.Items"),
+            resources.GetString("get_IDYearOfStudyList.Items1"),
+            resources.GetString("get_IDYearOfStudyList.Items2"),
+            resources.GetString("get_IDYearOfStudyList.Items3")});
             this.get_IDYearOfStudyList.Name = "get_IDYearOfStudyList";
-            // 
-            // get_IDgroupList
-            // 
-            resources.ApplyResources(this.get_IDgroupList, "get_IDgroupList");
-            this.get_IDgroupList.FormattingEnabled = true;
-            this.get_IDgroupList.Name = "get_IDgroupList";
-            this.get_IDgroupList.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // ButtonPanel
             // 
+            this.ButtonPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.ButtonPanel.Controls.Add(this.panel1);
+            this.ButtonPanel.Controls.Add(this.panel2);
             this.ButtonPanel.Controls.Add(this.Clear_Button);
             this.ButtonPanel.Controls.Add(this.Add_Button);
             this.ButtonPanel.Controls.Add(this.Cancel_Button);
             resources.ApplyResources(this.ButtonPanel, "ButtonPanel");
             this.ButtonPanel.Name = "ButtonPanel";
             // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Name = "panel1";
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.Name = "panel2";
+            // 
             // Clear_Button
             // 
             this.Clear_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.Clear_Button.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.Clear_Button, "Clear_Button");
             this.Clear_Button.Name = "Clear_Button";
             this.Clear_Button.UseVisualStyleBackColor = false;
@@ -161,13 +241,16 @@
             // Add_Button
             // 
             this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.Add_Button.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.Add_Button, "Add_Button");
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.UseVisualStyleBackColor = false;
+            this.Add_Button.Click += new System.EventHandler(this.Add_Button_Click);
             // 
             // Cancel_Button
             // 
             this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.Cancel_Button.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.Cancel_Button, "Cancel_Button");
             this.Cancel_Button.Name = "Cancel_Button";
             this.Cancel_Button.UseVisualStyleBackColor = false;
@@ -192,6 +275,7 @@
             this.InstitutPanel.ResumeLayout(false);
             this.InstitutPanel.PerformLayout();
             this.ButtonPanel.ResumeLayout(false);
+            this.ButtonPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -210,12 +294,15 @@
         private System.Windows.Forms.Label BirthDayLabel;
         private System.Windows.Forms.ComboBox get_IDInstitutionList;
         private System.Windows.Forms.ComboBox get_IDYearOfStudyList;
-        private System.Windows.Forms.ComboBox get_IDgroupList;
         private System.Windows.Forms.TextBox gpaInput;
         private System.Windows.Forms.Panel ButtonPanel;
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button Add_Button;
         private System.Windows.Forms.Button Cancel_Button;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label debug;
+        private System.Windows.Forms.TextBox Get_GroupID;
     }
 }
 
