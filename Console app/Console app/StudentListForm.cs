@@ -103,11 +103,13 @@ namespace Console_app
             string path = @"StudentList.txt";
             List<string[]> data = new List<string[]>();
             string FullNameINPUT = FullNameTextBox.Text;
+<<<<<<< Updated upstream
             //string BirthdayDateINPUT = BirthdayDateTextBox.Text;
+=======
+>>>>>>> Stashed changes
 
             if (File.Exists(path))
             {
-                int k = 0;
                 string[] LineElements = new string[7];
                 string[] l = File.ReadAllLines(path);
                 for (int i = 0; i < l.Length; i++)
@@ -127,9 +129,7 @@ namespace Console_app
 
                     if (SearchFunc(FullNameINPUT, str[0],  str[1], str[2]))
                     {
-                        data.Add(new string[7]);
-                        data[k] = LineElements;
-                        k++;
+                        data.Add(LineElements);
                     }
 
                 }
