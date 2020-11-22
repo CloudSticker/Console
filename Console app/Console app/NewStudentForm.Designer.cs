@@ -44,9 +44,9 @@
             this.get_IDYearOfStudyList = new System.Windows.Forms.ComboBox();
             this.get_IDgroupList = new System.Windows.Forms.ComboBox();
             this.ButtonPanel = new System.Windows.Forms.Panel();
-            this.Cancel_Button = new System.Windows.Forms.Button();
-            this.Add_Button = new System.Windows.Forms.Button();
             this.Clear_Button = new System.Windows.Forms.Button();
+            this.Add_Button = new System.Windows.Forms.Button();
+            this.Cancel_Button = new System.Windows.Forms.Button();
             this.FullNamePanel.SuspendLayout();
             this.BirthDayPanel.SuspendLayout();
             this.InstitutPanel.SuspendLayout();
@@ -151,13 +151,12 @@
             resources.ApplyResources(this.ButtonPanel, "ButtonPanel");
             this.ButtonPanel.Name = "ButtonPanel";
             // 
-            // Cancel_Button
+            // Clear_Button
             // 
-            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
-            resources.ApplyResources(this.Cancel_Button, "Cancel_Button");
-            this.Cancel_Button.Name = "Cancel_Button";
-            this.Cancel_Button.UseVisualStyleBackColor = false;
-            this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
+            this.Clear_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            resources.ApplyResources(this.Clear_Button, "Clear_Button");
+            this.Clear_Button.Name = "Clear_Button";
+            this.Clear_Button.UseVisualStyleBackColor = false;
             // 
             // Add_Button
             // 
@@ -166,12 +165,13 @@
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.UseVisualStyleBackColor = false;
             // 
-            // Clear_Button
+            // Cancel_Button
             // 
-            this.Clear_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
-            resources.ApplyResources(this.Clear_Button, "Clear_Button");
-            this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.UseVisualStyleBackColor = false;
+            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            resources.ApplyResources(this.Cancel_Button, "Cancel_Button");
+            this.Cancel_Button.Name = "Cancel_Button";
+            this.Cancel_Button.UseVisualStyleBackColor = false;
+            this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
             // AddingUserData_Form
             // 

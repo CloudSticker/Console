@@ -107,10 +107,10 @@
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="FullNamePanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 20</value>
+    <value>20, 23</value>
   </data>
   <data name="FullNamePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 140</value>
+    <value>460, 159</value>
   </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
   <data name="FullNamePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
@@ -140,13 +140,13 @@
     <value>Times New Roman, 15.75pt, style=Bold</value>
   </data>
   <data name="ThirdNameInput.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 108</value>
+    <value>0, 125</value>
   </data>
   <data name="ThirdNameInput.PlaceholderText" xml:space="preserve">
     <value>Отчество</value>
   </data>
   <data name="ThirdNameInput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 32</value>
+    <value>460, 34</value>
   </data>
   <data name="ThirdNameInput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -173,13 +173,13 @@
     <value>Times New Roman, 15.75pt, style=Bold</value>
   </data>
   <data name="FirstNameInput.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 54</value>
+    <value>0, 61</value>
   </data>
   <data name="FirstNameInput.PlaceholderText" xml:space="preserve">
     <value>Имя</value>
   </data>
   <data name="FirstNameInput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 32</value>
+    <value>460, 34</value>
   </data>
   <data name="FirstNameInput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -212,7 +212,7 @@
     <value>Фамилия</value>
   </data>
   <data name="SecondNameInput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 32</value>
+    <value>460, 34</value>
   </data>
   <data name="SecondNameInput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -296,10 +296,10 @@
     <value>3</value>
   </data>
   <data name="BirthDayPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 169</value>
+    <value>20, 192</value>
   </data>
   <data name="BirthDayPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 100</value>
+    <value>460, 113</value>
   </data>
   <data name="BirthDayPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
@@ -323,10 +323,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="BirthDateInputYear.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>320, 55</value>
+    <value>320, 62</value>
   </data>
   <data name="BirthDateInputYear.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 31</value>
+    <value>120, 34</value>
   </data>
   <data name="BirthDateInputYear.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -353,10 +353,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="BirthDateInputMonth.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>170, 55</value>
+    <value>170, 62</value>
   </data>
   <data name="BirthDateInputMonth.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 31</value>
+    <value>120, 34</value>
   </data>
   <data name="BirthDateInputMonth.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -383,10 +383,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="BirthDateInputDay.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 55</value>
+    <value>20, 62</value>
   </data>
   <data name="BirthDateInputDay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 31</value>
+    <value>120, 34</value>
   </data>
   <data name="BirthDateInputDay.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -416,10 +416,10 @@
     <value>Times New Roman, 14.25pt</value>
   </data>
   <data name="BirthDayLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 9</value>
+    <value>20, 10</value>
   </data>
   <data name="BirthDayLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>127, 21</value>
+    <value>138, 23</value>
   </data>
   <data name="BirthDayLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -506,10 +506,10 @@
     <value>3</value>
   </data>
   <data name="InstitutPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 286</value>
+    <value>20, 324</value>
   </data>
   <data name="InstitutPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 193</value>
+    <value>460, 219</value>
   </data>
   <data name="InstitutPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
@@ -533,13 +533,13 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="gpaInput.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 131</value>
+    <value>20, 148</value>
   </data>
   <data name="gpaInput.PlaceholderText" xml:space="preserve">
     <value>Средний балл</value>
   </data>
   <data name="gpaInput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>137, 32</value>
+    <value>137, 34</value>
   </data>
   <data name="gpaInput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
@@ -563,10 +563,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="get_IDInstitutionList.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 20</value>
+    <value>20, 23</value>
   </data>
   <data name="get_IDInstitutionList.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>420, 31</value>
+    <value>420, 34</value>
   </data>
   <data name="get_IDInstitutionList.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -593,10 +593,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="get_IDYearOfStudyList.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 94</value>
+    <value>20, 107</value>
   </data>
   <data name="get_IDYearOfStudyList.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>420, 31</value>
+    <value>420, 34</value>
   </data>
   <data name="get_IDYearOfStudyList.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -623,10 +623,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="get_IDgroupList.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 57</value>
+    <value>20, 65</value>
   </data>
   <data name="get_IDgroupList.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>420, 31</value>
+    <value>420, 34</value>
   </data>
   <data name="get_IDgroupList.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -646,117 +646,6 @@
   <data name="&gt;&gt;get_IDgroupList.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;Clear_Button.Name" xml:space="preserve">
-    <value>Clear_Button</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Name" xml:space="preserve">
-    <value>Add_Button</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Name" xml:space="preserve">
-    <value>Cancel_Button</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ButtonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 485</value>
-  </data>
-  <data name="ButtonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 53</value>
-  </data>
-  <data name="ButtonPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Name" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Cancel_Button.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Segoe UI, 15.75pt</value>
-  </data>
-  <data name="Cancel_Button.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 0</value>
-  </data>
-  <data name="Cancel_Button.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 50</value>
-  </data>
-  <data name="Cancel_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
-  </data>
-  <data name="Cancel_Button.Text" xml:space="preserve">
-    <value>Отмена</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Name" xml:space="preserve">
-    <value>Cancel_Button</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Add_Button.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Segoe UI, 15.75pt</value>
-  </data>
-  <data name="Add_Button.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>170, 0</value>
-  </data>
-  <data name="Add_Button.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 50</value>
-  </data>
-  <data name="Add_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>0</value>
-  </data>
-  <data name="Add_Button.Text" xml:space="preserve">
-    <value>Добавить</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Name" xml:space="preserve">
-    <value>Add_Button</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="Clear_Button.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
@@ -764,7 +653,7 @@
     <value>340, 0</value>
   </data>
   <data name="Clear_Button.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 50</value>
+    <value>120, 57</value>
   </data>
   <data name="Clear_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
@@ -784,6 +673,81 @@
   <data name="&gt;&gt;Clear_Button.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="Add_Button.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Times New Roman, 16.301888pt</value>
+  </data>
+  <data name="Add_Button.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>170, 0</value>
+  </data>
+  <data name="Add_Button.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>120, 57</value>
+  </data>
+  <data name="Add_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="Add_Button.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="&gt;&gt;Add_Button.Name" xml:space="preserve">
+    <value>Add_Button</value>
+  </data>
+  <data name="&gt;&gt;Add_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Add_Button.Parent" xml:space="preserve">
+    <value>ButtonPanel</value>
+  </data>
+  <data name="&gt;&gt;Add_Button.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Cancel_Button.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Times New Roman, 16.301888pt</value>
+  </data>
+  <data name="Cancel_Button.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 0</value>
+  </data>
+  <data name="Cancel_Button.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>120, 57</value>
+  </data>
+  <data name="Cancel_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="Cancel_Button.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="&gt;&gt;Cancel_Button.Name" xml:space="preserve">
+    <value>Cancel_Button</value>
+  </data>
+  <data name="&gt;&gt;Cancel_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Cancel_Button.Parent" xml:space="preserve">
+    <value>ButtonPanel</value>
+  </data>
+  <data name="&gt;&gt;Cancel_Button.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ButtonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>20, 550</value>
+  </data>
+  <data name="ButtonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>460, 60</value>
+  </data>
+  <data name="ButtonPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Name" xml:space="preserve">
+    <value>ButtonPanel</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
@@ -791,10 +755,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
-    <value>7, 15</value>
+    <value>7, 17</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>500, 550</value>
+    <value>500, 623</value>
   </data>
   <data name="$this.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>10000, 0</value>
