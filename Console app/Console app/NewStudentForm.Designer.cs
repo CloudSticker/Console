@@ -134,25 +134,15 @@
             resources.GetString("BirthDateInputYear.Items31"),
             resources.GetString("BirthDateInputYear.Items32")});
             this.BirthDateInputYear.Name = "BirthDateInputYear";
+            this.BirthDateInputYear.SelectedIndexChanged += new System.EventHandler(this.BirthDateInputYear_SelectedIndexChanged);
             // 
             // BirthDateInputMonth
             // 
             resources.ApplyResources(this.BirthDateInputMonth, "BirthDateInputMonth");
             this.BirthDateInputMonth.FormattingEnabled = true;
-            this.BirthDateInputMonth.Items.AddRange(new object[] {
-            resources.GetString("BirthDateInputMonth.Items"),
-            resources.GetString("BirthDateInputMonth.Items1"),
-            resources.GetString("BirthDateInputMonth.Items2"),
-            resources.GetString("BirthDateInputMonth.Items3"),
-            resources.GetString("BirthDateInputMonth.Items4"),
-            resources.GetString("BirthDateInputMonth.Items5"),
-            resources.GetString("BirthDateInputMonth.Items6"),
-            resources.GetString("BirthDateInputMonth.Items7"),
-            resources.GetString("BirthDateInputMonth.Items8"),
-            resources.GetString("BirthDateInputMonth.Items9"),
-            resources.GetString("BirthDateInputMonth.Items10"),
-            resources.GetString("BirthDateInputMonth.Items11")});
             this.BirthDateInputMonth.Name = "BirthDateInputMonth";
+            this.BirthDateInputMonth.SelectedIndexChanged += new System.EventHandler(this.BirthDateInputMonth_SelectedIndexChanged);
+            this.BirthDateInputMonth.Leave += new System.EventHandler(this.BirthDateInputMonth_Leave);
             // 
             // BirthDateInputDay
             // 
@@ -237,6 +227,7 @@
             resources.ApplyResources(this.Clear_Button, "Clear_Button");
             this.Clear_Button.Name = "Clear_Button";
             this.Clear_Button.UseVisualStyleBackColor = false;
+            this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
             // 
             // Add_Button
             // 
@@ -290,7 +281,6 @@
         private System.Windows.Forms.Panel InstitutPanel;
         private System.Windows.Forms.ComboBox BirthDateInputYear;
         private System.Windows.Forms.ComboBox BirthDateInputMonth;
-        private System.Windows.Forms.ComboBox BirthDateInputDay;
         private System.Windows.Forms.Label BirthDayLabel;
         private System.Windows.Forms.ComboBox get_IDInstitutionList;
         private System.Windows.Forms.ComboBox get_IDYearOfStudyList;
@@ -303,6 +293,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label debug;
         private System.Windows.Forms.TextBox Get_GroupID;
+        private System.Windows.Forms.ComboBox BirthDateInputDay;
     }
 }
 

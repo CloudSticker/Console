@@ -103,7 +103,7 @@ namespace Console_app
             string path = @"StudentList.txt";
             List<string[]> data = new List<string[]>();
             string FullNameINPUT = FullNameTextBox.Text;
-            string BirthdayDateINPUT = BirthdayDateTextBox.Text;
+            //string BirthdayDateINPUT = BirthdayDateTextBox.Text;
 
             if (File.Exists(path))
             {
