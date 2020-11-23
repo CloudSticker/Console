@@ -165,7 +165,7 @@ namespace Console_app
             WorkingFlow Datas = new WorkingFlow();
             if (((Convert.ToInt32(Year) - 1964) % 4 == 0))
             {
-                if (Month == 2) //Проверка на месяц (31)
+                if (Month == 1) //Проверка на месяц (31)
                 {
                     return Datas.DaysList29;
                 }
@@ -179,7 +179,7 @@ namespace Console_app
             }
             else
             {
-                if (Month == 2) //Проверка на месяц (31)
+                if (Month == 1) //Проверка на месяц (31)
                 {
                     return Datas.DaysList28;
                 }

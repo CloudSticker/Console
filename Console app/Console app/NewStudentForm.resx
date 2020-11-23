@@ -60,73 +60,67 @@
   <metadata name="FullNamePanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <metadata name="ThirdNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+  <metadata name="label2.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <metadata name="FirstNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="label2.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
-  </metadata>
-  <metadata name="SecondNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;ThirdNameInput.Name" xml:space="preserve">
-    <value>ThirdNameInput</value>
-  </data>
-  <data name="&gt;&gt;ThirdNameInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ThirdNameInput.Parent" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;ThirdNameInput.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;FirstNameInput.Name" xml:space="preserve">
-    <value>FirstNameInput</value>
-  </data>
-  <data name="&gt;&gt;FirstNameInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FirstNameInput.Parent" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;FirstNameInput.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;SecondNameInput.Name" xml:space="preserve">
-    <value>SecondNameInput</value>
-  </data>
-  <data name="&gt;&gt;SecondNameInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SecondNameInput.Parent" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;SecondNameInput.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="FullNamePanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 23</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>3, 97</value>
   </data>
-  <data name="FullNamePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 159</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>170, 17</value>
   </data>
-  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
-  <data name="FullNamePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
+  <data name="label2.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;FullNamePanel.Name" xml:space="preserve">
+  <data name="label2.Text" xml:space="preserve">
+    <value>Неправильно введено имя</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>FullNamePanel</value>
   </data>
-  <data name="&gt;&gt;FullNamePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;FullNamePanel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <metadata name="label1.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <data name="label1.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;FullNamePanel.ZOrder" xml:space="preserve">
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>3, 36</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>199, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Неправильно введена фамилия</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>FullNamePanel</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="ThirdNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -149,7 +143,7 @@
     <value>460, 34</value>
   </data>
   <data name="ThirdNameInput.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;ThirdNameInput.Name" xml:space="preserve">
     <value>ThirdNameInput</value>
@@ -161,7 +155,7 @@
     <value>FullNamePanel</value>
   </data>
   <data name="&gt;&gt;ThirdNameInput.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <metadata name="FirstNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -182,7 +176,7 @@
     <value>460, 34</value>
   </data>
   <data name="FirstNameInput.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;FirstNameInput.Name" xml:space="preserve">
     <value>FirstNameInput</value>
@@ -194,7 +188,7 @@
     <value>FullNamePanel</value>
   </data>
   <data name="&gt;&gt;FirstNameInput.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <metadata name="SecondNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -227,106 +221,61 @@
     <value>FullNamePanel</value>
   </data>
   <data name="&gt;&gt;SecondNameInput.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FullNamePanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>20, 23</value>
+  </data>
+  <data name="FullNamePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>460, 159</value>
+  </data>
+  <data name="FullNamePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;FullNamePanel.Name" xml:space="preserve">
+    <value>FullNamePanel</value>
+  </data>
+  <data name="&gt;&gt;FullNamePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FullNamePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FullNamePanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="BirthDayPanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="BirthDateInputYear.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="BirthDateInputMonth.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="BirthDateInputDay.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="BirthDayLabel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
   <data name="BirthDayPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;debug.Name" xml:space="preserve">
-    <value>debug</value>
+  <data name="label4.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;debug.Type" xml:space="preserve">
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>23, 98</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>162, 17</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Некоректно введена дата</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;debug.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>BirthDayPanel</value>
   </data>
-  <data name="&gt;&gt;debug.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputYear.Name" xml:space="preserve">
-    <value>BirthDateInputYear</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputYear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputYear.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputYear.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputMonth.Name" xml:space="preserve">
-    <value>BirthDateInputMonth</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputMonth.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputMonth.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputMonth.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputDay.Name" xml:space="preserve">
-    <value>BirthDateInputDay</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputDay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputDay.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputDay.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;BirthDayLabel.Name" xml:space="preserve">
-    <value>BirthDayLabel</value>
-  </data>
-  <data name="&gt;&gt;BirthDayLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDayLabel.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDayLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="BirthDayPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 192</value>
-  </data>
-  <data name="BirthDayPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 113</value>
-  </data>
-  <data name="BirthDayPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;BirthDayPanel.Name" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDayPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDayPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BirthDayPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="debug.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -353,7 +302,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;debug.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="BirthDateInputYear.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -467,7 +416,7 @@
     <value>120, 34</value>
   </data>
   <data name="BirthDateInputYear.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="BirthDateInputYear.Text" xml:space="preserve">
     <value>Год</value>
@@ -482,7 +431,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputYear.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="BirthDateInputMonth.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -497,7 +446,7 @@
     <value>120, 34</value>
   </data>
   <data name="BirthDateInputMonth.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="BirthDateInputMonth.Text" xml:space="preserve">
     <value>Месяц</value>
@@ -512,7 +461,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputMonth.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="BirthDateInputDay.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -527,7 +476,7 @@
     <value>120, 34</value>
   </data>
   <data name="BirthDateInputDay.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="BirthDateInputDay.Text" xml:space="preserve">
     <value>День</value>
@@ -542,7 +491,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputDay.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="BirthDayLabel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -557,13 +506,13 @@
     <value>20, 10</value>
   </data>
   <data name="BirthDayLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>138, 23</value>
+    <value>147, 23</value>
   </data>
   <data name="BirthDayLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
   </data>
   <data name="BirthDayLabel.Text" xml:space="preserve">
-    <value>Год рождения:</value>
+    <value>Дата рождения:</value>
   </data>
   <data name="&gt;&gt;BirthDayLabel.Name" xml:space="preserve">
     <value>BirthDayLabel</value>
@@ -575,94 +524,34 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDayLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="BirthDayPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>20, 192</value>
+  </data>
+  <data name="BirthDayPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>460, 113</value>
+  </data>
+  <data name="BirthDayPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;BirthDayPanel.Name" xml:space="preserve">
+    <value>BirthDayPanel</value>
+  </data>
+  <data name="&gt;&gt;BirthDayPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BirthDayPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BirthDayPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="InstitutPanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <metadata name="Get_GroupID.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="gpaInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="get_IDInstitutionList.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="get_IDYearOfStudyList.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="InstitutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;Get_GroupID.Name" xml:space="preserve">
-    <value>Get_GroupID</value>
-  </data>
-  <data name="&gt;&gt;Get_GroupID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Get_GroupID.Parent" xml:space="preserve">
-    <value>InstitutPanel</value>
-  </data>
-  <data name="&gt;&gt;Get_GroupID.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gpaInput.Name" xml:space="preserve">
-    <value>gpaInput</value>
-  </data>
-  <data name="&gt;&gt;gpaInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gpaInput.Parent" xml:space="preserve">
-    <value>InstitutPanel</value>
-  </data>
-  <data name="&gt;&gt;gpaInput.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;get_IDInstitutionList.Name" xml:space="preserve">
-    <value>get_IDInstitutionList</value>
-  </data>
-  <data name="&gt;&gt;get_IDInstitutionList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;get_IDInstitutionList.Parent" xml:space="preserve">
-    <value>InstitutPanel</value>
-  </data>
-  <data name="&gt;&gt;get_IDInstitutionList.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;get_IDYearOfStudyList.Name" xml:space="preserve">
-    <value>get_IDYearOfStudyList</value>
-  </data>
-  <data name="&gt;&gt;get_IDYearOfStudyList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;get_IDYearOfStudyList.Parent" xml:space="preserve">
-    <value>InstitutPanel</value>
-  </data>
-  <data name="&gt;&gt;get_IDYearOfStudyList.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="InstitutPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 324</value>
-  </data>
-  <data name="InstitutPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 219</value>
-  </data>
-  <data name="InstitutPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;InstitutPanel.Name" xml:space="preserve">
-    <value>InstitutPanel</value>
-  </data>
-  <data name="&gt;&gt;InstitutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InstitutPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;InstitutPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <metadata name="Get_GroupID.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -680,7 +569,7 @@
     <value>420, 34</value>
   </data>
   <data name="Get_GroupID.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Get_GroupID.Name" xml:space="preserve">
     <value>Get_GroupID</value>
@@ -710,7 +599,7 @@
     <value>137, 34</value>
   </data>
   <data name="gpaInput.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;gpaInput.Name" xml:space="preserve">
     <value>gpaInput</value>
@@ -749,7 +638,7 @@
     <value>420, 34</value>
   </data>
   <data name="get_IDInstitutionList.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="get_IDInstitutionList.Text" xml:space="preserve">
     <value>Институт</value>
@@ -791,7 +680,7 @@
     <value>420, 34</value>
   </data>
   <data name="get_IDYearOfStudyList.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
+    <value>8</value>
   </data>
   <data name="get_IDYearOfStudyList.Text" xml:space="preserve">
     <value>Курс</value>
@@ -808,99 +697,30 @@
   <data name="&gt;&gt;get_IDYearOfStudyList.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="InstitutPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>20, 324</value>
+  </data>
+  <data name="InstitutPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>460, 219</value>
+  </data>
+  <data name="InstitutPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;InstitutPanel.Name" xml:space="preserve">
+    <value>InstitutPanel</value>
+  </data>
+  <data name="&gt;&gt;InstitutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InstitutPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;InstitutPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="ButtonPanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <metadata name="Clear_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="Add_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="Cancel_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.Name" xml:space="preserve">
-    <value>Clear_Button</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Name" xml:space="preserve">
-    <value>Add_Button</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Name" xml:space="preserve">
-    <value>Cancel_Button</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="ButtonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 550</value>
-  </data>
-  <data name="ButtonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>500, 60</value>
-  </data>
-  <data name="ButtonPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Name" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="panel1.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
@@ -965,7 +785,7 @@
     <value>166, 57</value>
   </data>
   <data name="Clear_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>4</value>
+    <value>11</value>
   </data>
   <data name="Clear_Button.Text" xml:space="preserve">
     <value>Очистить</value>
@@ -998,7 +818,7 @@
     <value>166, 57</value>
   </data>
   <data name="Add_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>0</value>
+    <value>10</value>
   </data>
   <data name="Add_Button.Text" xml:space="preserve">
     <value>Добавить</value>
@@ -1034,7 +854,7 @@
     <value>166, 57</value>
   </data>
   <data name="Cancel_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
+    <value>12</value>
   </data>
   <data name="Cancel_Button.Text" xml:space="preserve">
     <value>Отмена</value>
@@ -1050,6 +870,54 @@
   </data>
   <data name="&gt;&gt;Cancel_Button.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="ButtonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 550</value>
+  </data>
+  <data name="ButtonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>500, 60</value>
+  </data>
+  <data name="ButtonPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Name" xml:space="preserve">
+    <value>ButtonPanel</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>23, 184</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>200, 17</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Неправильно введено отчество</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>

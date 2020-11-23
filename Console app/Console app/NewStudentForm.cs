@@ -72,10 +72,38 @@ namespace Console_app
             bool IsSecondNameCorrect = IsTextOfNamesINPutValid(SecondNameInput.Text);
             bool IsFirstNameCorrect = IsTextOfNamesINPutValid(FirstNameInput.Text);
             bool IsThirdNameCorrect = IsTextOfNamesINPutValid(ThirdNameInput.Text);
-            bool IsEverythingCorrect = IsSecondNameCorrect && IsFirstNameCorrect && IsThirdNameCorrect;
-            if (IsEverythingCorrect)
+            bool IsDateSetted = (BirthDateInputDay.SelectedIndex > 0 && BirthDateInputMonth.SelectedIndex > -1 && BirthDateInputYear.SelectedIndex > -1);
+            bool IsInstitutionSetted = get_IDInstitutionList.SelectedIndex > -1;
+            bool IsGroupSetted = Get_GroupID.Text != "";
+            bool IsGPASetted = (double.TryParse(gpaInput.Text, out double valGPA) && valGPA >= 0 && valGPA <= 100);
+            if (IsSecondNameCorrect && IsFirstNameCorrect && IsThirdNameCorrect && IsDateSetted && IsInstitutionSetted && IsGroupSetted && IsGPASetted)
             {
                 //debug.Text = SecondNameInput.Text + FirstNameInput.Text + ThirdNameInput.Text;
+            } else if (!IsSecondNameCorrect)
+            {
+                debug.Text = debug.Text + "1";
+            }
+            else if (!IsFirstNameCorrect)
+            {
+                debug.Text = debug.Text + "2";
+            }
+            else if (!IsThirdNameCorrect)
+            {
+                debug.Text = debug.Text + "3";
+            }
+            else if (!IsDateSetted)
+            {
+                debug.Text = debug.Text + "4";
+            }
+            else if (!IsInstitutionSetted)
+            {
+                debug.Text = debug.Text + "5";
+            }
+            else if (!IsGroupSetted)
+            {
+                debug.Text = debug.Text + "6";
+            } else if (!IsGPASetted) {
+                debug.Text = debug.Text + "7";
             }
 
         }
@@ -134,6 +162,5 @@ namespace Console_app
             get_IDYearOfStudyList.SelectedIndex = -1;
         }
 
-        
     }
 }

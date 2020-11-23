@@ -103,42 +103,8 @@ namespace Console_app
             string path = @"StudentList.txt";
             List<string[]> data = new List<string[]>();
             string FullNameINPUT = FullNameTextBox.Text;
-<<<<<<< Updated upstream
+
             //string BirthdayDateINPUT = BirthdayDateTextBox.Text;
-=======
->>>>>>> Stashed changes
-
-            if (File.Exists(path))
-            {
-                string[] LineElements = new string[7];
-                string[] l = File.ReadAllLines(path);
-                for (int i = 0; i < l.Length; i++)
-                {
-                    
-                        
-                    LineElements = l[i].Split(' ');
-                    string[] str = LineElements[1].Split('_');
-                    int[] int1 = new int[2];
-                    for (int j = 0; j < 3; j++)
-                    {
-                        int.TryParse(LineElements[2].Split('.')[j], out int1[j]);
-                    }
-
-                    string s = str[0] + ' ' + str[1] + ' ' + str[2] + ' ';
-                    LineElements[1] = s;
-
-                    if (SearchFunc(FullNameINPUT, str[0],  str[1], str[2]))
-                    {
-                        data.Add(LineElements);
-                    }
-
-                }
-               
-                foreach (string[] s in data)
-                {
-                    DataGridList.Rows.Add(s);
-                }
-            }
         
             
         }

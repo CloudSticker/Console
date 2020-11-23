@@ -50,6 +50,10 @@
             this.Clear_Button = new System.Windows.Forms.Button();
             this.Add_Button = new System.Windows.Forms.Button();
             this.Cancel_Button = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.FullNamePanel.SuspendLayout();
             this.BirthDayPanel.SuspendLayout();
             this.InstitutPanel.SuspendLayout();
@@ -58,6 +62,8 @@
             // 
             // FullNamePanel
             // 
+            this.FullNamePanel.Controls.Add(this.label2);
+            this.FullNamePanel.Controls.Add(this.label1);
             this.FullNamePanel.Controls.Add(this.ThirdNameInput);
             this.FullNamePanel.Controls.Add(this.FirstNameInput);
             this.FullNamePanel.Controls.Add(this.SecondNameInput);
@@ -83,6 +89,7 @@
             // BirthDayPanel
             // 
             resources.ApplyResources(this.BirthDayPanel, "BirthDayPanel");
+            this.BirthDayPanel.Controls.Add(this.label4);
             this.BirthDayPanel.Controls.Add(this.debug);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputYear);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputMonth);
@@ -247,11 +254,36 @@
             this.Cancel_Button.UseVisualStyleBackColor = false;
             this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Name = "label4";
+            // 
             // AddingUserData_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.ButtonPanel);
             this.Controls.Add(this.InstitutPanel);
             this.Controls.Add(this.BirthDayPanel);
@@ -268,6 +300,7 @@
             this.ButtonPanel.ResumeLayout(false);
             this.ButtonPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -294,6 +327,10 @@
         private System.Windows.Forms.Label debug;
         private System.Windows.Forms.TextBox Get_GroupID;
         private System.Windows.Forms.ComboBox BirthDateInputDay;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
