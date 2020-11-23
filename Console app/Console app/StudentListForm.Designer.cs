@@ -31,8 +31,11 @@ namespace Console_app
         {
             this.AddStudentButton = new System.Windows.Forms.Button();
             this.FilterGroupBox = new System.Windows.Forms.GroupBox();
-            this.FullNamelbl = new System.Windows.Forms.Label();
-            this.BirthdayDatelbl = new System.Windows.Forms.Label();
+            this.BirthdayDateCheckBox = new System.Windows.Forms.CheckBox();
+            this.FullNameCheckBox = new System.Windows.Forms.CheckBox();
+            this.MounthComboBox = new System.Windows.Forms.ComboBox();
+            this.DayComboBox = new System.Windows.Forms.ComboBox();
+            this.YearComboBox = new System.Windows.Forms.ComboBox();
             this.FullNameTextBox = new System.Windows.Forms.TextBox();
             this.SearchButton = new System.Windows.Forms.Button();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,9 +46,7 @@ namespace Console_app
             this.Cource = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MidCertificateScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridList = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.StudentListButton = new System.Windows.Forms.Button();
             this.FilterGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +55,7 @@ namespace Console_app
             // 
             this.AddStudentButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
             this.AddStudentButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddStudentButton.Location = new System.Drawing.Point(7, 495);
+            this.AddStudentButton.Location = new System.Drawing.Point(7, 151);
             this.AddStudentButton.Name = "AddStudentButton";
             this.AddStudentButton.Size = new System.Drawing.Size(140, 60);
             this.AddStudentButton.TabIndex = 0;
@@ -64,11 +65,11 @@ namespace Console_app
             // 
             // FilterGroupBox
             // 
-            this.FilterGroupBox.Controls.Add(this.comboBox3);
-            this.FilterGroupBox.Controls.Add(this.comboBox2);
-            this.FilterGroupBox.Controls.Add(this.comboBox1);
-            this.FilterGroupBox.Controls.Add(this.FullNamelbl);
-            this.FilterGroupBox.Controls.Add(this.BirthdayDatelbl);
+            this.FilterGroupBox.Controls.Add(this.BirthdayDateCheckBox);
+            this.FilterGroupBox.Controls.Add(this.FullNameCheckBox);
+            this.FilterGroupBox.Controls.Add(this.MounthComboBox);
+            this.FilterGroupBox.Controls.Add(this.DayComboBox);
+            this.FilterGroupBox.Controls.Add(this.YearComboBox);
             this.FilterGroupBox.Controls.Add(this.FullNameTextBox);
             this.FilterGroupBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FilterGroupBox.Location = new System.Drawing.Point(172, 12);
@@ -79,23 +80,62 @@ namespace Console_app
             this.FilterGroupBox.Text = "Фильтры";
             this.FilterGroupBox.Enter += new System.EventHandler(this.FilterGroupBox_Enter);
             // 
-            // FullNamelbl
+            // BirthdayDateCheckBox
             // 
-            this.FullNamelbl.AutoSize = true;
-            this.FullNamelbl.Location = new System.Drawing.Point(118, 36);
-            this.FullNamelbl.Name = "FullNamelbl";
-            this.FullNamelbl.Size = new System.Drawing.Size(57, 23);
-            this.FullNamelbl.TabIndex = 1;
-            this.FullNamelbl.Text = "ФИО";
+            this.BirthdayDateCheckBox.AutoSize = true;
+            this.BirthdayDateCheckBox.Location = new System.Drawing.Point(437, 32);
+            this.BirthdayDateCheckBox.Name = "BirthdayDateCheckBox";
+            this.BirthdayDateCheckBox.Size = new System.Drawing.Size(160, 27);
+            this.BirthdayDateCheckBox.TabIndex = 2;
+            this.BirthdayDateCheckBox.Text = "Дата рождения";
+            this.BirthdayDateCheckBox.UseVisualStyleBackColor = true;
+            this.BirthdayDateCheckBox.CheckedChanged += new System.EventHandler(this.BirthdayDateCheckBox_CheckedChanged);
             // 
-            // BirthdayDatelbl
+            // FullNameCheckBox
             // 
-            this.BirthdayDatelbl.AutoSize = true;
-            this.BirthdayDatelbl.Location = new System.Drawing.Point(437, 36);
-            this.BirthdayDatelbl.Name = "BirthdayDatelbl";
-            this.BirthdayDatelbl.Size = new System.Drawing.Size(141, 23);
-            this.BirthdayDatelbl.TabIndex = 1;
-            this.BirthdayDatelbl.Text = "Дата рождения";
+            this.FullNameCheckBox.AutoSize = true;
+            this.FullNameCheckBox.Location = new System.Drawing.Point(106, 32);
+            this.FullNameCheckBox.Name = "FullNameCheckBox";
+            this.FullNameCheckBox.Size = new System.Drawing.Size(76, 27);
+            this.FullNameCheckBox.TabIndex = 2;
+            this.FullNameCheckBox.Text = "ФИО";
+            this.FullNameCheckBox.UseVisualStyleBackColor = true;
+            this.FullNameCheckBox.CheckedChanged += new System.EventHandler(this.FullNameCheckBox_CheckedChanged);
+            // 
+            // MounthComboBox
+            // 
+            this.MounthComboBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MounthComboBox.FormattingEnabled = true;
+            this.MounthComboBox.Location = new System.Drawing.Point(448, 63);
+            this.MounthComboBox.Name = "MounthComboBox";
+            this.MounthComboBox.Size = new System.Drawing.Size(120, 31);
+            this.MounthComboBox.TabIndex = 1;
+            this.MounthComboBox.Text = "Месяц";
+            this.MounthComboBox.SelectedIndexChanged += new System.EventHandler(this.MounthComboBox_SelectedIndexChanged);
+            this.MounthComboBox.Click += new System.EventHandler(this.MounthComboBox_Click);
+            this.MounthComboBox.Leave += new System.EventHandler(this.MounthComboBox_Leave);
+            // 
+            // DayComboBox
+            // 
+            this.DayComboBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DayComboBox.FormattingEnabled = true;
+            this.DayComboBox.Location = new System.Drawing.Point(322, 62);
+            this.DayComboBox.Name = "DayComboBox";
+            this.DayComboBox.Size = new System.Drawing.Size(120, 31);
+            this.DayComboBox.TabIndex = 1;
+            this.DayComboBox.Text = "День";
+            this.DayComboBox.Click += new System.EventHandler(this.DayComboBox_Click);
+            this.DayComboBox.Leave += new System.EventHandler(this.DayComboBox_Leave);
+            // 
+            // YearComboBox
+            // 
+            this.YearComboBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.YearComboBox.FormattingEnabled = true;
+            this.YearComboBox.Location = new System.Drawing.Point(574, 63);
+            this.YearComboBox.Name = "YearComboBox";
+            this.YearComboBox.Size = new System.Drawing.Size(120, 31);
+            this.YearComboBox.TabIndex = 1;
+            this.YearComboBox.Text = "Год";
             // 
             // FullNameTextBox
             // 
@@ -189,41 +229,24 @@ namespace Console_app
             this.DataGridList.TabIndex = 4;
             this.DataGridList.Text = "dataGridView1";
             // 
-            // comboBox1
+            // StudentListButton
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(574, 63);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 31);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Год";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(322, 62);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(120, 31);
-            this.comboBox2.TabIndex = 1;
-            this.comboBox2.Text = "День";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(448, 63);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(120, 31);
-            this.comboBox3.TabIndex = 1;
-            this.comboBox3.Text = "Месяц";
+            this.StudentListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.StudentListButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StudentListButton.Location = new System.Drawing.Point(7, 85);
+            this.StudentListButton.Name = "StudentListButton";
+            this.StudentListButton.Size = new System.Drawing.Size(140, 60);
+            this.StudentListButton.TabIndex = 6;
+            this.StudentListButton.Text = "Список студентов";
+            this.StudentListButton.UseVisualStyleBackColor = false;
+            this.StudentListButton.Click += new System.EventHandler(this.StudentListButton_Click);
             // 
             // StudentListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.StudentListButton);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DataGridList);
             this.Controls.Add(this.FilterGroupBox);
@@ -254,10 +277,14 @@ namespace Console_app
         private System.Windows.Forms.DataGridViewTextBoxColumn MidCertificateScore;
         private System.Windows.Forms.ComboBox FilterComboBox;
         private System.Windows.Forms.TextBox FullNameTextBox;
-        private System.Windows.Forms.Label FullNamelbl;
-        private System.Windows.Forms.Label BirthdayDatelbl;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox YearComboBox;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox FullNameCheckBox;
+        private System.Windows.Forms.CheckBox BirthdayDateCheckBox;
+        private System.Windows.Forms.ComboBox DayComboBox;
+        private System.Windows.Forms.ComboBox MounthComboBox;
+        private System.Windows.Forms.Button StudentListButton;
     }
 }
