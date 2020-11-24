@@ -60,66 +60,72 @@
   <metadata name="FullNamePanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <metadata name="label2.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+  <metadata name="FirstNameErrLbl.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
-  <data name="label2.AutoSize" type="System.Boolean, System.Private.CoreLib">
+  <data name="FirstNameErrLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="FirstNameErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>3, 97</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="FirstNameErrLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>170, 17</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="FirstNameErrLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="FirstNameErrLbl.Text" xml:space="preserve">
     <value>Неправильно введено имя</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="FirstNameErrLbl.Visible" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;FirstNameErrLbl.Name" xml:space="preserve">
+    <value>FirstNameErrLbl</value>
+  </data>
+  <data name="&gt;&gt;FirstNameErrLbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;FirstNameErrLbl.Parent" xml:space="preserve">
     <value>FullNamePanel</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;FirstNameErrLbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="label1.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+  <metadata name="SecondNameErrLbl.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <data name="label1.AutoSize" type="System.Boolean, System.Private.CoreLib">
+  <data name="SecondNameErrLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="SecondNameErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>3, 36</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="SecondNameErrLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>199, 17</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="SecondNameErrLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="SecondNameErrLbl.Text" xml:space="preserve">
     <value>Неправильно введена фамилия</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="SecondNameErrLbl.Visible" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;SecondNameErrLbl.Name" xml:space="preserve">
+    <value>SecondNameErrLbl</value>
+  </data>
+  <data name="&gt;&gt;SecondNameErrLbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;SecondNameErrLbl.Parent" xml:space="preserve">
     <value>FullNamePanel</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SecondNameErrLbl.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="ThirdNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
@@ -250,31 +256,34 @@
   <data name="BirthDayPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, System.Private.CoreLib">
+  <data name="DateErrLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>23, 98</value>
+  <data name="DateErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>19, 98</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="DateErrLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>162, 17</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="DateErrLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="DateErrLbl.Text" xml:space="preserve">
     <value>Некоректно введена дата</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="DateErrLbl.Visible" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;DateErrLbl.Name" xml:space="preserve">
+    <value>DateErrLbl</value>
+  </data>
+  <data name="&gt;&gt;DateErrLbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DateErrLbl.Parent" xml:space="preserve">
     <value>BirthDayPanel</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DateErrLbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="debug.AutoSize" type="System.Boolean, System.Private.CoreLib">
@@ -620,13 +629,13 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="get_IDInstitutionList.Items" xml:space="preserve">
-    <value>НИТУ "МИСиС"</value>
+    <value>НИТУ"МИСиС"</value>
   </data>
   <data name="get_IDInstitutionList.Items1" xml:space="preserve">
     <value>МосПолитех</value>
   </data>
   <data name="get_IDInstitutionList.Items2" xml:space="preserve">
-    <value>МПФУ "Синергия"</value>
+    <value>МПФУ"Синергия"</value>
   </data>
   <data name="get_IDInstitutionList.Items3" xml:space="preserve">
     <value>МГУ</value>
@@ -892,31 +901,34 @@
   <data name="&gt;&gt;ButtonPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, System.Private.CoreLib">
+  <data name="ThirdNameErrLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="ThirdNameErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>23, 184</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="ThirdNameErrLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>200, 17</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="ThirdNameErrLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>5</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
+  <data name="ThirdNameErrLbl.Text" xml:space="preserve">
     <value>Неправильно введено отчество</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="ThirdNameErrLbl.Visible" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+  <data name="&gt;&gt;ThirdNameErrLbl.Name" xml:space="preserve">
+    <value>ThirdNameErrLbl</value>
+  </data>
+  <data name="&gt;&gt;ThirdNameErrLbl.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ThirdNameErrLbl.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ThirdNameErrLbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">

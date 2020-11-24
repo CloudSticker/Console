@@ -30,10 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddingUserData_Form));
             this.FullNamePanel = new System.Windows.Forms.Panel();
+            this.FirstNameErrLbl = new System.Windows.Forms.Label();
+            this.SecondNameErrLbl = new System.Windows.Forms.Label();
             this.ThirdNameInput = new System.Windows.Forms.TextBox();
             this.FirstNameInput = new System.Windows.Forms.TextBox();
             this.SecondNameInput = new System.Windows.Forms.TextBox();
             this.BirthDayPanel = new System.Windows.Forms.Panel();
+            this.DateErrLbl = new System.Windows.Forms.Label();
             this.debug = new System.Windows.Forms.Label();
             this.BirthDateInputYear = new System.Windows.Forms.ComboBox();
             this.BirthDateInputMonth = new System.Windows.Forms.ComboBox();
@@ -50,10 +53,7 @@
             this.Clear_Button = new System.Windows.Forms.Button();
             this.Add_Button = new System.Windows.Forms.Button();
             this.Cancel_Button = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.ThirdNameErrLbl = new System.Windows.Forms.Label();
             this.FullNamePanel.SuspendLayout();
             this.BirthDayPanel.SuspendLayout();
             this.InstitutPanel.SuspendLayout();
@@ -62,14 +62,26 @@
             // 
             // FullNamePanel
             // 
-            this.FullNamePanel.Controls.Add(this.label2);
-            this.FullNamePanel.Controls.Add(this.label1);
+            this.FullNamePanel.Controls.Add(this.FirstNameErrLbl);
+            this.FullNamePanel.Controls.Add(this.SecondNameErrLbl);
             this.FullNamePanel.Controls.Add(this.ThirdNameInput);
             this.FullNamePanel.Controls.Add(this.FirstNameInput);
             this.FullNamePanel.Controls.Add(this.SecondNameInput);
             resources.ApplyResources(this.FullNamePanel, "FullNamePanel");
             this.FullNamePanel.Name = "FullNamePanel";
             this.FullNamePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // FirstNameErrLbl
+            // 
+            resources.ApplyResources(this.FirstNameErrLbl, "FirstNameErrLbl");
+            this.FirstNameErrLbl.ForeColor = System.Drawing.Color.Red;
+            this.FirstNameErrLbl.Name = "FirstNameErrLbl";
+            // 
+            // SecondNameErrLbl
+            // 
+            resources.ApplyResources(this.SecondNameErrLbl, "SecondNameErrLbl");
+            this.SecondNameErrLbl.ForeColor = System.Drawing.Color.Red;
+            this.SecondNameErrLbl.Name = "SecondNameErrLbl";
             // 
             // ThirdNameInput
             // 
@@ -89,13 +101,19 @@
             // BirthDayPanel
             // 
             resources.ApplyResources(this.BirthDayPanel, "BirthDayPanel");
-            this.BirthDayPanel.Controls.Add(this.label4);
+            this.BirthDayPanel.Controls.Add(this.DateErrLbl);
             this.BirthDayPanel.Controls.Add(this.debug);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputYear);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputMonth);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputDay);
             this.BirthDayPanel.Controls.Add(this.BirthDayLabel);
             this.BirthDayPanel.Name = "BirthDayPanel";
+            // 
+            // DateErrLbl
+            // 
+            resources.ApplyResources(this.DateErrLbl, "DateErrLbl");
+            this.DateErrLbl.ForeColor = System.Drawing.Color.Red;
+            this.DateErrLbl.Name = "DateErrLbl";
             // 
             // debug
             // 
@@ -254,36 +272,18 @@
             this.Cancel_Button.UseVisualStyleBackColor = false;
             this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
-            // label1
+            // ThirdNameErrLbl
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Name = "label3";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.ThirdNameErrLbl, "ThirdNameErrLbl");
+            this.ThirdNameErrLbl.ForeColor = System.Drawing.Color.Red;
+            this.ThirdNameErrLbl.Name = "ThirdNameErrLbl";
             // 
             // AddingUserData_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.ThirdNameErrLbl);
             this.Controls.Add(this.ButtonPanel);
             this.Controls.Add(this.InstitutPanel);
             this.Controls.Add(this.BirthDayPanel);
@@ -327,10 +327,10 @@
         private System.Windows.Forms.Label debug;
         private System.Windows.Forms.TextBox Get_GroupID;
         private System.Windows.Forms.ComboBox BirthDateInputDay;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label FirstNameErrLbl;
+        private System.Windows.Forms.Label SecondNameErrLbl;
+        private System.Windows.Forms.Label ThirdNameErrLbl;
+        private System.Windows.Forms.Label DateErrLbl;
     }
 }
 
