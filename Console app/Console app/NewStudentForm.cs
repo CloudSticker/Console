@@ -7,12 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Console_app
 {
 
     public partial class AddingUserData_Form : Form
     {
+        internal bool IsSecondNameCorrect;
+        internal bool IsFirstNameCorrect;
+        internal bool IsThirdNameCorrect;
+        internal bool IsDateSetted;
+        internal bool IsInstitutionSetted;
+        internal bool IsGroupSetted;
+        internal bool IsGPASetted;
         WorkingFlow Datas = new WorkingFlow();
         public AddingUserData_Form()
         {
@@ -53,6 +61,7 @@ namespace Console_app
             this.Close();
             StudentListForm StartNewForm = new StudentListForm();
             StartNewForm.Show();
+
         }
 
         static bool IsTextOfNamesINPutValid(String enter)
@@ -69,43 +78,34 @@ namespace Console_app
         }
         private void Add_Button_Click(object sender, EventArgs e)
         {
-            bool IsSecondNameCorrect = IsTextOfNamesINPutValid(SecondNameInput.Text);
-            bool IsFirstNameCorrect = IsTextOfNamesINPutValid(FirstNameInput.Text);
-            bool IsThirdNameCorrect = IsTextOfNamesINPutValid(ThirdNameInput.Text);
-            bool IsDateSetted = (BirthDateInputDay.SelectedIndex > 0 && BirthDateInputMonth.SelectedIndex > -1 && BirthDateInputYear.SelectedIndex > -1);
-            bool IsInstitutionSetted = get_IDInstitutionList.SelectedIndex > -1;
-            bool IsGroupSetted = Get_GroupID.Text != "";
-            bool IsGPASetted = (double.TryParse(gpaInput.Text, out double valGPA) && valGPA >= 0 && valGPA <= 100);
+            string ID = Convert.ToString(Datas.CheckForID());
+            string Month;
+            if (BirthDateInputMonth.SelectedIndex < 9)
+            {
+                Month = '0' + Convert.ToString(BirthDateInputMonth.SelectedIndex + 1);
+            } else
+            {
+                Month = Convert.ToString(BirthDateInputMonth.SelectedIndex + 1);
+            }
+            IsSecondNameCorrect = IsTextOfNamesINPutValid(SecondNameInput.Text);
+            IsFirstNameCorrect = IsTextOfNamesINPutValid(FirstNameInput.Text);
+            IsThirdNameCorrect = IsTextOfNamesINPutValid(ThirdNameInput.Text);
+            IsDateSetted = (BirthDateInputDay.SelectedIndex > -1 && BirthDateInputMonth.SelectedIndex > -1 && BirthDateInputYear.SelectedIndex > -1);
+            IsInstitutionSetted = get_IDInstitutionList.SelectedIndex > -1;
+            IsGroupSetted = Get_GroupID.Text != "";
+            bool parse = double.TryParse(gpaInput.Text, out double valGPA) && valGPA == Math.Round(valGPA,2);
+            
+            IsGPASetted = (parse && valGPA >= 0 && valGPA <= 100 );
             if (IsSecondNameCorrect && IsFirstNameCorrect && IsThirdNameCorrect && IsDateSetted && IsInstitutionSetted && IsGroupSetted && IsGPASetted)
             {
-                //debug.Text = SecondNameInput.Text + FirstNameInput.Text + ThirdNameInput.Text;
-            } else if (!IsSecondNameCorrect)
+                string stroke = ID + ' ' + SecondNameInput.Text + '_' + FirstNameInput.Text + '_' + ThirdNameInput.Text + ' ' + BirthDateInputDay.Text + '.' + Month + '.' + BirthDateInputYear.Text + ' ' + get_IDInstitutionList.Text + ' ' + Get_GroupID.Text + ' ' + get_IDYearOfStudyList.Text + ' ' + gpaInput.Text;
+                Datas.ADDinFile(stroke);
+                clearingfirlds();
+                UnVisErrors();
+            } else 
             {
-                debug.Text = debug.Text + "1";
+                ErrorChecks();
             }
-            else if (!IsFirstNameCorrect)
-            {
-                debug.Text = debug.Text + "2";
-            }
-            else if (!IsThirdNameCorrect)
-            {
-                debug.Text = debug.Text + "3";
-            }
-            else if (!IsDateSetted)
-            {
-                debug.Text = debug.Text + "4";
-            }
-            else if (!IsInstitutionSetted)
-            {
-                debug.Text = debug.Text + "5";
-            }
-            else if (!IsGroupSetted)
-            {
-                debug.Text = debug.Text + "6";
-            } else if (!IsGPASetted) {
-                debug.Text = debug.Text + "7";
-            }
-
         }
 
         private void BirthDateInputMonth_Leave(object sender, EventArgs e)
@@ -150,6 +150,11 @@ namespace Console_app
 
         private void Clear_Button_Click(object sender, EventArgs e)
         {
+            clearingfirlds();
+            UnVisErrors();
+        }
+        private void clearingfirlds()
+        {
             SecondNameInput.Clear();
             FirstNameInput.Clear();
             ThirdNameInput.Clear();
@@ -160,6 +165,20 @@ namespace Console_app
             BirthDateInputYear.SelectedIndex = 0;
             get_IDInstitutionList.SelectedIndex = -1;
             get_IDYearOfStudyList.SelectedIndex = -1;
+        }
+        private void UnVisErrors()
+        {
+            FirstNameErrLbl.Visible = false;
+            SecondNameErrLbl.Visible = false;
+            ThirdNameErrLbl.Visible = false;
+            DateErrLbl.Visible = false;
+        }
+        private void ErrorChecks()
+        {
+            FirstNameErrLbl.Visible = !IsFirstNameCorrect;
+            SecondNameErrLbl.Visible = !IsSecondNameCorrect;
+            ThirdNameErrLbl.Visible = !IsThirdNameCorrect;
+            DateErrLbl.Visible = !IsDateSetted;
         }
 
     }

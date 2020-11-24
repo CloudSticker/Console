@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace Console_app
 {
 
     internal class WorkingFlow
     {
+        string path = @"StudentList.txt";
         internal List<string> monthList = new List<string>()
         {
             "Январь",
@@ -191,6 +193,49 @@ namespace Console_app
                 {
                     return Datas.DaysList31;
                 }
+            }
+        }
+        internal void ADDinFile(string stroke)
+        {
+            if (File.Exists(path))
+            {
+                using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
+                {
+                    sw.Write($"\r\n{stroke}");
+                }
+            } else
+            {
+                using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
+                {
+                    sw.WriteLine(stroke);
+                }
+            }
+        }
+        internal int CheckForID()
+        {
+            int max = 0;
+            if(File.Exists(path))
+            {
+                string[] AllLines = File.ReadAllLines(path);
+                for (int i = 0; i < AllLines.Length; i++)
+                {
+                    string[] ElementsOfLine = AllLines[i].Split(' ');
+                    if (max < Convert.ToInt32(ElementsOfLine[0]))
+                    {
+                        max = Convert.ToInt32(ElementsOfLine[0]);
+                        continue;
+                    }
+                }
+                if(max == AllLines.Length)
+                {
+                    return max+1;
+                } else
+                {
+                    return -1;
+                }
+            } else
+            {
+                return 1;
             }
         }
     }
