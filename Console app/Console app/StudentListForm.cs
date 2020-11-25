@@ -136,10 +136,10 @@ namespace Console_app
         private void AddContextMenu()
         {
             m.Text = "Изменить";
-            m.Click += new EventHandler(toolStripItem2_Click);
+            m.Click += new EventHandler(toolChangeItem2_Click);
 
             m1.Text = "Удалить";
-            m1.Click += new EventHandler(tollDeleteItem_Click);
+            m1.Click += new EventHandler(toolDeleteItem_Click);
             
             ContextMenuStrip strip = new ContextMenuStrip();
             foreach (DataGridViewColumn column in DataGridList.Columns)
@@ -154,7 +154,7 @@ namespace Console_app
         private DataGridViewCellEventArgs mouseLocation;
 
         // Change the cell's color.
-        private void tollDeleteItem_Click(object sender, EventArgs args)
+        private void toolDeleteItem_Click(object sender, EventArgs args)
         {
             /*
             if (this.DataGridList.SelectedRows.Count > 0)
@@ -166,9 +166,11 @@ namespace Console_app
                 }*/
             Fill_List(RowNum);
         }
-        private void toolStripItem2_Click(object sender, EventArgs args)
+        private void toolChangeItem2_Click(object sender, EventArgs args)
         {
-
+            EditStudentForm StartNewForm = new EditStudentForm();
+            StartNewForm.Show();
+            this.Visible = false;
         }
 
         // Deal with hovering over a cell.

@@ -10,7 +10,7 @@ namespace Console_app
 {
     public partial class EditStudentForm : Form
     {
-        public EditStudentForm(string input)
+        public EditStudentForm()
         {
             InitializeComponent();
             SecondNameInput.Text = "Кузнецов";
