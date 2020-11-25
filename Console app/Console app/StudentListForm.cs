@@ -16,7 +16,7 @@ namespace Console_app
         WorkingFlow Datas = new WorkingFlow();
         public bool IsFullNameActive;
         public bool IsBirthdayDateActive;
-
+        public int RowNum;
         
         public StudentListForm()
         {
@@ -35,11 +35,14 @@ namespace Console_app
 
         }
 
+        internal List<string[]> data = new List<string[]>();
+
         private void Fill_List()
         {
+            data = new List<string[]>();
             DataGridList.Rows.Clear();
             string path = @"StudentList.txt";
-            List<string[]> data = new List<string[]>();
+            
 
             
             if (File.Exists(path))
@@ -64,7 +67,50 @@ namespace Console_app
             {
                 DataGridList.Rows.Add(s);
             }
+        }
+        private void Fill_List(int ind)
+        {
+            DataGridList.Rows.Clear();
+            string path = @"StudentList.txt";
+            data = new List<string[]>();
 
+            if (File.Exists(path))
+            {
+                string[] LineElements = new string[7];
+                string[] l = File.ReadAllLines(path);
+
+                for (int i = 0; i < l.Length; i++)
+                {
+                    LineElements = l[i].Split(' ');
+
+                    if ((LineElements[0] == ind.ToString()))
+                    {
+
+                        using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
+                        {
+                            for (int j = 0; j < l.Length; j++)
+                            {
+                                LineElements = l[j].Split(' ');
+                                if (!(LineElements[0] == ind.ToString()))
+                                    sw.WriteLine(l[j]);
+                            }
+                        }
+
+                        l = File.ReadAllLines(path);
+                        FullNameCheckBox.Text = ind.ToString() + " ÏÅÐÅÇÀÏÈÑÜ";
+
+                    }
+                }
+                
+            }
+
+
+            foreach (string[] s in data)
+            {
+                DataGridList.Rows.Add(s);
+            }
+            DataGridList.Rows.Clear();
+            Fill_List();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -110,13 +156,15 @@ namespace Console_app
         // Change the cell's color.
         private void tollDeleteItem_Click(object sender, EventArgs args)
         {
-            
+            /*
             if (this.DataGridList.SelectedRows.Count > 0)
                 foreach (DataGridViewRow drv in DataGridList.SelectedRows)
                 {
                     
                     DataGridList.Rows.Remove(drv);
-                }
+                    
+                }*/
+            Fill_List(RowNum);
         }
         private void toolStripItem2_Click(object sender, EventArgs args)
         {
@@ -280,7 +328,7 @@ namespace Console_app
 
         private void StudentListButton_Click(object sender, EventArgs e)
         {
-
+            List<string[]> data = new List<string[]>();
             Fill_List();
         }
 
@@ -296,8 +344,10 @@ namespace Console_app
 
         private void DataGridList_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            FullNameCheckBox.Text = Convert.ToString(e.RowIndex.ToString());
-            //BirthdayDateCheckBox.Text = DataGridList[e.RowIndex]
+            //FullNameCheckBox.Text = ;
+            
+            string[] s = data[e.RowIndex];;
+            RowNum = Convert.ToInt32(s[0]);
         }
     }
 

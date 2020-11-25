@@ -47,7 +47,6 @@ namespace Console_app
             this.MidCertificateScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridList = new System.Windows.Forms.DataGridView();
             this.StudentListButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.FilterGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).BeginInit();
             this.SuspendLayout();
@@ -244,24 +243,11 @@ namespace Console_app
             this.StudentListButton.UseVisualStyleBackColor = false;
             this.StudentListButton.Click += new System.EventHandler(this.StudentListButton_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(7, 217);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 60);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Удалить студента";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // StudentListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.StudentListButton);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DataGridList);
@@ -302,6 +288,5 @@ namespace Console_app
         private System.Windows.Forms.ComboBox DayComboBox;
         private System.Windows.Forms.ComboBox MounthComboBox;
         private System.Windows.Forms.Button StudentListButton;
-        private System.Windows.Forms.Button button1;
     }
 }

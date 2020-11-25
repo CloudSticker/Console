@@ -49,3 +49,4 @@ C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Project\Console app\Co
 C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Project\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.pdb
 C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Project\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.genruntimeconfig.cache
 C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Project\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.EditStudentForm.resources
+C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.EditStudentForm.resources
