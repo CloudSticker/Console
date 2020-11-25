@@ -22,11 +22,16 @@ namespace Console_app
         {
             WorkingFlow Datas = new WorkingFlow();
             InitializeComponent();
-
+            AddContextMenu();
             Datas.Filling();
             
             YearComboBox.DataSource = Datas.Years;
             MounthComboBox.DataSource = Datas.monthList;
+
+        }
+
+        private void DeleteStudent(int ID)
+        {
 
         }
 
@@ -79,6 +84,49 @@ namespace Console_app
         private void FilterButton1_Click(object sender, EventArgs e)
         {
             
+        }
+        ToolStripMenuItem m = new ToolStripMenuItem();
+        ToolStripMenuItem m1 = new ToolStripMenuItem();
+        private void AddContextMenu()
+        {
+            m.Text = "Изменить";
+            m.Click += new EventHandler(toolStripItem2_Click);
+
+            m1.Text = "Удалить";
+            m1.Click += new EventHandler(tollDeleteItem_Click);
+            
+            ContextMenuStrip strip = new ContextMenuStrip();
+            foreach (DataGridViewColumn column in DataGridList.Columns)
+            {
+
+                column.ContextMenuStrip = strip;
+                column.ContextMenuStrip.Items.Add(m);
+                column.ContextMenuStrip.Items.Add(m1);
+            }
+        }
+
+        private DataGridViewCellEventArgs mouseLocation;
+
+        // Change the cell's color.
+        private void tollDeleteItem_Click(object sender, EventArgs args)
+        {
+            
+            if (this.DataGridList.SelectedRows.Count > 0)
+                foreach (DataGridViewRow drv in DataGridList.SelectedRows)
+                {
+                    
+                    DataGridList.Rows.Remove(drv);
+                }
+        }
+        private void toolStripItem2_Click(object sender, EventArgs args)
+        {
+
+        }
+
+        // Deal with hovering over a cell.
+        private void dataGridView_CellMouseEnter(object sender, DataGridViewCellEventArgs location)
+        {
+            mouseLocation = location;
         }
 
         public static bool SearchFunc(string INPUT, string str0, string str1, string str2, int ind)
@@ -240,5 +288,17 @@ namespace Console_app
         {
 
         }
+
+        private void DataGridList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void DataGridList_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            FullNameCheckBox.Text = Convert.ToString(e.RowIndex.ToString());
+            //BirthdayDateCheckBox.Text = DataGridList[e.RowIndex]
+        }
     }
+
 }

@@ -1,4 +1,4 @@
-﻿
+
 namespace Console_app
 {
     partial class StudentListForm
@@ -229,6 +229,8 @@ namespace Console_app
             this.DataGridList.Size = new System.Drawing.Size(700, 429);
             this.DataGridList.TabIndex = 4;
             this.DataGridList.Text = "dataGridView1";
+            this.DataGridList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridList_CellClick);
+            this.DataGridList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridList_CellDoubleClick);
             // 
             // StudentListButton
             // 
