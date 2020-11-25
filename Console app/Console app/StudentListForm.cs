@@ -61,7 +61,7 @@ namespace Console_app
  
                 }
             }
-            
+
 
             foreach (string[] s in data)
             {
@@ -78,39 +78,28 @@ namespace Console_app
             {
                 string[] LineElements = new string[7];
                 string[] l = File.ReadAllLines(path);
-
-                for (int i = 0; i < l.Length; i++)
+                using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
                 {
-                    LineElements = l[i].Split(' ');
-
-                    if ((LineElements[0] == ind.ToString()))
+                    for (int j = 0; j < l.Length; j++)
                     {
+                        LineElements = l[j].Split(' ');
+                        if (LineElements[0] == ind.ToString())
+                            continue;
 
-                        using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
-                        {
-                            for (int j = 0; j < l.Length; j++)
-                            {
-                                LineElements = l[j].Split(' ');
-                                if (!(LineElements[0] == ind.ToString()))
-                                    sw.WriteLine(l[j]);
-                            }
-                        }
-
-                        l = File.ReadAllLines(path);
-                        FullNameCheckBox.Text = ind.ToString() + " ÏÅÐÅÇÀÏÈÑÜ";
-
+                        if (j + 1 == l.Length)
+                            sw.Write(l[j]);
+                        else
+                            sw.Write($"{l[j]}\n");
                     }
                 }
-                
-            }
 
-
-            foreach (string[] s in data)
-            {
-                DataGridList.Rows.Add(s);
+                foreach (string[] s in data)
+                {
+                    DataGridList.Rows.Add(s);
+                }
+                DataGridList.Rows.Clear();
+                Fill_List();
             }
-            DataGridList.Rows.Clear();
-            Fill_List();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -346,10 +335,12 @@ namespace Console_app
 
         private void DataGridList_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //FullNameCheckBox.Text = ;
+            if ((0 <= e.RowIndex) && ( e.RowIndex < data.Count))
+            {
+                string[] s = data[e.RowIndex];
+                RowNum = Convert.ToInt32(s[0]);
+            }
             
-            string[] s = data[e.RowIndex];;
-            RowNum = Convert.ToInt32(s[0]);
         }
     }
 
