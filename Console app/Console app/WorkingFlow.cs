@@ -226,13 +226,7 @@ namespace Console_app
                         continue;
                     }
                 }
-                if(max == AllLines.Length)
-                {
                     return max+1;
-                } else
-                {
-                    return -1;
-                }
             } else
             {
                 return 1;

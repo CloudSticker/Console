@@ -8,11 +8,17 @@ using System.Windows.Forms;
 
 namespace Console_app
 {
-    public partial class Form1 : Form
+    public partial class EditStudentForm : Form
     {
-        public Form1()
+        public EditStudentForm(string input)
         {
             InitializeComponent();
+            SecondNameInput.Text = "Кузнецов";
+        }
+
+        private void SecondNameInput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
