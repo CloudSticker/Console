@@ -32,6 +32,7 @@ namespace Console_app
 
         private void Fill_List()
         {
+            DataGridList.Rows.Clear();
             string path = @"StudentList.txt";
             List<string[]> data = new List<string[]>();
 
@@ -158,28 +159,27 @@ namespace Console_app
                  
                     string s = str[0] + ' ' + str[1] + ' ' + str[2] + ' ';
                     LineElements[1] = s;
-
-                    if (IsFullNameActive)
+                    if (IsFullNameActive && IsBirthdayDateActive)
                     {
-                        if (SearchFunc(FullNameINPUT, str[0], str[1], str[2], 0))
+                        if (SearchFunc(FullNameINPUT, str[0], str[1], str[2], 0) && SearchFunc(LineElements[2], DayComboBox.Text, Convert.ToString(MounthComboBox.SelectedIndex + 1), YearComboBox.Text, 1))
                         {
                             data.Add(LineElements);
                         }
-                            
-                    } else if (IsBirthdayDateActive)
+
+
+
+                    }else if (IsBirthdayDateActive)
                     {
                         if (SearchFunc(LineElements[2], DayComboBox.Text, Convert.ToString(MounthComboBox.SelectedIndex + 1), YearComboBox.Text, 1))
                         {
                             data.Add(LineElements);
                         }
-                    }else if (IsFullNameActive && IsBirthdayDateActive)
+                    }else if (IsFullNameActive)
                     {
-                        if (SearchFunc(FullNameINPUT, str[0], str[1], str[2], 0) && SearchFunc(LineElements[2], DayComboBox.Text, Convert.ToString(MounthComboBox.SelectedIndex + 1), YearComboBox.Text, 1));
+                        if (SearchFunc(FullNameINPUT, str[0], str[1], str[2], 0))
                         {
                             data.Add(LineElements);
                         }
-
-
 
                     }
                 }
@@ -232,7 +232,13 @@ namespace Console_app
 
         private void StudentListButton_Click(object sender, EventArgs e)
         {
+
             Fill_List();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
