@@ -5,6 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
+using System.Media;
+using System.Runtime.InteropServices;
 
 namespace Console_app
 {
@@ -12,24 +15,36 @@ namespace Console_app
     public partial class Ghouse : Form
     {
 
+        [DllImport("winmm.dll", EntryPoint = "waveOutGetVolume")]
+        private static extern int WaveOutGetVolume(IntPtr hwo, out uint dwVolume);
+
+        [DllImport("winmm.dll", EntryPoint = "waveOutSetVolume")]
+        private static extern int WaveOutSetVolume(IntPtr hwo, uint dwVolume);
+
+
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Soun.wav");
+        bool a = false;
         Bitmap RotatingBlocks;
         Point DrawHere;
         Rectangle InvalidRect;
+        bool A;
 
         public Ghouse()
         {
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            InitializeComponent();
+            player.Play();
 
-           /* RotatingBlocks = new Bitmap(@"Ghouse.gif");
-            DrawHere = new Point(10, 10);
+            RotatingBlocks = new Bitmap(@"Nice.GIF");
+
+            InitializeComponent();
+            
+            DrawHere = new Point(0, 0);
             InvalidRect = new Rectangle(DrawHere, RotatingBlocks.Size);
 
             this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             this.SetStyle(ControlStyles.DoubleBuffer, true);
 
             this.Load += new System.EventHandler(this.Form1_Load);
-           */
+
         }
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -53,6 +68,20 @@ namespace Console_app
                                       new EventHandler(this.OnFrameChanged));
 
 
+            }
+        }
+
+        private void Ghouse_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            a = !a;
+            if (!a)
+            {
+                player.Stop();
             }
         }
     }
