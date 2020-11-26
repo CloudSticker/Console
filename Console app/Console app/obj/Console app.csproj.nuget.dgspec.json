@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danii\\OneDrive\\Рабочий стол\\GitKraken\\Project\\Console app\\Console app\\Console app.csproj": {}
+    "C:\\Users\\dan91\\OneDrive\\Рабочий стол\\GitHub\\Console app\\Console\\Console app\\Console app\\Console app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danii\\OneDrive\\Рабочий стол\\GitKraken\\Project\\Console app\\Console app\\Console app.csproj": {
+    "C:\\Users\\dan91\\OneDrive\\Рабочий стол\\GitHub\\Console app\\Console\\Console app\\Console app\\Console app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danii\\OneDrive\\Рабочий стол\\GitKraken\\Project\\Console app\\Console app\\Console app.csproj",
+        "projectUniqueName": "C:\\Users\\dan91\\OneDrive\\Рабочий стол\\GitHub\\Console app\\Console\\Console app\\Console app\\Console app.csproj",
         "projectName": "Console app",
-        "projectPath": "C:\\Users\\danii\\OneDrive\\Рабочий стол\\GitKraken\\Project\\Console app\\Console app\\Console app.csproj",
-        "packagesPath": "C:\\Users\\danii\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danii\\OneDrive\\Рабочий стол\\GitKraken\\Project\\Console app\\Console app\\obj\\",
+        "projectPath": "C:\\Users\\dan91\\OneDrive\\Рабочий стол\\GitHub\\Console app\\Console\\Console app\\Console app\\Console app.csproj",
+        "packagesPath": "C:\\Users\\dan91\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dan91\\OneDrive\\Рабочий стол\\GitHub\\Console app\\Console\\Console app\\Console app\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\danii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dan91\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -60,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

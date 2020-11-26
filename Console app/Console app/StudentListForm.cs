@@ -412,6 +412,9 @@ namespace Console_app
 
         private void YESBUTTON_Click(object sender, EventArgs e)
         {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Heart.wav");
+            player.Play();
+            Thread.Sleep(1000);
             Ghouse StartNewForm = new Ghouse();
             StartNewForm.Show();
             this.Visible = false;
@@ -559,6 +562,11 @@ namespace Console_app
                     a = true;
                 }
             }
+        }
+
+        private void YESBUTTON_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = curs;
         }
     }
 

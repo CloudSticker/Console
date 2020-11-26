@@ -333,6 +333,7 @@ namespace Console_app
             this.YESBUTTON.TabIndex = 8;
             this.YESBUTTON.UseVisualStyleBackColor = true;
             this.YESBUTTON.Click += new System.EventHandler(this.YESBUTTON_Click);
+            this.YESBUTTON.MouseLeave += new System.EventHandler(this.YESBUTTON_MouseLeave);
             this.YESBUTTON.MouseHover += new System.EventHandler(this.YESBUTTON_MouseHover);
             // 
             // StudentListForm
