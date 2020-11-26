@@ -21,15 +21,16 @@ namespace Console_app
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             InitializeComponent();
 
-           /* RotatingBlocks = new Bitmap(@"Ghouse.gif");
-            DrawHere = new Point(10, 10);
+            RotatingBlocks = new Bitmap(@"Ghouse.GIF");
+
+            DrawHere = new Point(0, 0);
             InvalidRect = new Rectangle(DrawHere, RotatingBlocks.Size);
 
             this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             this.SetStyle(ControlStyles.DoubleBuffer, true);
 
             this.Load += new System.EventHandler(this.Form1_Load);
-           */
+           
         }
         protected override void OnPaint(PaintEventArgs e)
         {
