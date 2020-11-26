@@ -70,10 +70,10 @@
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ThirdNameErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>23, 158</value>
+    <value>23, 179</value>
   </data>
   <data name="ThirdNameErrLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>181, 15</value>
+    <value>200, 17</value>
   </data>
   <data name="ThirdNameErrLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>10</value>
@@ -103,7 +103,7 @@
     <value>245, 0</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>5, 53</value>
+    <value>5, 60</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
@@ -134,7 +134,7 @@
     <value>245, 3</value>
   </data>
   <data name="Edit_Button.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>255, 50</value>
+    <value>255, 57</value>
   </data>
   <data name="Edit_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>10</value>
@@ -173,7 +173,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Cancel_Button.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>250, 50</value>
+    <value>250, 57</value>
   </data>
   <data name="Cancel_Button.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
@@ -194,10 +194,10 @@
     <value>2</value>
   </data>
   <data name="ButtonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 488</value>
+    <value>0, 553</value>
   </data>
   <data name="ButtonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>500, 53</value>
+    <value>500, 60</value>
   </data>
   <data name="ButtonPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>9</value>
@@ -233,10 +233,10 @@
     <value>4</value>
   </data>
   <data name="get_IDYearOfStudyList.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 94</value>
+    <value>20, 107</value>
   </data>
   <data name="get_IDYearOfStudyList.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>420, 31</value>
+    <value>420, 34</value>
   </data>
   <data name="get_IDYearOfStudyList.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>8</value>
@@ -266,10 +266,10 @@
     <value>NoControl</value>
   </data>
   <data name="DateErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>19, 86</value>
+    <value>19, 97</value>
   </data>
   <data name="DateErrLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>145, 15</value>
+    <value>162, 17</value>
   </data>
   <data name="DateErrLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
@@ -398,10 +398,10 @@
     <value>2017</value>
   </data>
   <data name="BirthDateInputYear.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>320, 55</value>
+    <value>20, 62</value>
   </data>
   <data name="BirthDateInputYear.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 31</value>
+    <value>120, 34</value>
   </data>
   <data name="BirthDateInputYear.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>5</value>
@@ -419,7 +419,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputYear.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <metadata name="BirthDateInputMonth.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -428,10 +428,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="BirthDateInputMonth.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>170, 55</value>
+    <value>170, 62</value>
   </data>
   <data name="BirthDateInputMonth.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 31</value>
+    <value>120, 34</value>
   </data>
   <data name="BirthDateInputMonth.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
@@ -449,7 +449,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputMonth.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <metadata name="BirthDateInputDay.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -458,10 +458,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="BirthDateInputDay.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 55</value>
+    <value>320, 62</value>
   </data>
   <data name="BirthDateInputDay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>120, 31</value>
+    <value>120, 34</value>
   </data>
   <data name="BirthDateInputDay.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
@@ -479,7 +479,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputDay.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <metadata name="gpaInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -488,13 +488,13 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="gpaInput.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 131</value>
+    <value>20, 148</value>
   </data>
   <data name="gpaInput.PlaceholderText" xml:space="preserve">
     <value>Средний балл</value>
   </data>
   <data name="gpaInput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>137, 32</value>
+    <value>137, 34</value>
   </data>
   <data name="gpaInput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>9</value>
@@ -518,10 +518,10 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="get_IDInstitutionList.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 20</value>
+    <value>20, 23</value>
   </data>
   <data name="get_IDInstitutionList.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>420, 31</value>
+    <value>420, 34</value>
   </data>
   <data name="get_IDInstitutionList.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
@@ -554,10 +554,10 @@
     <value>NoControl</value>
   </data>
   <data name="BirthDayLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 9</value>
+    <value>20, 10</value>
   </data>
   <data name="BirthDayLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>136, 21</value>
+    <value>147, 23</value>
   </data>
   <data name="BirthDayLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -575,7 +575,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDayLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <metadata name="InstitutPanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -590,10 +590,10 @@
     <value>Segoe UI, 12.226416pt, style=Bold</value>
   </data>
   <data name="ID_lbloutput.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>406, 167</value>
+    <value>406, 189</value>
   </data>
   <data name="ID_lbloutput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>0, 23</value>
+    <value>0, 25</value>
   </data>
   <data name="ID_lbloutput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>11</value>
@@ -617,10 +617,10 @@
     <value>Segoe MDL2 Assets, 16.301888pt, style=Bold</value>
   </data>
   <data name="IDtext.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>367, 164</value>
+    <value>367, 186</value>
   </data>
   <data name="IDtext.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>34, 22</value>
+    <value>37, 25</value>
   </data>
   <data name="IDtext.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>10</value>
@@ -647,13 +647,13 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="Get_GroupID.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 57</value>
+    <value>20, 65</value>
   </data>
   <data name="Get_GroupID.PlaceholderText" xml:space="preserve">
     <value>Группа</value>
   </data>
   <data name="Get_GroupID.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>420, 32</value>
+    <value>420, 34</value>
   </data>
   <data name="Get_GroupID.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>7</value>
@@ -671,10 +671,10 @@
     <value>2</value>
   </data>
   <data name="InstitutPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 281</value>
+    <value>20, 318</value>
   </data>
   <data name="InstitutPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 193</value>
+    <value>460, 219</value>
   </data>
   <data name="InstitutPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>7</value>
@@ -697,44 +697,11 @@
   <data name="BirthDayPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <metadata name="debug.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <data name="debug.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <data name="debug.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="debug.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>240, 11</value>
-  </data>
-  <data name="debug.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>38, 15</value>
-  </data>
-  <data name="debug.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
-  </data>
-  <data name="debug.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;debug.Name" xml:space="preserve">
-    <value>debug</value>
-  </data>
-  <data name="&gt;&gt;debug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;debug.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;debug.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="BirthDayPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 165</value>
+    <value>20, 187</value>
   </data>
   <data name="BirthDayPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 100</value>
+    <value>460, 113</value>
   </data>
   <data name="BirthDayPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>8</value>
@@ -761,10 +728,10 @@
     <value>NoControl</value>
   </data>
   <data name="FirstNameErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>3, 86</value>
+    <value>3, 97</value>
   </data>
   <data name="FirstNameErrLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>154, 15</value>
+    <value>170, 17</value>
   </data>
   <data name="FirstNameErrLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
@@ -797,10 +764,10 @@
     <value>NoControl</value>
   </data>
   <data name="SecondNameErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>3, 32</value>
+    <value>3, 36</value>
   </data>
   <data name="SecondNameErrLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>182, 15</value>
+    <value>199, 17</value>
   </data>
   <data name="SecondNameErrLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
@@ -833,13 +800,13 @@
     <value>Times New Roman, 15.75pt, style=Bold</value>
   </data>
   <data name="ThirdNameInput.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 108</value>
+    <value>0, 125</value>
   </data>
   <data name="ThirdNameInput.PlaceholderText" xml:space="preserve">
     <value>Отчество</value>
   </data>
   <data name="ThirdNameInput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 32</value>
+    <value>460, 34</value>
   </data>
   <data name="ThirdNameInput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
@@ -866,13 +833,13 @@
     <value>Times New Roman, 15.75pt, style=Bold</value>
   </data>
   <data name="FirstNameInput.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 54</value>
+    <value>0, 61</value>
   </data>
   <data name="FirstNameInput.PlaceholderText" xml:space="preserve">
     <value>Имя</value>
   </data>
   <data name="FirstNameInput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 32</value>
+    <value>460, 34</value>
   </data>
   <data name="FirstNameInput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -905,7 +872,7 @@
     <value>Фамилия</value>
   </data>
   <data name="SecondNameInput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 32</value>
+    <value>460, 34</value>
   </data>
   <data name="SecondNameInput.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -926,10 +893,10 @@
     <value>True</value>
   </metadata>
   <data name="FullNamePanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 16</value>
+    <value>20, 18</value>
   </data>
   <data name="FullNamePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 140</value>
+    <value>460, 159</value>
   </data>
   <data name="FullNamePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
@@ -953,10 +920,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
-    <value>7, 15</value>
+    <value>7, 17</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>500, 550</value>
+    <value>500, 623</value>
   </data>
   <data name="$this.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>10000, 0</value>

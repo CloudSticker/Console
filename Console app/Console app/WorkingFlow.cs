@@ -176,11 +176,11 @@ namespace Console_app
             bool IsActualWord = true;
             for (int i = 0; (i < enter.Length) && IsActualWord && CapitalCheck; i++)
             {
-                IsActualWord = (enter[i] <= 'я' && enter[i] >= 'А');
+                IsActualWord = (enter[i] <= 'я' && enter[i] >= 'А' || enter[i] == 'ё' || enter[i] == 'Ё');
                 CapitalCheck = enter[0] == enter.ToUpper()[0];
             }
 
-            return CapitalCheck && IsActualWord;
+            return CapitalCheck && IsActualWord && enter != "";
         }
        
         internal void Filling()

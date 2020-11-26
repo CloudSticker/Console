@@ -387,13 +387,21 @@ namespace Console_app
         private System.Windows.Forms.Label maxGPA;
         private System.Windows.Forms.Label minGPAlbl;
         private System.Windows.Forms.Label avgGPAlbl;
-        private System.Windows.Forms.Button YESBUTTON;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BirthDayDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Institute;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Group;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MidCertificateScore;
+        private System.Windows.Forms.Button YESBUTTON;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn BirthDayDate;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn Institute;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn Group;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cource;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn MidCertificateScore;
+
     }
 }

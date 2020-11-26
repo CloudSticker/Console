@@ -57,113 +57,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="FullNamePanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="FirstNameErrLbl.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="SecondNameErrLbl.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="ThirdNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="FirstNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="SecondNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;FirstNameErrLbl.Name" xml:space="preserve">
-    <value>FirstNameErrLbl</value>
-  </data>
-  <data name="&gt;&gt;FirstNameErrLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FirstNameErrLbl.Parent" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;FirstNameErrLbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;SecondNameErrLbl.Name" xml:space="preserve">
-    <value>SecondNameErrLbl</value>
-  </data>
-  <data name="&gt;&gt;SecondNameErrLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SecondNameErrLbl.Parent" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;SecondNameErrLbl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ThirdNameInput.Name" xml:space="preserve">
-    <value>ThirdNameInput</value>
-  </data>
-  <data name="&gt;&gt;ThirdNameInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ThirdNameInput.Parent" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;ThirdNameInput.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;FirstNameInput.Name" xml:space="preserve">
-    <value>FirstNameInput</value>
-  </data>
-  <data name="&gt;&gt;FirstNameInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FirstNameInput.Parent" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;FirstNameInput.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;SecondNameInput.Name" xml:space="preserve">
-    <value>SecondNameInput</value>
-  </data>
-  <data name="&gt;&gt;SecondNameInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SecondNameInput.Parent" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;SecondNameInput.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="FullNamePanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 23</value>
-  </data>
-  <data name="FullNamePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 159</value>
-  </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
-  <data name="FullNamePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;FullNamePanel.Name" xml:space="preserve">
-    <value>FullNamePanel</value>
-  </data>
-  <data name="&gt;&gt;FullNamePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullNamePanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;FullNamePanel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="FirstNameErrLbl.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="FirstNameErrLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="FirstNameErrLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>3, 97</value>
   </data>
@@ -191,9 +89,6 @@
   <data name="&gt;&gt;FirstNameErrLbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="SecondNameErrLbl.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="SecondNameErrLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
@@ -224,9 +119,6 @@
   <data name="&gt;&gt;SecondNameErrLbl.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="ThirdNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ThirdNameInput.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -259,9 +151,6 @@
   <data name="&gt;&gt;ThirdNameInput.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="FirstNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="FirstNameInput.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom</value>
   </data>
@@ -292,9 +181,6 @@
   <data name="&gt;&gt;FirstNameInput.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="SecondNameInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="SecondNameInput.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -325,116 +211,29 @@
   <data name="&gt;&gt;SecondNameInput.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="BirthDayPanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="BirthDateInputYear.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="BirthDateInputMonth.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="BirthDateInputDay.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="BirthDayLabel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <data name="BirthDayPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="FullNamePanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>20, 23</value>
   </data>
-  <data name="&gt;&gt;DateErrLbl.Name" xml:space="preserve">
-    <value>DateErrLbl</value>
+  <data name="FullNamePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>460, 159</value>
   </data>
-  <data name="&gt;&gt;DateErrLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DateErrLbl.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;DateErrLbl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;debug.Name" xml:space="preserve">
-    <value>debug</value>
-  </data>
-  <data name="&gt;&gt;debug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;debug.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;debug.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputYear.Name" xml:space="preserve">
-    <value>BirthDateInputYear</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputYear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputYear.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputYear.ZOrder" xml:space="preserve">
+  <data name="FullNamePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;BirthDateInputMonth.Name" xml:space="preserve">
-    <value>BirthDateInputMonth</value>
+  <data name="&gt;&gt;FullNamePanel.Name" xml:space="preserve">
+    <value>FullNamePanel</value>
   </data>
-  <data name="&gt;&gt;BirthDateInputMonth.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputMonth.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputMonth.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputDay.Name" xml:space="preserve">
-    <value>BirthDateInputDay</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputDay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputDay.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDateInputDay.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;BirthDayLabel.Name" xml:space="preserve">
-    <value>BirthDayLabel</value>
-  </data>
-  <data name="&gt;&gt;BirthDayLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BirthDayLabel.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDayLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="BirthDayPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 192</value>
-  </data>
-  <data name="BirthDayPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>460, 113</value>
-  </data>
-  <data name="BirthDayPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;BirthDayPanel.Name" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;BirthDayPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;FullNamePanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BirthDayPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;FullNamePanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;BirthDayPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;FullNamePanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BirthDayPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="DateErrLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -466,36 +265,6 @@
   <data name="&gt;&gt;DateErrLbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="debug.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <data name="debug.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>240, 13</value>
-  </data>
-  <data name="debug.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>43, 17</value>
-  </data>
-  <data name="debug.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
-  </data>
-  <data name="debug.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;debug.Name" xml:space="preserve">
-    <value>debug</value>
-  </data>
-  <data name="&gt;&gt;debug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;debug.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;debug.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="BirthDateInputYear.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="BirthDateInputYear.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
@@ -599,7 +368,7 @@
     <value>2017</value>
   </data>
   <data name="BirthDateInputYear.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>320, 62</value>
+    <value>20, 62</value>
   </data>
   <data name="BirthDateInputYear.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>120, 34</value>
@@ -620,11 +389,8 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputYear.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
-  <metadata name="BirthDateInputMonth.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="BirthDateInputMonth.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
@@ -650,16 +416,13 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputMonth.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
-  <metadata name="BirthDateInputDay.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="BirthDateInputDay.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="BirthDateInputDay.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>20, 62</value>
+    <value>320, 62</value>
   </data>
   <data name="BirthDateInputDay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>120, 34</value>
@@ -680,11 +443,8 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputDay.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
-  <metadata name="BirthDayLabel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="BirthDayLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
@@ -713,17 +473,32 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDayLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
-  <metadata name="InstitutPanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
+  <data name="BirthDayPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>20, 192</value>
+  </data>
+  <data name="BirthDayPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>460, 113</value>
+  </data>
+  <data name="BirthDayPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;BirthDayPanel.Name" xml:space="preserve">
+    <value>BirthDayPanel</value>
+  </data>
+  <data name="&gt;&gt;BirthDayPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BirthDayPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BirthDayPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="InstitutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <metadata name="Get_GroupID.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="Get_GroupID.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
@@ -751,9 +526,6 @@
   <data name="&gt;&gt;Get_GroupID.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="gpaInput.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="gpaInput.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
@@ -781,9 +553,6 @@
   <data name="&gt;&gt;gpaInput.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="get_IDInstitutionList.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="get_IDInstitutionList.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
@@ -811,9 +580,6 @@
   <data name="&gt;&gt;get_IDInstitutionList.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="get_IDYearOfStudyList.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="get_IDYearOfStudyList.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
@@ -874,99 +640,6 @@
   <data name="&gt;&gt;InstitutPanel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="ButtonPanel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="Clear_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="Add_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="Cancel_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.Name" xml:space="preserve">
-    <value>Clear_Button</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Clear_Button.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Name" xml:space="preserve">
-    <value>Add_Button</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Add_Button.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Name" xml:space="preserve">
-    <value>Cancel_Button</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.Parent" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;Cancel_Button.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="ButtonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 550</value>
-  </data>
-  <data name="ButtonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>500, 60</value>
-  </data>
-  <data name="ButtonPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Name" xml:space="preserve">
-    <value>ButtonPanel</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ButtonPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="panel1.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
@@ -1015,9 +688,6 @@
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="Clear_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="Clear_Button.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1048,9 +718,6 @@
   <data name="&gt;&gt;Clear_Button.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="Add_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="Add_Button.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1081,9 +748,6 @@
   <data name="&gt;&gt;Add_Button.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="Cancel_Button.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
   <data name="Cancel_Button.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1117,6 +781,27 @@
   <data name="&gt;&gt;Cancel_Button.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="ButtonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 550</value>
+  </data>
+  <data name="ButtonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>500, 60</value>
+  </data>
+  <data name="ButtonPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Name" xml:space="preserve">
+    <value>ButtonPanel</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="ThirdNameErrLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
@@ -1148,9 +833,6 @@
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">

@@ -18,6 +18,7 @@ namespace Console_app
         internal bool IsInstitutionSetted;
         internal bool IsGroupSetted;
         internal bool IsGPASetted;
+        internal bool IsYearOfStudySetted;
         string path = @"StudentList.txt";
         WorkingFlow Datas = new WorkingFlow();
         public EditStudentForm()
@@ -58,18 +59,6 @@ namespace Console_app
             gpaInput.Text = whatwegot[6];
         }
 
-        static bool IsTextOfNamesINPutValid(String enter)
-        {
-            bool CapitalCheck = true;
-            bool IsActualWord = true;
-            for (int i = 0; (i < enter.Length) && IsActualWord && CapitalCheck; i++)
-            {
-                IsActualWord = (enter[i] <= 'я' && enter[i] >= 'А');
-                CapitalCheck = enter[0] == enter.ToUpper()[0];
-            }
-
-            return CapitalCheck && IsActualWord;
-        }
 
         private void Cancel_Button_Click(object sender, EventArgs e)
         {
@@ -104,13 +93,14 @@ namespace Console_app
             IsThirdNameCorrect = Datas.IsTextOfNamesINPutValid(ThirdNameInput.Text);
             IsDateSetted = (BirthDateInputDay.SelectedIndex > -1 && BirthDateInputMonth.SelectedIndex > -1 && BirthDateInputYear.SelectedIndex > -1);
             IsInstitutionSetted = get_IDInstitutionList.SelectedIndex > -1;
+            IsYearOfStudySetted = get_IDYearOfStudyList.SelectedIndex > -1 && get_IDYearOfStudyList.SelectedIndex < 4;
             IsGroupSetted = Get_GroupID.Text != "";
             bool parse = double.TryParse(gpaInput.Text, out double valGPA) && valGPA == Math.Round(valGPA, 2);
 
             IsGPASetted = (parse && valGPA >= 0 && valGPA <= 100);
-            if (IsSecondNameCorrect && IsFirstNameCorrect && IsThirdNameCorrect && IsDateSetted && IsInstitutionSetted && IsGroupSetted && IsGPASetted)
+            if (IsSecondNameCorrect && IsFirstNameCorrect && IsThirdNameCorrect && IsDateSetted && IsInstitutionSetted && IsGroupSetted && IsGPASetted && IsYearOfStudySetted)
             {
-                string stroke = ID + ' ' + SecondNameInput.Text + '_' + FirstNameInput.Text + '_' + ThirdNameInput.Text + ' ' + Day + '.' + Month + '.' + BirthDateInputYear.Text + ' ' + get_IDInstitutionList.Text + ' ' + Get_GroupID.Text + ' ' + get_IDYearOfStudyList.Text + ' ' + gpaInput.Text;
+                string stroke = ID + ' ' + SecondNameInput.Text + '_' + FirstNameInput.Text + '_' + ThirdNameInput.Text + ' ' + Day + '.' + Month + '.' + BirthDateInputYear.Text + ' ' + get_IDInstitutionList.Text + ' ' + Get_GroupID.Text + ' ' + (get_IDYearOfStudyList.SelectedIndex + 1) + ' ' + gpaInput.Text;
                 string[] LineElements = new string[7];
                 string[] l = File.ReadAllLines(path);
                 using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
@@ -147,44 +137,61 @@ namespace Console_app
 
 
         }
-    
 
-        private void clearingfirlds()
-        {
-            SecondNameInput.Clear();
-            FirstNameInput.Clear();
-            ThirdNameInput.Clear();
-            Get_GroupID.Clear();
-            gpaInput.Clear();
-            BirthDateInputDay.SelectedIndex = 0;
-            BirthDateInputMonth.SelectedIndex = 0;
-            BirthDateInputYear.SelectedIndex = 0;
-            get_IDInstitutionList.SelectedIndex = -1;
-            get_IDYearOfStudyList.SelectedIndex = -1;
-        }
-        private void UnVisErrors()
-        {
-            FirstNameErrLbl.Visible = false;
-            SecondNameErrLbl.Visible = false;
-            ThirdNameErrLbl.Visible = false;
-            DateErrLbl.Visible = false;
-        }
+
         private void ErrorChecks()
         {
             FirstNameErrLbl.Visible = !IsFirstNameCorrect;
             SecondNameErrLbl.Visible = !IsSecondNameCorrect;
             ThirdNameErrLbl.Visible = !IsThirdNameCorrect;
             DateErrLbl.Visible = !IsDateSetted;
+            if (!IsYearOfStudySetted)
+                get_IDYearOfStudyList.BackColor = Color.LightCoral;
+            if (!IsInstitutionSetted)
+                get_IDInstitutionList.BackColor = Color.LightCoral;
+            if (!IsGroupSetted)
+                Get_GroupID.BackColor = Color.LightCoral;
+            if (!IsGPASetted)
+                gpaInput.BackColor = Color.LightCoral;
+
         }
 
-        private void Clear_Button_Click(object sender, EventArgs e)
-        {
-            clearingfirlds();
-        }
+
 
         private void get_IDInstitutionList_Click(object sender, EventArgs e)
         {
             get_IDInstitutionList.DataSource = Datas.UniversitiesList;
+            get_IDInstitutionList.BackColor = Color.White;
+        }
+
+        private void Get_GroupID_Click(object sender, EventArgs e)
+        {
+            Get_GroupID.BackColor = Color.White;
+        }
+
+        private void get_IDYearOfStudyList_Click(object sender, EventArgs e)
+        {
+            get_IDYearOfStudyList.BackColor = Color.White;
+        }
+
+        private void gpaInput_Click(object sender, EventArgs e)
+        {
+            gpaInput.BackColor = Color.White;
+        }
+
+        private void ThirdNameInput_Click(object sender, EventArgs e)
+        {
+            ThirdNameErrLbl.Visible = false;
+        }
+
+        private void SecondNameInput_Click(object sender, EventArgs e)
+        {
+            SecondNameErrLbl.Visible = false;
+        }
+
+        private void FirstNameInput_Click(object sender, EventArgs e)
+        {
+            FirstNameErrLbl.Visible = false;
         }
     }
 }

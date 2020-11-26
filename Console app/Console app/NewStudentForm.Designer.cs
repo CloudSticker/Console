@@ -37,7 +37,6 @@
             this.SecondNameInput = new System.Windows.Forms.TextBox();
             this.BirthDayPanel = new System.Windows.Forms.Panel();
             this.DateErrLbl = new System.Windows.Forms.Label();
-            this.debug = new System.Windows.Forms.Label();
             this.BirthDateInputYear = new System.Windows.Forms.ComboBox();
             this.BirthDateInputMonth = new System.Windows.Forms.ComboBox();
             this.BirthDateInputDay = new System.Windows.Forms.ComboBox();
@@ -87,22 +86,24 @@
             // 
             resources.ApplyResources(this.ThirdNameInput, "ThirdNameInput");
             this.ThirdNameInput.Name = "ThirdNameInput";
+            this.ThirdNameInput.Click += new System.EventHandler(this.ThirdNameInput_Click);
             // 
             // FirstNameInput
             // 
             resources.ApplyResources(this.FirstNameInput, "FirstNameInput");
             this.FirstNameInput.Name = "FirstNameInput";
+            this.FirstNameInput.Click += new System.EventHandler(this.FirstNameInput_Click);
             // 
             // SecondNameInput
             // 
             resources.ApplyResources(this.SecondNameInput, "SecondNameInput");
             this.SecondNameInput.Name = "SecondNameInput";
+            this.SecondNameInput.Click += new System.EventHandler(this.SecondNameInput_Click);
             // 
             // BirthDayPanel
             // 
             resources.ApplyResources(this.BirthDayPanel, "BirthDayPanel");
             this.BirthDayPanel.Controls.Add(this.DateErrLbl);
-            this.BirthDayPanel.Controls.Add(this.debug);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputYear);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputMonth);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputDay);
@@ -114,11 +115,6 @@
             resources.ApplyResources(this.DateErrLbl, "DateErrLbl");
             this.DateErrLbl.ForeColor = System.Drawing.Color.Red;
             this.DateErrLbl.Name = "DateErrLbl";
-            // 
-            // debug
-            // 
-            resources.ApplyResources(this.debug, "debug");
-            this.debug.Name = "debug";
             // 
             // BirthDateInputYear
             // 
@@ -194,14 +190,17 @@
             // 
             resources.ApplyResources(this.Get_GroupID, "Get_GroupID");
             this.Get_GroupID.Name = "Get_GroupID";
+            this.Get_GroupID.Click += new System.EventHandler(this.Get_GroupID_Click);
             // 
             // gpaInput
             // 
             resources.ApplyResources(this.gpaInput, "gpaInput");
             this.gpaInput.Name = "gpaInput";
+            this.gpaInput.Click += new System.EventHandler(this.gpaInput_Click);
             // 
             // get_IDInstitutionList
             // 
+            this.get_IDInstitutionList.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this.get_IDInstitutionList, "get_IDInstitutionList");
             this.get_IDInstitutionList.FormattingEnabled = true;
             this.get_IDInstitutionList.Name = "get_IDInstitutionList";
@@ -217,6 +216,7 @@
             resources.GetString("get_IDYearOfStudyList.Items2"),
             resources.GetString("get_IDYearOfStudyList.Items3")});
             this.get_IDYearOfStudyList.Name = "get_IDYearOfStudyList";
+            this.get_IDYearOfStudyList.Click += new System.EventHandler(this.get_IDYearOfStudyList_Click);
             // 
             // ButtonPanel
             // 
@@ -320,7 +320,6 @@
         private System.Windows.Forms.Button Cancel_Button;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label debug;
         private System.Windows.Forms.TextBox Get_GroupID;
         private System.Windows.Forms.ComboBox BirthDateInputDay;
         private System.Windows.Forms.Label FirstNameErrLbl;
