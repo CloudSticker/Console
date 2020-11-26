@@ -6,7 +6,7 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\danii\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\dan91\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\danii\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
