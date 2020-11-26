@@ -405,7 +405,7 @@ namespace Console_app
 
         private void YESBUTTON_Click(object sender, EventArgs e)
         {
-            AddingUserData_Form StartNewForm = new AddingUserData_Form();
+            Ghouse StartNewForm = new Ghouse();
             StartNewForm.Show();
             this.Visible = false;
         }
