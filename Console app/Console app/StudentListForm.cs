@@ -9,12 +9,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Linq;
+using System.Globalization;
 
 namespace Console_app
 {
     public partial class StudentListForm : Form
     {
         WorkingFlow Datas = new WorkingFlow();
+        internal bool a = true;
         public bool IsFullNameActive;
         public bool IsBirthdayDateActive;
         public int RowNum;
@@ -47,16 +49,16 @@ namespace Console_app
             data = new List<string[]>();
             DataGridList.Rows.Clear();
             string path = @"StudentList.txt";
-            
 
-            
+
+
             if (File.Exists(path))
             {
                 double min = 32767, max = -32768;
                 double sum = 0;
                 string[] LineElements = new string[7];
                 string[] l = File.ReadAllLines(path);
-                for(int i = 0; i < l.Length; i++)
+                for (int i = 0; i < l.Length; i++)
                 {
                     data.Add(new string[7]);
                     LineElements = l[i].Split(' ');
@@ -70,11 +72,11 @@ namespace Console_app
                         min = Convert.ToDouble(LineElements[6]);
                     }
                     string[] str = LineElements[1].Split('_');
-                    string s = str[0] + ' ' + str[1] + ' '+ str[2] + ' '; 
+                    string s = str[0] + ' ' + str[1] + ' ' + str[2] + ' ';
                     LineElements[1] = s;
 
                     data[i] = LineElements;
- 
+
                 }
                 double res = sum / l.Length;
                 res = Math.Round(res, 2);
@@ -115,10 +117,10 @@ namespace Console_app
                         {
                             min = Convert.ToDouble(LineElements[6]);
                         }
-                        
+
                         if (LineElements[0] == RowNum.ToString())
                             continue;
-                            sw.Write($"{l[j]}\r\n");
+                        sw.Write($"{l[j]}\r\n");
                     }
                 }
                 double res = sum / l.Length;
@@ -143,7 +145,7 @@ namespace Console_app
             AddingUserData_Form StartNewForm = new AddingUserData_Form();
             StartNewForm.Show();
             this.Visible = false;
-            
+
         }
 
         private void FilterGroupBox_Enter(object sender, EventArgs e)
@@ -153,7 +155,7 @@ namespace Console_app
 
         private void FilterButton1_Click(object sender, EventArgs e)
         {
-            
+
         }
         ToolStripMenuItem m = new ToolStripMenuItem();
         ToolStripMenuItem m1 = new ToolStripMenuItem();
@@ -164,7 +166,7 @@ namespace Console_app
 
             m1.Text = "Delete";
             m1.Click += new EventHandler(toolDeleteItem_Click);
-            
+
             ContextMenuStrip strip = new ContextMenuStrip();
             foreach (DataGridViewColumn column in DataGridList.Columns)
             {
@@ -250,9 +252,10 @@ namespace Console_app
                     return true;
                 }
                 return false;
-            }else if(ind == 1)
+            }
+            else if (ind == 1)
             {
-                
+
                 if (Convert.ToInt32(str0) < 10)
                 {
                     str0 = '0' + str0;
@@ -282,7 +285,7 @@ namespace Console_app
                 return false;
             }
             return false;
-            
+
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
@@ -301,7 +304,7 @@ namespace Console_app
 
                     LineElements = l[i].Split(' ');
                     string[] str = LineElements[1].Split('_');
-                 
+
                     string s = str[0] + ' ' + str[1] + ' ' + str[2] + ' ';
                     LineElements[1] = s;
                     if (IsFullNameActive && IsBirthdayDateActive)
@@ -313,13 +316,15 @@ namespace Console_app
 
 
 
-                    }else if (IsBirthdayDateActive)
+                    }
+                    else if (IsBirthdayDateActive)
                     {
                         if (SearchFunc(LineElements[2], DayComboBox.Text, Convert.ToString(MounthComboBox.SelectedIndex + 1), YearComboBox.Text, 1))
                         {
                             data.Add(LineElements);
                         }
-                    }else if (IsFullNameActive)
+                    }
+                    else if (IsFullNameActive)
                     {
                         if (SearchFunc(FullNameINPUT, str[0], str[1], str[2], 0))
                         {
@@ -334,7 +339,7 @@ namespace Console_app
                 }
             }
         }
-               
+
         private void FullNameCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             IsFullNameActive = FullNameCheckBox.Checked;
@@ -371,8 +376,8 @@ namespace Console_app
         }
 
         private void DayComboBox_Leave(object sender, EventArgs e)
-        { 
-           // DayComboBox.DataSource = Datas.CheckBirthDate(MounthComboBox.SelectedIndex, YearComboBox.Text);
+        {
+            // DayComboBox.DataSource = Datas.CheckBirthDate(MounthComboBox.SelectedIndex, YearComboBox.Text);
         }
 
         private void StudentListButton_Click(object sender, EventArgs e)
@@ -388,17 +393,19 @@ namespace Console_app
 
         private void DataGridList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void DataGridList_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if ((0 <= e.RowIndex) && ( e.RowIndex < data.Count))
+            if ((0 <= e.RowIndex) && (e.RowIndex < data.Count))
             {
                 string[] s = data[e.RowIndex];
                 RowNum = Convert.ToInt32(DataGridList["StudentID", e.RowIndex].Value);
                 FullNameCheckBox.Text = Convert.ToString(DataGridList["StudentID", e.RowIndex].Value);
-            } else {
+            }
+            else
+            {
                 RowNum = -1;
             }
         }
@@ -414,6 +421,144 @@ namespace Console_app
         private void YESBUTTON_MouseHover(object sender, EventArgs e)
         {
             this.Cursor = curs1;
+        }
+        private class RowComparer : System.Collections.IComparer
+        {
+            private static int sortOrderModifier = 1;
+
+            public RowComparer(SortOrder sortOrder)
+            {
+                if (sortOrder == SortOrder.Descending)
+                {
+                    sortOrderModifier = -1;
+                }
+                else if (sortOrder == SortOrder.Ascending)
+                {
+                    sortOrderModifier = 1;
+                }
+            }
+
+            public int Compare(object x, object y)
+            {
+                DataGridViewRow DataGridViewRow1 = (DataGridViewRow)x;
+                DataGridViewRow DataGridViewRow2 = (DataGridViewRow)y;
+
+                // Try to sort based on the Last Name column.
+
+                int CompareResult = System.DateTime.Compare(
+                    DateTime.ParseExact(DataGridViewRow1.Cells[2].Value.ToString(), "dd.MM.yyyy", CultureInfo.InvariantCulture),
+                    DateTime.ParseExact(DataGridViewRow2.Cells[2].Value.ToString(), "dd.MM.yyyy", CultureInfo.InvariantCulture));
+
+                // If the Last Names are equal, sort based on the First Name.
+                if (CompareResult == 0)
+                {
+                    CompareResult = System.DateTime.Compare(
+                    DateTime.ParseExact(DataGridViewRow1.Cells[2].Value.ToString(), "dd.MM.yyyy", CultureInfo.InvariantCulture),
+                    DateTime.ParseExact(DataGridViewRow2.Cells[2].Value.ToString(), "dd.MM.yyyy", CultureInfo.InvariantCulture));
+                }
+                return CompareResult * sortOrderModifier;
+            }
+        }//класс для сортировки по дате
+
+        private class RowComparerID : System.Collections.IComparer
+        {
+            private static int sortOrderModifier = 1;
+
+            public RowComparerID(SortOrder sortOrder)
+            {
+                if (sortOrder == SortOrder.Descending)
+                {
+                    sortOrderModifier = -1;
+                }
+                else if (sortOrder == SortOrder.Ascending)
+                {
+                    sortOrderModifier = 1;
+                }
+            }
+
+            public int Compare(object x, object y)
+            {
+                DataGridViewRow DataGridViewRow1 = (DataGridViewRow)x;
+                DataGridViewRow DataGridViewRow2 = (DataGridViewRow)y;
+
+                // Try to sort based on the Last Name column.
+                int CompareResult;
+                if (Convert.ToInt32(DataGridViewRow1.Cells[0].Value) > Convert.ToInt32(DataGridViewRow2.Cells[0].Value))
+                {
+                    CompareResult = 1;
+                }
+                else if (Convert.ToInt32(DataGridViewRow1.Cells[0].Value) < Convert.ToInt32(DataGridViewRow2.Cells[0].Value))
+                {
+                    CompareResult = -1;
+                }
+                else
+                {
+                    CompareResult = 0;
+                }
+                return CompareResult * sortOrderModifier;
+            }
+        }//класс для сортировки по ID
+
+        private void DataGridList_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.ColumnIndex == 2)
+            {
+
+                if (a)
+                {
+                    DataGridList.Sort(new RowComparer(SortOrder.Ascending));
+                    a = false;
+                }
+                else
+                {
+                    DataGridList.Sort(new RowComparer(SortOrder.Descending));
+                    a = true;
+                }
+            }
+            if (e.ColumnIndex == 0)
+            {
+                if (a)
+                {
+                    DataGridList.Sort(new RowComparerID(SortOrder.Ascending));
+                    a = false;
+                }
+                else
+                {
+                    DataGridList.Sort(new RowComparerID(SortOrder.Descending));
+                    a = true;
+                }
+            }
+        }
+
+        private void DataGridList_ColumnHeaderMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.ColumnIndex == 2)
+            {
+
+                if (a)
+                {
+                    DataGridList.Sort(new RowComparer(SortOrder.Ascending));
+                    a = false;
+                }
+                else
+                {
+                    DataGridList.Sort(new RowComparer(SortOrder.Descending));
+                    a = true;
+                }
+            }
+            if (e.ColumnIndex == 0)
+            {
+                if (a)
+                {
+                    DataGridList.Sort(new RowComparerID(SortOrder.Ascending));
+                    a = false;
+                }
+                else
+                {
+                    DataGridList.Sort(new RowComparerID(SortOrder.Descending));
+                    a = true;
+                }
+            }
         }
     }
 
