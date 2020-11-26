@@ -47,12 +47,23 @@ namespace Console_app
             
             if (File.Exists(path))
             {
+                double min = 32767, max = -32768;
+                double sum = 0;
                 string[] LineElements = new string[7];
                 string[] l = File.ReadAllLines(path);
                 for(int i = 0; i < l.Length; i++)
                 {
                     data.Add(new string[7]);
                     LineElements = l[i].Split(' ');
+                    sum += Convert.ToDouble(LineElements[6]);
+                    if (Convert.ToDouble(LineElements[6]) > max)
+                    {
+                        max = Convert.ToDouble(LineElements[6]);
+                    }
+                    if (Convert.ToDouble(LineElements[6]) < min)
+                    {
+                        min = Convert.ToDouble(LineElements[6]);
+                    }
                     string[] str = LineElements[1].Split('_');
                     string s = str[0] + ' ' + str[1] + ' '+ str[2] + ' '; 
                     LineElements[1] = s;
@@ -60,6 +71,11 @@ namespace Console_app
                     data[i] = LineElements;
  
                 }
+                double res = sum / l.Length;
+                res = Math.Round(res, 2);
+                avgGPAlblOUT.Text = Convert.ToString(res);
+                minGPAlblOUT.Text = Convert.ToString(min);
+                maxGPAOUT.Text = Convert.ToString(max);
             }
 
 
@@ -76,6 +92,7 @@ namespace Console_app
 
             if (File.Exists(path))
             {
+                double min = 32767, max = -32768, sum = 0;
                 string[] LineElements = new string[7];
                 string[] l = File.ReadAllLines(path);
                 using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
@@ -83,11 +100,28 @@ namespace Console_app
                     for (int j = 0; j < l.Length; j++)
                     {
                         LineElements = l[j].Split(' ');
-                        if (LineElements[0] == ind.ToString())
+
+                        sum += Convert.ToDouble(LineElements[6]);
+                        if (Convert.ToDouble(LineElements[6]) > max)
+                        {
+                            max = Convert.ToDouble(LineElements[6]);
+                        }
+                        if (Convert.ToDouble(LineElements[6]) < min)
+                        {
+                            min = Convert.ToDouble(LineElements[6]);
+                        }
+                        
+                        if (LineElements[0] == RowNum.ToString())
                             continue;
                             sw.Write($"{l[j]}\r\n");
                     }
                 }
+                double res = sum / l.Length;
+                res = Math.Round(res, 2);
+
+                avgGPAlblOUT.Text = Convert.ToString(res);
+                minGPAlblOUT.Text = Convert.ToString(min);
+                maxGPAOUT.Text = Convert.ToString(max);
 
                 foreach (string[] s in data)
                 {
@@ -357,11 +391,11 @@ namespace Console_app
             if ((0 <= e.RowIndex) && ( e.RowIndex < data.Count))
             {
                 string[] s = data[e.RowIndex];
-                RowNum = Convert.ToInt32(s[0]);
+                RowNum = Convert.ToInt32(DataGridList["StudentID", e.RowIndex].Value);
+                FullNameCheckBox.Text = Convert.ToString(DataGridList["StudentID", e.RowIndex].Value);
             } else {
                 RowNum = -1;
             }
-            
         }
     }
 
