@@ -153,30 +153,32 @@ namespace Console_app
         }
         private void toolChangeItem2_Click(object sender, EventArgs args)
         {
-            FullNameCheckBox.Text = "ЫЫЫЫЫЫЫЫЫЫЫы";
-            EditStudentForm StartNewForm = new EditStudentForm();
-            StartNewForm.Show();
-            string path = @"StudentList.txt";
-            string[] l = File.ReadAllLines(path);
-            string[] LineElements;
-            for (int i = 0; i < l.Length; i++)
+            if (RowNum >= 0)
             {
-                LineElements = l[i].Split(' ');
-                if (LineElements[0] == RowNum.ToString())
+                EditStudentForm StartNewForm = new EditStudentForm();
+                StartNewForm.Show();
+                string path = @"StudentList.txt";
+                string[] l = File.ReadAllLines(path);
+                string[] LineElements;
+                for (int i = 0; i < l.Length; i++)
                 {
-                        //FullNameCheckBox.Text = RowNum.ToString();
-                    //BirthdayDateCheckBox.Text = LineElements[1];
-                    for (int j = 6; j >= 0; j--)
+                    LineElements = l[i].Split(' ');
+                    if (LineElements[0] == RowNum.ToString())
                     {
-                        newdata.Push(LineElements[j]);
-                        //BirthdayDateCheckBox.Text = newdata.Peek();
+                        //FullNameCheckBox.Text = RowNum.ToString();
+                        //BirthdayDateCheckBox.Text = LineElements[1];
+                        for (int j = 6; j >= 0; j--)
+                        {
+                            newdata.Push(LineElements[j]);
+                            //BirthdayDateCheckBox.Text = newdata.Peek();
+                        }
+                        break;
                     }
-                    break;
-                }    
+                }
+                StartNewForm.datatransfer(newdata);
+                this.Visible = false;
             }
-            
-            StartNewForm.datatransfer(newdata);
-            this.Visible = false;
+
         }
 
         // Deal with hovering over a cell.
@@ -356,6 +358,8 @@ namespace Console_app
             {
                 string[] s = data[e.RowIndex];
                 RowNum = Convert.ToInt32(s[0]);
+            } else {
+                RowNum = -1;
             }
             
         }
