@@ -47,8 +47,16 @@ namespace Console_app
             this.MidCertificateScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridList = new System.Windows.Forms.DataGridView();
             this.StudentListButton = new System.Windows.Forms.Button();
+            this.gpaGrBox = new System.Windows.Forms.GroupBox();
+            this.avgGPAlbl = new System.Windows.Forms.Label();
+            this.minGPAlbl = new System.Windows.Forms.Label();
+            this.maxGPA = new System.Windows.Forms.Label();
+            this.avgGPAlblOUT = new System.Windows.Forms.Label();
+            this.minGPAlblOUT = new System.Windows.Forms.Label();
+            this.maxGPAOUT = new System.Windows.Forms.Label();
             this.FilterGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).BeginInit();
+            this.gpaGrBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddStudentButton
@@ -243,11 +251,80 @@ namespace Console_app
             this.StudentListButton.UseVisualStyleBackColor = false;
             this.StudentListButton.Click += new System.EventHandler(this.StudentListButton_Click);
             // 
+            // gpaGrBox
+            // 
+            this.gpaGrBox.Controls.Add(this.maxGPAOUT);
+            this.gpaGrBox.Controls.Add(this.minGPAlblOUT);
+            this.gpaGrBox.Controls.Add(this.avgGPAlblOUT);
+            this.gpaGrBox.Controls.Add(this.maxGPA);
+            this.gpaGrBox.Controls.Add(this.minGPAlbl);
+            this.gpaGrBox.Controls.Add(this.avgGPAlbl);
+            this.gpaGrBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gpaGrBox.Location = new System.Drawing.Point(7, 217);
+            this.gpaGrBox.Name = "gpaGrBox";
+            this.gpaGrBox.Size = new System.Drawing.Size(140, 105);
+            this.gpaGrBox.TabIndex = 7;
+            this.gpaGrBox.TabStop = false;
+            this.gpaGrBox.Text = "Ср. баллы";
+            // 
+            // avgGPAlbl
+            // 
+            this.avgGPAlbl.AutoSize = true;
+            this.avgGPAlbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.avgGPAlbl.Location = new System.Drawing.Point(0, 28);
+            this.avgGPAlbl.Name = "avgGPAlbl";
+            this.avgGPAlbl.Size = new System.Drawing.Size(85, 23);
+            this.avgGPAlbl.TabIndex = 0;
+            this.avgGPAlbl.Text = "Ср.балл:";
+            // 
+            // minGPAlbl
+            // 
+            this.minGPAlbl.AutoSize = true;
+            this.minGPAlbl.Location = new System.Drawing.Point(0, 51);
+            this.minGPAlbl.Name = "minGPAlbl";
+            this.minGPAlbl.Size = new System.Drawing.Size(56, 23);
+            this.minGPAlbl.TabIndex = 0;
+            this.minGPAlbl.Text = "Мин:";
+            // 
+            // maxGPA
+            // 
+            this.maxGPA.AutoSize = true;
+            this.maxGPA.Location = new System.Drawing.Point(0, 74);
+            this.maxGPA.Name = "maxGPA";
+            this.maxGPA.Size = new System.Drawing.Size(61, 23);
+            this.maxGPA.TabIndex = 0;
+            this.maxGPA.Text = "Макс:";
+            // 
+            // avgGPAlblOUT
+            // 
+            this.avgGPAlblOUT.AutoSize = true;
+            this.avgGPAlblOUT.Location = new System.Drawing.Point(73, 28);
+            this.avgGPAlblOUT.Name = "avgGPAlblOUT";
+            this.avgGPAlblOUT.Size = new System.Drawing.Size(0, 23);
+            this.avgGPAlblOUT.TabIndex = 0;
+            // 
+            // minGPAlblOUT
+            // 
+            this.minGPAlblOUT.AutoSize = true;
+            this.minGPAlblOUT.Location = new System.Drawing.Point(73, 51);
+            this.minGPAlblOUT.Name = "minGPAlblOUT";
+            this.minGPAlblOUT.Size = new System.Drawing.Size(0, 23);
+            this.minGPAlblOUT.TabIndex = 0;
+            // 
+            // maxGPAOUT
+            // 
+            this.maxGPAOUT.AutoSize = true;
+            this.maxGPAOUT.Location = new System.Drawing.Point(73, 74);
+            this.maxGPAOUT.Name = "maxGPAOUT";
+            this.maxGPAOUT.Size = new System.Drawing.Size(0, 23);
+            this.maxGPAOUT.TabIndex = 0;
+            // 
             // StudentListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.gpaGrBox);
             this.Controls.Add(this.StudentListButton);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DataGridList);
@@ -260,6 +337,8 @@ namespace Console_app
             this.FilterGroupBox.ResumeLayout(false);
             this.FilterGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).EndInit();
+            this.gpaGrBox.ResumeLayout(false);
+            this.gpaGrBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -288,5 +367,12 @@ namespace Console_app
         private System.Windows.Forms.ComboBox DayComboBox;
         private System.Windows.Forms.ComboBox MounthComboBox;
         private System.Windows.Forms.Button StudentListButton;
+        private System.Windows.Forms.GroupBox gpaGrBox;
+        private System.Windows.Forms.Label maxGPAOUT;
+        private System.Windows.Forms.Label minGPAlblOUT;
+        private System.Windows.Forms.Label avgGPAlblOUT;
+        private System.Windows.Forms.Label maxGPA;
+        private System.Windows.Forms.Label minGPAlbl;
+        private System.Windows.Forms.Label avgGPAlbl;
     }
 }

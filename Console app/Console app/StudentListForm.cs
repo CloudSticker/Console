@@ -153,7 +153,6 @@ namespace Console_app
         }
         private void toolChangeItem2_Click(object sender, EventArgs args)
         {
-            FullNameCheckBox.Text = "ЫЫЫЫЫЫЫЫЫЫЫы";
             EditStudentForm StartNewForm = new EditStudentForm();
             StartNewForm.Show();
             string path = @"StudentList.txt";
