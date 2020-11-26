@@ -265,33 +265,6 @@
   <data name="&gt;&gt;DateErrLbl.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="debug.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <data name="debug.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>240, 13</value>
-  </data>
-  <data name="debug.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>43, 17</value>
-  </data>
-  <data name="debug.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
-  </data>
-  <data name="debug.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;debug.Name" xml:space="preserve">
-    <value>debug</value>
-  </data>
-  <data name="&gt;&gt;debug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;debug.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;debug.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="BirthDateInputYear.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
   </data>
@@ -416,7 +389,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputYear.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="BirthDateInputMonth.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
@@ -443,7 +416,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputMonth.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="BirthDateInputDay.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
@@ -470,7 +443,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDateInputDay.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="BirthDayLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -500,7 +473,7 @@
     <value>BirthDayPanel</value>
   </data>
   <data name="&gt;&gt;BirthDayLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="BirthDayPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>20, 192</value>

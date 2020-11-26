@@ -402,7 +402,7 @@ namespace Console_app
             {
                 string[] s = data[e.RowIndex];
                 RowNum = Convert.ToInt32(DataGridList["StudentID", e.RowIndex].Value);
-                FullNameCheckBox.Text = Convert.ToString(DataGridList["StudentID", e.RowIndex].Value);
+                //FullNameCheckBox.Text = Convert.ToString(DataGridList["StudentID", e.RowIndex].Value);
             }
             else
             {

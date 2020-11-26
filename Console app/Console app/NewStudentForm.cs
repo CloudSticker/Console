@@ -21,6 +21,7 @@ namespace Console_app
         internal bool IsInstitutionSetted;
         internal bool IsGroupSetted;
         internal bool IsGPASetted;
+        internal bool IsYearOfStudySetted;
         WorkingFlow Datas = new WorkingFlow();
         public AddingUserData_Form()
         {
@@ -89,12 +90,13 @@ namespace Console_app
             IsDateSetted = (BirthDateInputDay.SelectedIndex > -1 && BirthDateInputMonth.SelectedIndex > -1 && BirthDateInputYear.SelectedIndex > -1);
             IsInstitutionSetted = get_IDInstitutionList.SelectedIndex > -1;
             IsGroupSetted = Get_GroupID.Text != "";
+            IsYearOfStudySetted = get_IDYearOfStudyList.SelectedIndex > -1 && get_IDYearOfStudyList.SelectedIndex < 4;
             bool parse = double.TryParse(gpaInput.Text, out double valGPA) && valGPA == Math.Round(valGPA,2);
             
             IsGPASetted = (parse && valGPA >= 0 && valGPA <= 100 );
-            if (IsSecondNameCorrect && IsFirstNameCorrect && IsThirdNameCorrect && IsDateSetted && IsInstitutionSetted && IsGroupSetted && IsGPASetted)
+            if (IsSecondNameCorrect && IsFirstNameCorrect && IsThirdNameCorrect && IsDateSetted && IsInstitutionSetted && IsGroupSetted && IsGPASetted && IsYearOfStudySetted)
             {
-                string stroke = ID + ' ' + SecondNameInput.Text + '_' + FirstNameInput.Text + '_' + ThirdNameInput.Text + ' ' + Day + '.' + Month + '.' + BirthDateInputYear.Text + ' ' + get_IDInstitutionList.Text + ' ' + Get_GroupID.Text + ' ' + get_IDYearOfStudyList.Text + ' ' + gpaInput.Text;
+                string stroke = ID + ' ' + SecondNameInput.Text + '_' + FirstNameInput.Text + '_' + ThirdNameInput.Text + ' ' + Day + '.' + Month + '.' + BirthDateInputYear.Text + ' ' + get_IDInstitutionList.Text + ' ' + Get_GroupID.Text + ' ' + (get_IDYearOfStudyList.SelectedIndex + 1) + ' ' + gpaInput.Text;
                 Datas.ADDinFile(stroke);
                 clearingfirlds();
                 UnVisErrors();
@@ -168,6 +170,10 @@ namespace Console_app
             SecondNameErrLbl.Visible = false;
             ThirdNameErrLbl.Visible = false;
             DateErrLbl.Visible = false;
+                get_IDYearOfStudyList.BackColor = Color.White;
+                get_IDInstitutionList.BackColor = Color.White;
+                Get_GroupID.BackColor = Color.White;
+                gpaInput.BackColor = Color.White;
         }
         private void ErrorChecks()
         {
@@ -175,11 +181,51 @@ namespace Console_app
             SecondNameErrLbl.Visible = !IsSecondNameCorrect;
             ThirdNameErrLbl.Visible = !IsThirdNameCorrect;
             DateErrLbl.Visible = !IsDateSetted;
+            if (!IsYearOfStudySetted)
+                get_IDYearOfStudyList.BackColor = Color.LightCoral;
+            if (!IsInstitutionSetted)
+                get_IDInstitutionList.BackColor = Color.LightCoral;
+            if (!IsGroupSetted)
+                Get_GroupID.BackColor = Color.LightCoral;
+            if (!IsGPASetted)
+                gpaInput.BackColor = Color.LightCoral;
+
         }
 
         private void get_IDInstitutionList_Click(object sender, EventArgs e)
         {
             get_IDInstitutionList.DataSource = Datas.UniversitiesList;
+            get_IDInstitutionList.BackColor = Color.White;
+        }
+
+        private void Get_GroupID_Click(object sender, EventArgs e)
+        {
+            Get_GroupID.BackColor = Color.White;
+        }
+
+        private void get_IDYearOfStudyList_Click(object sender, EventArgs e)
+        {
+            get_IDYearOfStudyList.BackColor = Color.White;
+        }
+
+        private void gpaInput_Click(object sender, EventArgs e)
+        {
+            gpaInput.BackColor = Color.White;
+        }
+
+        private void ThirdNameInput_Click(object sender, EventArgs e)
+        {
+            ThirdNameErrLbl.Visible = false;
+        }
+
+        private void SecondNameInput_Click(object sender, EventArgs e)
+        {
+            SecondNameErrLbl.Visible = false;
+        }
+
+        private void FirstNameInput_Click(object sender, EventArgs e)
+        {
+            FirstNameErrLbl.Visible = false;
         }
     }
 }

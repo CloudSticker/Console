@@ -47,7 +47,6 @@
             this.IDtext = new System.Windows.Forms.Label();
             this.Get_GroupID = new System.Windows.Forms.TextBox();
             this.BirthDayPanel = new System.Windows.Forms.Panel();
-            this.debug = new System.Windows.Forms.Label();
             this.FirstNameErrLbl = new System.Windows.Forms.Label();
             this.SecondNameErrLbl = new System.Windows.Forms.Label();
             this.ThirdNameInput = new System.Windows.Forms.TextBox();
@@ -65,6 +64,7 @@
             resources.ApplyResources(this.ThirdNameErrLbl, "ThirdNameErrLbl");
             this.ThirdNameErrLbl.ForeColor = System.Drawing.Color.Red;
             this.ThirdNameErrLbl.Name = "ThirdNameErrLbl";
+            this.ThirdNameErrLbl.Click += new System.EventHandler(this.ThirdNameInput_Click);
             // 
             // panel2
             // 
@@ -109,6 +109,7 @@
             resources.GetString("get_IDYearOfStudyList.Items2"),
             resources.GetString("get_IDYearOfStudyList.Items3")});
             this.get_IDYearOfStudyList.Name = "get_IDYearOfStudyList";
+            this.get_IDYearOfStudyList.Click += new System.EventHandler(this.get_IDYearOfStudyList_Click);
             // 
             // DateErrLbl
             // 
@@ -172,6 +173,7 @@
             // 
             resources.ApplyResources(this.gpaInput, "gpaInput");
             this.gpaInput.Name = "gpaInput";
+            this.gpaInput.Click += new System.EventHandler(this.gpaInput_Click);
             // 
             // get_IDInstitutionList
             // 
@@ -210,49 +212,49 @@
             // 
             resources.ApplyResources(this.Get_GroupID, "Get_GroupID");
             this.Get_GroupID.Name = "Get_GroupID";
+            this.Get_GroupID.Click += new System.EventHandler(this.Get_GroupID_Click);
             // 
             // BirthDayPanel
             // 
             resources.ApplyResources(this.BirthDayPanel, "BirthDayPanel");
             this.BirthDayPanel.Controls.Add(this.DateErrLbl);
-            this.BirthDayPanel.Controls.Add(this.debug);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputYear);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputMonth);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputDay);
             this.BirthDayPanel.Controls.Add(this.BirthDayLabel);
             this.BirthDayPanel.Name = "BirthDayPanel";
             // 
-            // debug
-            // 
-            resources.ApplyResources(this.debug, "debug");
-            this.debug.Name = "debug";
-            // 
             // FirstNameErrLbl
             // 
             resources.ApplyResources(this.FirstNameErrLbl, "FirstNameErrLbl");
             this.FirstNameErrLbl.ForeColor = System.Drawing.Color.Red;
             this.FirstNameErrLbl.Name = "FirstNameErrLbl";
+            this.FirstNameErrLbl.Click += new System.EventHandler(this.FirstNameInput_Click);
             // 
             // SecondNameErrLbl
             // 
             resources.ApplyResources(this.SecondNameErrLbl, "SecondNameErrLbl");
             this.SecondNameErrLbl.ForeColor = System.Drawing.Color.Red;
             this.SecondNameErrLbl.Name = "SecondNameErrLbl";
+            this.SecondNameErrLbl.Click += new System.EventHandler(this.SecondNameInput_Click);
             // 
             // ThirdNameInput
             // 
             resources.ApplyResources(this.ThirdNameInput, "ThirdNameInput");
             this.ThirdNameInput.Name = "ThirdNameInput";
+            this.ThirdNameInput.Click += new System.EventHandler(this.ThirdNameInput_Click);
             // 
             // FirstNameInput
             // 
             resources.ApplyResources(this.FirstNameInput, "FirstNameInput");
             this.FirstNameInput.Name = "FirstNameInput";
+            this.FirstNameInput.Click += new System.EventHandler(this.FirstNameInput_Click);
             // 
             // SecondNameInput
             // 
             resources.ApplyResources(this.SecondNameInput, "SecondNameInput");
             this.SecondNameInput.Name = "SecondNameInput";
+            this.SecondNameInput.Click += new System.EventHandler(this.FirstNameInput_Click);
             this.SecondNameInput.TextChanged += new System.EventHandler(this.SecondNameInput_TextChanged);
             // 
             // FullNamePanel
@@ -343,7 +345,6 @@
         private System.Windows.Forms.TextBox SecondNameInput;
 
         private System.Windows.Forms.Panel FullNamePanel;
-        private System.Windows.Forms.Label debug;
         private System.Windows.Forms.Label IDtext;
         private System.Windows.Forms.Label d;
         private System.Windows.Forms.Label ID_lbloutput;
