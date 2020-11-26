@@ -29,6 +29,7 @@ namespace Console_app
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentListForm));
             this.AddStudentButton = new System.Windows.Forms.Button();
             this.FilterGroupBox = new System.Windows.Forms.GroupBox();
             this.BirthdayDateCheckBox = new System.Windows.Forms.CheckBox();
@@ -48,12 +49,13 @@ namespace Console_app
             this.DataGridList = new System.Windows.Forms.DataGridView();
             this.StudentListButton = new System.Windows.Forms.Button();
             this.gpaGrBox = new System.Windows.Forms.GroupBox();
-            this.avgGPAlbl = new System.Windows.Forms.Label();
-            this.minGPAlbl = new System.Windows.Forms.Label();
-            this.maxGPA = new System.Windows.Forms.Label();
-            this.avgGPAlblOUT = new System.Windows.Forms.Label();
-            this.minGPAlblOUT = new System.Windows.Forms.Label();
             this.maxGPAOUT = new System.Windows.Forms.Label();
+            this.minGPAlblOUT = new System.Windows.Forms.Label();
+            this.avgGPAlblOUT = new System.Windows.Forms.Label();
+            this.maxGPA = new System.Windows.Forms.Label();
+            this.minGPAlbl = new System.Windows.Forms.Label();
+            this.avgGPAlbl = new System.Windows.Forms.Label();
+            this.YESBUTTON = new System.Windows.Forms.Button();
             this.FilterGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).BeginInit();
             this.gpaGrBox.SuspendLayout();
@@ -267,24 +269,29 @@ namespace Console_app
             this.gpaGrBox.TabStop = false;
             this.gpaGrBox.Text = "Ср. баллы";
             // 
-            // avgGPAlbl
+            // maxGPAOUT
             // 
-            this.avgGPAlbl.AutoSize = true;
-            this.avgGPAlbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.avgGPAlbl.Location = new System.Drawing.Point(0, 28);
-            this.avgGPAlbl.Name = "avgGPAlbl";
-            this.avgGPAlbl.Size = new System.Drawing.Size(85, 23);
-            this.avgGPAlbl.TabIndex = 0;
-            this.avgGPAlbl.Text = "Ср.балл:";
+            this.maxGPAOUT.AutoSize = true;
+            this.maxGPAOUT.Location = new System.Drawing.Point(73, 74);
+            this.maxGPAOUT.Name = "maxGPAOUT";
+            this.maxGPAOUT.Size = new System.Drawing.Size(0, 23);
+            this.maxGPAOUT.TabIndex = 0;
             // 
-            // minGPAlbl
+            // minGPAlblOUT
             // 
-            this.minGPAlbl.AutoSize = true;
-            this.minGPAlbl.Location = new System.Drawing.Point(0, 51);
-            this.minGPAlbl.Name = "minGPAlbl";
-            this.minGPAlbl.Size = new System.Drawing.Size(56, 23);
-            this.minGPAlbl.TabIndex = 0;
-            this.minGPAlbl.Text = "Мин:";
+            this.minGPAlblOUT.AutoSize = true;
+            this.minGPAlblOUT.Location = new System.Drawing.Point(73, 51);
+            this.minGPAlblOUT.Name = "minGPAlblOUT";
+            this.minGPAlblOUT.Size = new System.Drawing.Size(0, 23);
+            this.minGPAlblOUT.TabIndex = 0;
+            // 
+            // avgGPAlblOUT
+            // 
+            this.avgGPAlblOUT.AutoSize = true;
+            this.avgGPAlblOUT.Location = new System.Drawing.Point(73, 28);
+            this.avgGPAlblOUT.Name = "avgGPAlblOUT";
+            this.avgGPAlblOUT.Size = new System.Drawing.Size(0, 23);
+            this.avgGPAlblOUT.TabIndex = 0;
             // 
             // maxGPA
             // 
@@ -295,41 +302,53 @@ namespace Console_app
             this.maxGPA.TabIndex = 0;
             this.maxGPA.Text = "Макс:";
             // 
-            // avgGPAlblOUT
+            // minGPAlbl
             // 
-            this.avgGPAlblOUT.AutoSize = true;
-            this.avgGPAlblOUT.Location = new System.Drawing.Point(73, 28);
-            this.avgGPAlblOUT.Name = "avgGPAlblOUT";
-            this.avgGPAlblOUT.Size = new System.Drawing.Size(0, 23);
-            this.avgGPAlblOUT.TabIndex = 0;
+            this.minGPAlbl.AutoSize = true;
+            this.minGPAlbl.Location = new System.Drawing.Point(0, 51);
+            this.minGPAlbl.Name = "minGPAlbl";
+            this.minGPAlbl.Size = new System.Drawing.Size(56, 23);
+            this.minGPAlbl.TabIndex = 0;
+            this.minGPAlbl.Text = "Мин:";
             // 
-            // minGPAlblOUT
+            // avgGPAlbl
             // 
-            this.minGPAlblOUT.AutoSize = true;
-            this.minGPAlblOUT.Location = new System.Drawing.Point(73, 51);
-            this.minGPAlblOUT.Name = "minGPAlblOUT";
-            this.minGPAlblOUT.Size = new System.Drawing.Size(0, 23);
-            this.minGPAlblOUT.TabIndex = 0;
+            this.avgGPAlbl.AutoSize = true;
+            this.avgGPAlbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.avgGPAlbl.Location = new System.Drawing.Point(0, 28);
+            this.avgGPAlbl.Name = "avgGPAlbl";
+            this.avgGPAlbl.Size = new System.Drawing.Size(85, 23);
+            this.avgGPAlbl.TabIndex = 0;
+            this.avgGPAlbl.Text = "Ср.балл:";
             // 
-            // maxGPAOUT
+            // YESBUTTON
             // 
-            this.maxGPAOUT.AutoSize = true;
-            this.maxGPAOUT.Location = new System.Drawing.Point(73, 74);
-            this.maxGPAOUT.Name = "maxGPAOUT";
-            this.maxGPAOUT.Size = new System.Drawing.Size(0, 23);
-            this.maxGPAOUT.TabIndex = 0;
+            this.YESBUTTON.FlatAppearance.BorderSize = 0;
+            this.YESBUTTON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.YESBUTTON.Image = ((System.Drawing.Image)(resources.GetObject("YESBUTTON.Image")));
+            this.YESBUTTON.Location = new System.Drawing.Point(13, 338);
+            this.YESBUTTON.Margin = new System.Windows.Forms.Padding(0);
+            this.YESBUTTON.Name = "YESBUTTON";
+            this.YESBUTTON.Size = new System.Drawing.Size(140, 140);
+            this.YESBUTTON.TabIndex = 8;
+            this.YESBUTTON.UseVisualStyleBackColor = true;
+            this.YESBUTTON.Click += new System.EventHandler(this.YESBUTTON_Click);
+            this.YESBUTTON.MouseHover += new System.EventHandler(this.YESBUTTON_MouseHover);
             // 
             // StudentListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.YESBUTTON);
             this.Controls.Add(this.gpaGrBox);
             this.Controls.Add(this.StudentListButton);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DataGridList);
             this.Controls.Add(this.FilterGroupBox);
             this.Controls.Add(this.AddStudentButton);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StudentListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -374,5 +393,6 @@ namespace Console_app
         private System.Windows.Forms.Label maxGPA;
         private System.Windows.Forms.Label minGPAlbl;
         private System.Windows.Forms.Label avgGPAlbl;
+        private System.Windows.Forms.Button YESBUTTON;
     }
 }

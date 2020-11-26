@@ -8,6 +8,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Console_app
 {
@@ -18,13 +19,17 @@ namespace Console_app
         public bool IsBirthdayDateActive;
         public int RowNum;
         Stack<string> newdata = new Stack<string>();
+        System.Windows.Forms.Cursor curs = new System.Windows.Forms.Cursor(@"Arrow.cur");
+        System.Windows.Forms.Cursor curs1 = new System.Windows.Forms.Cursor(@"Normal.cur");
         public StudentListForm()
         {
             WorkingFlow Datas = new WorkingFlow();
             InitializeComponent();
             AddContextMenu();
             Datas.Filling();
-            
+            this.Cursor = curs;
+
+
             YearComboBox.DataSource = Datas.Years;
             MounthComboBox.DataSource = Datas.monthList;
 
@@ -396,6 +401,19 @@ namespace Console_app
             } else {
                 RowNum = -1;
             }
+        }
+
+        private void YESBUTTON_Click(object sender, EventArgs e)
+        {
+            AddingUserData_Form StartNewForm = new AddingUserData_Form();
+            StartNewForm.Show();
+            this.Visible = false;
+        }
+
+
+        private void YESBUTTON_MouseHover(object sender, EventArgs e)
+        {
+            this.Cursor = curs1;
         }
     }
 
