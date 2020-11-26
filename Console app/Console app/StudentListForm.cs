@@ -530,36 +530,6 @@ namespace Console_app
             }
         }
 
-        private void DataGridList_ColumnHeaderMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            if (e.ColumnIndex == 2)
-            {
-
-                if (a)
-                {
-                    DataGridList.Sort(new RowComparer(SortOrder.Ascending));
-                    a = false;
-                }
-                else
-                {
-                    DataGridList.Sort(new RowComparer(SortOrder.Descending));
-                    a = true;
-                }
-            }
-            if (e.ColumnIndex == 0)
-            {
-                if (a)
-                {
-                    DataGridList.Sort(new RowComparerID(SortOrder.Ascending));
-                    a = false;
-                }
-                else
-                {
-                    DataGridList.Sort(new RowComparerID(SortOrder.Descending));
-                    a = true;
-                }
-            }
-        }
     }
 
 }
