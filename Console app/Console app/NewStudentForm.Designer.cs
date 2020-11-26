@@ -204,12 +204,8 @@
             // 
             resources.ApplyResources(this.get_IDInstitutionList, "get_IDInstitutionList");
             this.get_IDInstitutionList.FormattingEnabled = true;
-            this.get_IDInstitutionList.Items.AddRange(new object[] {
-            resources.GetString("get_IDInstitutionList.Items"),
-            resources.GetString("get_IDInstitutionList.Items1"),
-            resources.GetString("get_IDInstitutionList.Items2"),
-            resources.GetString("get_IDInstitutionList.Items3")});
             this.get_IDInstitutionList.Name = "get_IDInstitutionList";
+            this.get_IDInstitutionList.Click += new System.EventHandler(this.get_IDInstitutionList_Click);
             // 
             // get_IDYearOfStudyList
             // 

@@ -9,6 +9,20 @@ namespace Console_app
     internal class WorkingFlow
     {
         string path = @"StudentList.txt";
+        internal List<string> UniversitiesList = new List<string>()
+        {
+            "МИСиС",
+            "Синергия",
+            "МГТУ",
+            "Баумана",
+            "МИРЭА",
+            "РХТУ",
+            "МГСУ",
+            "ФГБОУ",
+            "МАИ",
+            "РГСУ",
+            "ВШЭ"
+        };
         internal List<string> monthList = new List<string>()
         {
             "Январь",
@@ -155,6 +169,20 @@ namespace Console_app
             "28"
         };
         internal List<string> Years = new List<string>() { };
+      
+        internal bool IsTextOfNamesINPutValid(String enter)
+        {
+            bool CapitalCheck = true;
+            bool IsActualWord = true;
+            for (int i = 0; (i < enter.Length) && IsActualWord && CapitalCheck; i++)
+            {
+                IsActualWord = (enter[i] <= 'я' && enter[i] >= 'А');
+                CapitalCheck = enter[0] == enter.ToUpper()[0];
+            }
+
+            return CapitalCheck && IsActualWord;
+        }
+       
         internal void Filling()
         {
             for (int i = 2005; i > 1970; i--)
@@ -201,7 +229,7 @@ namespace Console_app
             {
                 using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
                 {
-                    sw.Write($"\r\n{stroke}");
+                    sw.Write($"{stroke}\r\n");
                 }
             } else
             {

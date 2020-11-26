@@ -64,22 +64,11 @@ namespace Console_app
 
         }
 
-        static bool IsTextOfNamesINPutValid(String enter)
-        {
-            bool CapitalCheck = true;
-            bool IsActualWord = true;
-            for (int i = 0; (i < enter.Length) && IsActualWord && CapitalCheck; i++)
-            {
-                IsActualWord = (enter[i] <= 'я' && enter[i] >= 'А');
-                CapitalCheck = enter[0] == enter.ToUpper()[0];
-            }
-
-            return CapitalCheck && IsActualWord;
-        }
         private void Add_Button_Click(object sender, EventArgs e)
         {
             string ID = Convert.ToString(Datas.CheckForID());
             string Month;
+            string Day;
             if (BirthDateInputMonth.SelectedIndex < 9)
             {
                 Month = '0' + Convert.ToString(BirthDateInputMonth.SelectedIndex + 1);
@@ -87,9 +76,16 @@ namespace Console_app
             {
                 Month = Convert.ToString(BirthDateInputMonth.SelectedIndex + 1);
             }
-            IsSecondNameCorrect = IsTextOfNamesINPutValid(SecondNameInput.Text);
-            IsFirstNameCorrect = IsTextOfNamesINPutValid(FirstNameInput.Text);
-            IsThirdNameCorrect = IsTextOfNamesINPutValid(ThirdNameInput.Text);
+            if (Convert.ToInt32(BirthDateInputDay.Text) < 10)
+            {
+                Day = '0' + BirthDateInputDay.Text;
+            } else
+            {
+                Day = BirthDateInputDay.Text;
+            }
+            IsSecondNameCorrect = Datas.IsTextOfNamesINPutValid(SecondNameInput.Text);
+            IsFirstNameCorrect = Datas.IsTextOfNamesINPutValid(FirstNameInput.Text);
+            IsThirdNameCorrect = Datas.IsTextOfNamesINPutValid(ThirdNameInput.Text);
             IsDateSetted = (BirthDateInputDay.SelectedIndex > -1 && BirthDateInputMonth.SelectedIndex > -1 && BirthDateInputYear.SelectedIndex > -1);
             IsInstitutionSetted = get_IDInstitutionList.SelectedIndex > -1;
             IsGroupSetted = Get_GroupID.Text != "";
@@ -98,7 +94,7 @@ namespace Console_app
             IsGPASetted = (parse && valGPA >= 0 && valGPA <= 100 );
             if (IsSecondNameCorrect && IsFirstNameCorrect && IsThirdNameCorrect && IsDateSetted && IsInstitutionSetted && IsGroupSetted && IsGPASetted)
             {
-                string stroke = ID + ' ' + SecondNameInput.Text + '_' + FirstNameInput.Text + '_' + ThirdNameInput.Text + ' ' + BirthDateInputDay.Text + '.' + Month + '.' + BirthDateInputYear.Text + ' ' + get_IDInstitutionList.Text + ' ' + Get_GroupID.Text + ' ' + get_IDYearOfStudyList.Text + ' ' + gpaInput.Text;
+                string stroke = ID + ' ' + SecondNameInput.Text + '_' + FirstNameInput.Text + '_' + ThirdNameInput.Text + ' ' + Day + '.' + Month + '.' + BirthDateInputYear.Text + ' ' + get_IDInstitutionList.Text + ' ' + Get_GroupID.Text + ' ' + get_IDYearOfStudyList.Text + ' ' + gpaInput.Text;
                 Datas.ADDinFile(stroke);
                 clearingfirlds();
                 UnVisErrors();
@@ -181,5 +177,9 @@ namespace Console_app
             DateErrLbl.Visible = !IsDateSetted;
         }
 
+        private void get_IDInstitutionList_Click(object sender, EventArgs e)
+        {
+            get_IDInstitutionList.DataSource = Datas.UniversitiesList;
+        }
     }
 }

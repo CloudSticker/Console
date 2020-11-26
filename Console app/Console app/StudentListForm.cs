@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +17,7 @@ namespace Console_app
         public bool IsFullNameActive;
         public bool IsBirthdayDateActive;
         public int RowNum;
-        
+        Stack<string> newdata = new Stack<string>();
         public StudentListForm()
         {
             WorkingFlow Datas = new WorkingFlow();
@@ -54,7 +54,7 @@ namespace Console_app
                     data.Add(new string[7]);
                     LineElements = l[i].Split(' ');
                     string[] str = LineElements[1].Split('_');
-                    string s = str[0] + ' ' + str[1] + ' '+ str[2] + ' ';
+                    string s = str[0] + ' ' + str[1] + ' '+ str[2] + ' '; 
                     LineElements[1] = s;
 
                     data[i] = LineElements;
@@ -85,11 +85,7 @@ namespace Console_app
                         LineElements = l[j].Split(' ');
                         if (LineElements[0] == ind.ToString())
                             continue;
-
-                        if (j + 1 == l.Length)
-                            sw.Write(l[j]);
-                        else
-                            sw.Write($"{l[j]}\n");
+                            sw.Write($"{l[j]}\r\n");
                     }
                 }
 
@@ -124,10 +120,10 @@ namespace Console_app
         ToolStripMenuItem m1 = new ToolStripMenuItem();
         private void AddContextMenu()
         {
-            m.Text = "Èçìåíèòü";
+            m.Text = "Edit";
             m.Click += new EventHandler(toolChangeItem2_Click);
 
-            m1.Text = "Óäàëèòü";
+            m1.Text = "Delete";
             m1.Click += new EventHandler(toolDeleteItem_Click);
             
             ContextMenuStrip strip = new ContextMenuStrip();
@@ -157,8 +153,29 @@ namespace Console_app
         }
         private void toolChangeItem2_Click(object sender, EventArgs args)
         {
+            FullNameCheckBox.Text = "Ð«Ð«Ð«Ð«Ð«Ð«Ð«Ð«Ð«Ð«Ð«Ñ‹";
             EditStudentForm StartNewForm = new EditStudentForm();
             StartNewForm.Show();
+            string path = @"StudentList.txt";
+            string[] l = File.ReadAllLines(path);
+            string[] LineElements;
+            for (int i = 0; i < l.Length; i++)
+            {
+                LineElements = l[i].Split(' ');
+                if (LineElements[0] == RowNum.ToString())
+                {
+                        //FullNameCheckBox.Text = RowNum.ToString();
+                    //BirthdayDateCheckBox.Text = LineElements[1];
+                    for (int j = 6; j >= 0; j--)
+                    {
+                        newdata.Push(LineElements[j]);
+                        //BirthdayDateCheckBox.Text = newdata.Peek();
+                    }
+                    break;
+                }    
+            }
+            
+            StartNewForm.datatransfer(newdata);
             this.Visible = false;
         }
 

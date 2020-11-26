@@ -326,7 +326,7 @@
     <value>InstitutPanel</value>
   </data>
   <data name="&gt;&gt;get_IDYearOfStudyList.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <metadata name="DateErrLbl.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -363,39 +363,6 @@
   </data>
   <data name="&gt;&gt;DateErrLbl.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <metadata name="debug.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>True</value>
-  </metadata>
-  <data name="debug.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <data name="debug.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="debug.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>240, 13</value>
-  </data>
-  <data name="debug.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>43, 17</value>
-  </data>
-  <data name="debug.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
-  </data>
-  <data name="debug.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;debug.Name" xml:space="preserve">
-    <value>debug</value>
-  </data>
-  <data name="&gt;&gt;debug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;debug.Parent" xml:space="preserve">
-    <value>BirthDayPanel</value>
-  </data>
-  <data name="&gt;&gt;debug.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <metadata name="BirthDateInputYear.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -614,25 +581,13 @@
     <value>InstitutPanel</value>
   </data>
   <data name="&gt;&gt;gpaInput.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <metadata name="get_IDInstitutionList.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
   <data name="get_IDInstitutionList.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Times New Roman, 15.75pt</value>
-  </data>
-  <data name="get_IDInstitutionList.Items" xml:space="preserve">
-    <value>НИТУ"МИСиС"</value>
-  </data>
-  <data name="get_IDInstitutionList.Items1" xml:space="preserve">
-    <value>МосПолитех</value>
-  </data>
-  <data name="get_IDInstitutionList.Items2" xml:space="preserve">
-    <value>МПФУ"Синергия"</value>
-  </data>
-  <data name="get_IDInstitutionList.Items3" xml:space="preserve">
-    <value>МГУ</value>
   </data>
   <data name="get_IDInstitutionList.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>20, 23</value>
@@ -656,7 +611,7 @@
     <value>InstitutPanel</value>
   </data>
   <data name="&gt;&gt;get_IDInstitutionList.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <metadata name="BirthDayLabel.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
@@ -700,6 +655,63 @@
   <data name="InstitutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="ID_lbloutput.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="ID_lbloutput.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 12.226416pt, style=Bold</value>
+  </data>
+  <data name="ID_lbloutput.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>406, 189</value>
+  </data>
+  <data name="ID_lbloutput.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>0, 25</value>
+  </data>
+  <data name="ID_lbloutput.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;ID_lbloutput.Name" xml:space="preserve">
+    <value>ID_lbloutput</value>
+  </data>
+  <data name="&gt;&gt;ID_lbloutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_lbloutput.Parent" xml:space="preserve">
+    <value>InstitutPanel</value>
+  </data>
+  <data name="&gt;&gt;ID_lbloutput.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="IDtext.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="IDtext.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe MDL2 Assets, 16.301888pt, style=Bold</value>
+  </data>
+  <data name="IDtext.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>367, 186</value>
+  </data>
+  <data name="IDtext.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>37, 25</value>
+  </data>
+  <data name="IDtext.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>10</value>
+  </data>
+  <data name="IDtext.Text" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="&gt;&gt;IDtext.Name" xml:space="preserve">
+    <value>IDtext</value>
+  </data>
+  <data name="&gt;&gt;IDtext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IDtext.Parent" xml:space="preserve">
+    <value>InstitutPanel</value>
+  </data>
+  <data name="&gt;&gt;IDtext.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="Get_GroupID.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
@@ -728,7 +740,7 @@
     <value>InstitutPanel</value>
   </data>
   <data name="&gt;&gt;Get_GroupID.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="InstitutPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>20, 319</value>
@@ -756,6 +768,39 @@
   </metadata>
   <data name="BirthDayPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <metadata name="debug.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <data name="debug.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="debug.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="debug.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>240, 13</value>
+  </data>
+  <data name="debug.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>43, 17</value>
+  </data>
+  <data name="debug.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="debug.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;debug.Name" xml:space="preserve">
+    <value>debug</value>
+  </data>
+  <data name="&gt;&gt;debug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;debug.Parent" xml:space="preserve">
+    <value>BirthDayPanel</value>
+  </data>
+  <data name="&gt;&gt;debug.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="BirthDayPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>20, 187</value>

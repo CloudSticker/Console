@@ -50,3 +50,21 @@ C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Project\Console app\Co
 C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Project\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.genruntimeconfig.cache
 C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Project\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.EditStudentForm.resources
 C:\Users\dan91\OneDrive\Рабочий стол\GitHub\Console app\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.EditStudentForm.resources
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.exe
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.deps.json
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.runtimeconfig.json
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.runtimeconfig.dev.json
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.dll
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\bin\Debug\netcoreapp3.1\Console app.pdb
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.csprojAssemblyReference.cache
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.EditStudentForm.resources
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.AddingUserData_Form.resources
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.Properties.Resources.resources
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console_app.StudentListForm.resources
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.csproj.GenerateResource.cache
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.AssemblyInfoInputs.cache
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.AssemblyInfo.cs
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.csproj.CoreCompileInputs.cache
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.dll
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.pdb
+C:\Users\danii\OneDrive\Рабочий стол\GitKraken\Console\Console app\Console app\obj\Debug\netcoreapp3.1\Console app.genruntimeconfig.cache
