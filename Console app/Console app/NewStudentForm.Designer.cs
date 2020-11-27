@@ -61,6 +61,7 @@
             // 
             // FullNamePanel
             // 
+            this.FullNamePanel.BackColor = System.Drawing.Color.Transparent;
             this.FullNamePanel.Controls.Add(this.FirstNameErrLbl);
             this.FullNamePanel.Controls.Add(this.SecondNameErrLbl);
             this.FullNamePanel.Controls.Add(this.ThirdNameInput);
@@ -103,6 +104,7 @@
             // BirthDayPanel
             // 
             resources.ApplyResources(this.BirthDayPanel, "BirthDayPanel");
+            this.BirthDayPanel.BackColor = System.Drawing.Color.Transparent;
             this.BirthDayPanel.Controls.Add(this.DateErrLbl);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputYear);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputMonth);
@@ -179,6 +181,7 @@
             // InstitutPanel
             // 
             resources.ApplyResources(this.InstitutPanel, "InstitutPanel");
+            this.InstitutPanel.BackColor = System.Drawing.Color.Transparent;
             this.InstitutPanel.Controls.Add(this.Get_GroupID);
             this.InstitutPanel.Controls.Add(this.gpaInput);
             this.InstitutPanel.Controls.Add(this.get_IDInstitutionList);
@@ -220,7 +223,7 @@
             // 
             // ButtonPanel
             // 
-            this.ButtonPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.ButtonPanel.BackColor = System.Drawing.Color.Transparent;
             this.ButtonPanel.Controls.Add(this.panel1);
             this.ButtonPanel.Controls.Add(this.panel2);
             this.ButtonPanel.Controls.Add(this.Clear_Button);
@@ -232,18 +235,18 @@
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Name = "panel1";
             // 
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Name = "panel2";
             // 
             // Clear_Button
             // 
-            this.Clear_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.Clear_Button.BackColor = System.Drawing.Color.Transparent;
             this.Clear_Button.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.Clear_Button, "Clear_Button");
             this.Clear_Button.Name = "Clear_Button";
@@ -252,7 +255,7 @@
             // 
             // Add_Button
             // 
-            this.Add_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.Add_Button.BackColor = System.Drawing.Color.Transparent;
             this.Add_Button.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.Add_Button, "Add_Button");
             this.Add_Button.Name = "Add_Button";
@@ -261,7 +264,7 @@
             // 
             // Cancel_Button
             // 
-            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.Cancel_Button.BackColor = System.Drawing.Color.Transparent;
             this.Cancel_Button.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.Cancel_Button, "Cancel_Button");
             this.Cancel_Button.Name = "Cancel_Button";
@@ -271,8 +274,10 @@
             // ThirdNameErrLbl
             // 
             resources.ApplyResources(this.ThirdNameErrLbl, "ThirdNameErrLbl");
+            this.ThirdNameErrLbl.BackColor = System.Drawing.Color.Transparent;
             this.ThirdNameErrLbl.ForeColor = System.Drawing.Color.Red;
             this.ThirdNameErrLbl.Name = "ThirdNameErrLbl";
+            this.ThirdNameErrLbl.UseMnemonic = false;
             // 
             // AddingUserData_Form
             // 

@@ -30,8 +30,19 @@ namespace Console_app
             AddContextMenu();
             Datas.Filling();
             this.Cursor = curs;
-
-
+            FilterGroupBox.BackColor = Color.FromArgb(25, Color.Black);
+            gpaGrBox.BackColor = Color.FromArgb(25, Color.Black);
+            SearchButton.BackColor = Color.FromArgb(25, Color.Black);
+            StudentListButton.BackColor = Color.FromArgb(25, Color.Black);
+            AddStudentButton.BackColor = Color.FromArgb(25, Color.Black);
+            FullNameCheckBox.BackColor = Color.FromArgb(0, Color.Black);
+            BirthdayDateCheckBox.BackColor = Color.FromArgb(0, Color.Black);
+            avgGPAlblOUT.BackColor = Color.FromArgb(0, Color.Black);
+            minGPAlblOUT.BackColor = Color.FromArgb(0, Color.Black);
+            maxGPAOUT.BackColor = Color.FromArgb(0, Color.Black);
+            SearchButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(40, Color.Black);
+            AddStudentButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(40, Color.Black);
+            StudentListButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(40, Color.Black);
             YearComboBox.DataSource = Datas.Years;
             MounthComboBox.DataSource = Datas.monthList;
 

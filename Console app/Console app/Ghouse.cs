@@ -21,7 +21,6 @@ namespace Console_app
         [DllImport("winmm.dll", EntryPoint = "waveOutSetVolume")]
         private static extern int WaveOutSetVolume(IntPtr hwo, uint dwVolume);
 
-
         System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Soun.wav");
         bool a = false;
         Bitmap RotatingBlocks;
@@ -32,7 +31,7 @@ namespace Console_app
         public Ghouse()
         {
             player.Play();
-
+            
             RotatingBlocks = new Bitmap(@"Nice.GIF");
 
             InitializeComponent();
@@ -83,6 +82,14 @@ namespace Console_app
             {
                 player.Stop();
             }
+        }
+
+        private void Ghouse_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            StudentListForm StartNewForm = new StudentListForm();
+            StartNewForm.Show();
+            player.Stop();
         }
     }
 }

@@ -30,6 +30,10 @@ namespace Console_app
             Datas.Filling();
             BirthDateInputYear.DataSource = Datas.Years;
             BirthDateInputMonth.DataSource = Datas.monthList;
+            ButtonPanel.BackColor = Color.FromArgb(25, Color.Black);
+            Cancel_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
+            Add_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
+            Clear_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
         }
         private void Form1_Load(object sender, EventArgs e)
         {

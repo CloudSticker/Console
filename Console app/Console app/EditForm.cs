@@ -25,6 +25,9 @@ namespace Console_app
         {
             InitializeComponent();
             Datas.Filling();
+            ButtonPanel.BackColor = Color.FromArgb(25, Color.Black);
+            Edit_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
+            Cancel_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
             get_IDInstitutionList.DataSource = Datas.UniversitiesList; 
             BirthDateInputYear.DataSource = Datas.Years;
             BirthDateInputMonth.DataSource = Datas.monthList;

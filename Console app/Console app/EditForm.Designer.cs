@@ -62,6 +62,7 @@
             // ThirdNameErrLbl
             // 
             resources.ApplyResources(this.ThirdNameErrLbl, "ThirdNameErrLbl");
+            this.ThirdNameErrLbl.BackColor = System.Drawing.Color.Transparent;
             this.ThirdNameErrLbl.ForeColor = System.Drawing.Color.Red;
             this.ThirdNameErrLbl.Name = "ThirdNameErrLbl";
             this.ThirdNameErrLbl.Click += new System.EventHandler(this.ThirdNameInput_Click);
@@ -69,13 +70,15 @@
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Name = "panel2";
             // 
             // Edit_Button
             // 
-            this.Edit_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.Edit_Button.BackColor = System.Drawing.Color.Transparent;
+            this.Edit_Button.Cursor = System.Windows.Forms.Cursors.Default;
             this.Edit_Button.FlatAppearance.BorderSize = 0;
+            this.Edit_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.Edit_Button, "Edit_Button");
             this.Edit_Button.Name = "Edit_Button";
             this.Edit_Button.UseVisualStyleBackColor = false;
@@ -83,7 +86,7 @@
             // 
             // ButtonPanel
             // 
-            this.ButtonPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.ButtonPanel.BackColor = System.Drawing.Color.Transparent;
             this.ButtonPanel.Controls.Add(this.panel2);
             this.ButtonPanel.Controls.Add(this.Edit_Button);
             this.ButtonPanel.Controls.Add(this.Cancel_Button);
@@ -92,7 +95,7 @@
             // 
             // Cancel_Button
             // 
-            this.Cancel_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(129)))), ((int)(((byte)(184)))));
+            this.Cancel_Button.BackColor = System.Drawing.Color.Transparent;
             this.Cancel_Button.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.Cancel_Button, "Cancel_Button");
             this.Cancel_Button.Name = "Cancel_Button";
@@ -190,6 +193,7 @@
             // InstitutPanel
             // 
             resources.ApplyResources(this.InstitutPanel, "InstitutPanel");
+            this.InstitutPanel.BackColor = System.Drawing.Color.Transparent;
             this.InstitutPanel.Controls.Add(this.ID_lbloutput);
             this.InstitutPanel.Controls.Add(this.IDtext);
             this.InstitutPanel.Controls.Add(this.Get_GroupID);
@@ -217,6 +221,7 @@
             // BirthDayPanel
             // 
             resources.ApplyResources(this.BirthDayPanel, "BirthDayPanel");
+            this.BirthDayPanel.BackColor = System.Drawing.Color.Transparent;
             this.BirthDayPanel.Controls.Add(this.DateErrLbl);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputYear);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputMonth);
@@ -259,6 +264,7 @@
             // 
             // FullNamePanel
             // 
+            this.FullNamePanel.BackColor = System.Drawing.Color.Transparent;
             this.FullNamePanel.Controls.Add(this.FirstNameErrLbl);
             this.FullNamePanel.Controls.Add(this.SecondNameErrLbl);
             this.FullNamePanel.Controls.Add(this.ThirdNameInput);
