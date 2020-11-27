@@ -168,15 +168,20 @@ namespace Console_app
         {
 
         }
+
         ToolStripMenuItem m = new ToolStripMenuItem();
         ToolStripMenuItem m1 = new ToolStripMenuItem();
+        ToolStripMenuItem m2 = new ToolStripMenuItem();
         private void AddContextMenu()
         {
             m.Text = "Edit";
-            m.Click += new EventHandler(toolChangeItem2_Click);
+            m.Click += new EventHandler(toolChangeItem_Click);
 
             m1.Text = "Delete";
             m1.Click += new EventHandler(toolDeleteItem_Click);
+
+            m2.Text = "Delete";
+            m2.Click += new EventHandler(toolChangeSomeItem_Click);
 
             ContextMenuStrip strip = new ContextMenuStrip();
             foreach (DataGridViewColumn column in DataGridList.Columns)
@@ -190,20 +195,16 @@ namespace Console_app
 
         private DataGridViewCellEventArgs mouseLocation;
 
-        // Change the cell's color.
         private void toolDeleteItem_Click(object sender, EventArgs args)
         {
-            /*
-            if (this.DataGridList.SelectedRows.Count > 0)
-                foreach (DataGridViewRow drv in DataGridList.SelectedRows)
-                {
-                    
-                    DataGridList.Rows.Remove(drv);
-                    
-                }*/
             Fill_List(RowNum);
         }
-        private void toolChangeItem2_Click(object sender, EventArgs args)
+        private void toolChangeSomeItem_Click(object sender, EventArgs args)
+        {   
+
+        }
+
+        private void toolChangeItem_Click(object sender, EventArgs args)
         {
             if (RowNum >= 0)
             {
@@ -233,7 +234,6 @@ namespace Console_app
 
         }
 
-        // Deal with hovering over a cell.
         private void dataGridView_CellMouseEnter(object sender, DataGridViewCellEventArgs location)
         {
             mouseLocation = location;
