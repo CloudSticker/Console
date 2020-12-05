@@ -41,5 +41,29 @@ namespace Console_app
                 }
             }
         }
-}
+        internal void datatransfer(Queue<String> thedata)
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                mystack.Push(thedata.Dequeue());
+            }
+
+            if (mystack.Peek() != null)
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    ListViewItem lvi = new ListViewItem();
+                    lvi.Text = mystack.Pop();
+                    listView1.Items.Add(lvi);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            StudentListForm StartNewForm = new StudentListForm();
+            StartNewForm.Show();
+        }
+    }
 }

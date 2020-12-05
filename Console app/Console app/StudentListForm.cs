@@ -21,6 +21,9 @@ namespace Console_app
         public bool IsBirthdayDateActive;
         public int RowNum;
         Stack<string> newdata = new Stack<string>();
+        Queue<String> newdataq = new Queue<String>();
+        System.Windows.Forms.Cursor curs = new System.Windows.Forms.Cursor(@"Arrow.cur");
+        System.Windows.Forms.Cursor curs1 = new System.Windows.Forms.Cursor(@"Normal.cur");
         public StudentListForm()
         {
             WorkingFlow Datas = new WorkingFlow();
@@ -38,6 +41,7 @@ namespace Console_app
         }
 
         internal List<string[]> data = new List<string[]>();
+
 
         private void Fill_List()
         {
@@ -155,6 +159,8 @@ namespace Console_app
         ToolStripMenuItem m = new ToolStripMenuItem();
         ToolStripMenuItem m1 = new ToolStripMenuItem();
         ToolStripMenuItem m2 = new ToolStripMenuItem();
+        ToolStripMenuItem m3 = new ToolStripMenuItem();
+        ToolStripMenuItem m4 = new ToolStripMenuItem();
         private void AddContextMenu()
         {
             m.Text = "Изменить";
@@ -163,8 +169,14 @@ namespace Console_app
             m1.Text = "Удалить";
             m1.Click += new EventHandler(toolDeleteItem_Click);
 
-            m2.Text = "Структуры данных";
+            m2.Text = "Стек";
             m2.Click += new EventHandler(toolChangeSomeItem_Click);
+
+            m3.Text = "Дек";
+            m3.Click += new EventHandler(toolChangeDeqItem_Click);
+
+            m4.Text = "Очередь";
+            m4.Click += new EventHandler(toolChangeQueueItem_Click);
 
             ContextMenuStrip strip = new ContextMenuStrip();
             foreach (DataGridViewColumn column in DataGridList.Columns)
@@ -174,6 +186,7 @@ namespace Console_app
                 column.ContextMenuStrip.Items.Add(m);
                 column.ContextMenuStrip.Items.Add(m1);
                 column.ContextMenuStrip.Items.Add(m2);
+                column.ContextMenuStrip.Items.Add(m4);
             }
         }
 
@@ -205,6 +218,61 @@ namespace Console_app
                     }
                 }
                 StartForm.datatransfer(newdata);
+                this.Visible = false;
+            }
+
+        }
+        private void toolChangeDeqItem_Click(object sender, EventArgs args)
+        {
+            if (RowNum >= 0)
+            {
+                Form1 StartForm = new Form1();
+                StartForm.Show();
+                string path = @"StudentList.txt";
+                string[] l = File.ReadAllLines(path);
+                string[] LineElements;
+                for (int i = 0; i < l.Length; i++)
+                {
+                    LineElements = l[i].Split(' ');
+                    if (LineElements[0] == RowNum.ToString())
+                    {
+                        //FullNameCheckBox.Text = RowNum.ToString();
+                        //BirthdayDateCheckBox.Text = LineElements[1];
+                        for (int j = 6; j >= 0; j--)
+                        {
+                            newdata.Push(LineElements[j]);
+                            //BirthdayDateCheckBox.Text = newdata.Peek();
+                        }
+                        break;
+                    }
+                }
+                StartForm.datatransfer(newdata);
+                this.Visible = false;
+            }
+
+        }
+        private void toolChangeQueueItem_Click(object sender, EventArgs args)
+        {
+            if (RowNum >= 0)
+            {
+                Form1 StartForm = new Form1();
+                StartForm.Show();
+                string path = @"StudentList.txt";
+                string[] l = File.ReadAllLines(path);
+                string[] LineElements;
+                for (int i = 0; i < l.Length; i++)
+                {
+                    LineElements = l[i].Split(' ');
+                    if (LineElements[0] == RowNum.ToString())
+                    {
+                        for (int j = 6; j >= 0; j--)
+                        {
+                            newdataq.Enqueue(LineElements[j]);
+                        }
+                        break;
+                    }
+                }
+                StartForm.datatransfer(newdataq);
                 this.Visible = false;
             }
 
