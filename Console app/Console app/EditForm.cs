@@ -25,7 +25,6 @@ namespace Console_app
         {
             InitializeComponent();
             Datas.Filling();
-            ButtonPanel.BackColor = Color.FromArgb(25, Color.Black);
             Edit_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
             Cancel_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
             get_IDInstitutionList.DataSource = Datas.UniversitiesList; 
@@ -37,7 +36,7 @@ namespace Console_app
         {
 
         }
-        internal void datatransfer(Stack<string> thedata) //не нужно в жизни, но нужно по лабе ¯\_(ツ)_/¯ 
+        internal void datatransfer(Stack<string> thedata) 
         {
             string[] whatwegot = new string[7];
             string weneedit;
@@ -144,10 +143,6 @@ namespace Console_app
 
         private void ErrorChecks()
         {
-            FirstNameErrLbl.Visible = !IsFirstNameCorrect;
-            SecondNameErrLbl.Visible = !IsSecondNameCorrect;
-            ThirdNameErrLbl.Visible = !IsThirdNameCorrect;
-            DateErrLbl.Visible = !IsDateSetted;
             if (!IsYearOfStudySetted)
                 get_IDYearOfStudyList.BackColor = Color.LightCoral;
             if (!IsInstitutionSetted)
@@ -184,17 +179,16 @@ namespace Console_app
 
         private void ThirdNameInput_Click(object sender, EventArgs e)
         {
-            ThirdNameErrLbl.Visible = false;
+            
         }
 
         private void SecondNameInput_Click(object sender, EventArgs e)
         {
-            SecondNameErrLbl.Visible = false;
+           
         }
 
         private void FirstNameInput_Click(object sender, EventArgs e)
         {
-            FirstNameErrLbl.Visible = false;
         }
     }
 }

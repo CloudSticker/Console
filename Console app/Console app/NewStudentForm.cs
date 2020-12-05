@@ -30,7 +30,6 @@ namespace Console_app
             Datas.Filling();
             BirthDateInputYear.DataSource = Datas.Years;
             BirthDateInputMonth.DataSource = Datas.monthList;
-            ButtonPanel.BackColor = Color.FromArgb(25, Color.Black);
             Cancel_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
             Add_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
             Clear_Button.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, Color.Black);
@@ -170,10 +169,6 @@ namespace Console_app
         }
         private void UnVisErrors()
         {
-            FirstNameErrLbl.Visible = false;
-            SecondNameErrLbl.Visible = false;
-            ThirdNameErrLbl.Visible = false;
-            DateErrLbl.Visible = false;
                 get_IDYearOfStudyList.BackColor = Color.White;
                 get_IDInstitutionList.BackColor = Color.White;
                 Get_GroupID.BackColor = Color.White;
@@ -181,10 +176,6 @@ namespace Console_app
         }
         private void ErrorChecks()
         {
-            FirstNameErrLbl.Visible = !IsFirstNameCorrect;
-            SecondNameErrLbl.Visible = !IsSecondNameCorrect;
-            ThirdNameErrLbl.Visible = !IsThirdNameCorrect;
-            DateErrLbl.Visible = !IsDateSetted;
             if (!IsYearOfStudySetted)
                 get_IDYearOfStudyList.BackColor = Color.LightCoral;
             if (!IsInstitutionSetted)
@@ -219,17 +210,19 @@ namespace Console_app
 
         private void ThirdNameInput_Click(object sender, EventArgs e)
         {
-            ThirdNameErrLbl.Visible = false;
         }
 
         private void SecondNameInput_Click(object sender, EventArgs e)
         {
-            SecondNameErrLbl.Visible = false;
         }
 
         private void FirstNameInput_Click(object sender, EventArgs e)
         {
-            FirstNameErrLbl.Visible = false;
+        }
+
+        private void ThirdNameInput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

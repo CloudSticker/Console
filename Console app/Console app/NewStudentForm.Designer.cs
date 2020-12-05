@@ -30,13 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddingUserData_Form));
             this.FullNamePanel = new System.Windows.Forms.Panel();
-            this.FirstNameErrLbl = new System.Windows.Forms.Label();
-            this.SecondNameErrLbl = new System.Windows.Forms.Label();
             this.ThirdNameInput = new System.Windows.Forms.TextBox();
             this.FirstNameInput = new System.Windows.Forms.TextBox();
             this.SecondNameInput = new System.Windows.Forms.TextBox();
             this.BirthDayPanel = new System.Windows.Forms.Panel();
-            this.DateErrLbl = new System.Windows.Forms.Label();
             this.BirthDateInputYear = new System.Windows.Forms.ComboBox();
             this.BirthDateInputMonth = new System.Windows.Forms.ComboBox();
             this.BirthDateInputDay = new System.Windows.Forms.ComboBox();
@@ -46,24 +43,17 @@
             this.gpaInput = new System.Windows.Forms.TextBox();
             this.get_IDInstitutionList = new System.Windows.Forms.ComboBox();
             this.get_IDYearOfStudyList = new System.Windows.Forms.ComboBox();
-            this.ButtonPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.Clear_Button = new System.Windows.Forms.Button();
             this.Add_Button = new System.Windows.Forms.Button();
             this.Cancel_Button = new System.Windows.Forms.Button();
-            this.ThirdNameErrLbl = new System.Windows.Forms.Label();
             this.FullNamePanel.SuspendLayout();
             this.BirthDayPanel.SuspendLayout();
             this.InstitutPanel.SuspendLayout();
-            this.ButtonPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // FullNamePanel
             // 
             this.FullNamePanel.BackColor = System.Drawing.Color.Transparent;
-            this.FullNamePanel.Controls.Add(this.FirstNameErrLbl);
-            this.FullNamePanel.Controls.Add(this.SecondNameErrLbl);
             this.FullNamePanel.Controls.Add(this.ThirdNameInput);
             this.FullNamePanel.Controls.Add(this.FirstNameInput);
             this.FullNamePanel.Controls.Add(this.SecondNameInput);
@@ -71,23 +61,12 @@
             this.FullNamePanel.Name = "FullNamePanel";
             this.FullNamePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
-            // FirstNameErrLbl
-            // 
-            resources.ApplyResources(this.FirstNameErrLbl, "FirstNameErrLbl");
-            this.FirstNameErrLbl.ForeColor = System.Drawing.Color.Red;
-            this.FirstNameErrLbl.Name = "FirstNameErrLbl";
-            // 
-            // SecondNameErrLbl
-            // 
-            resources.ApplyResources(this.SecondNameErrLbl, "SecondNameErrLbl");
-            this.SecondNameErrLbl.ForeColor = System.Drawing.Color.Red;
-            this.SecondNameErrLbl.Name = "SecondNameErrLbl";
-            // 
             // ThirdNameInput
             // 
             resources.ApplyResources(this.ThirdNameInput, "ThirdNameInput");
             this.ThirdNameInput.Name = "ThirdNameInput";
             this.ThirdNameInput.Click += new System.EventHandler(this.ThirdNameInput_Click);
+            this.ThirdNameInput.TextChanged += new System.EventHandler(this.ThirdNameInput_TextChanged);
             // 
             // FirstNameInput
             // 
@@ -105,18 +84,11 @@
             // 
             resources.ApplyResources(this.BirthDayPanel, "BirthDayPanel");
             this.BirthDayPanel.BackColor = System.Drawing.Color.Transparent;
-            this.BirthDayPanel.Controls.Add(this.DateErrLbl);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputYear);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputMonth);
             this.BirthDayPanel.Controls.Add(this.BirthDateInputDay);
             this.BirthDayPanel.Controls.Add(this.BirthDayLabel);
             this.BirthDayPanel.Name = "BirthDayPanel";
-            // 
-            // DateErrLbl
-            // 
-            resources.ApplyResources(this.DateErrLbl, "DateErrLbl");
-            this.DateErrLbl.ForeColor = System.Drawing.Color.Red;
-            this.DateErrLbl.Name = "DateErrLbl";
             // 
             // BirthDateInputYear
             // 
@@ -182,8 +154,11 @@
             // 
             resources.ApplyResources(this.InstitutPanel, "InstitutPanel");
             this.InstitutPanel.BackColor = System.Drawing.Color.Transparent;
+            this.InstitutPanel.Controls.Add(this.Cancel_Button);
             this.InstitutPanel.Controls.Add(this.Get_GroupID);
+            this.InstitutPanel.Controls.Add(this.Clear_Button);
             this.InstitutPanel.Controls.Add(this.gpaInput);
+            this.InstitutPanel.Controls.Add(this.Add_Button);
             this.InstitutPanel.Controls.Add(this.get_IDInstitutionList);
             this.InstitutPanel.Controls.Add(this.get_IDYearOfStudyList);
             this.InstitutPanel.Name = "InstitutPanel";
@@ -221,29 +196,6 @@
             this.get_IDYearOfStudyList.Name = "get_IDYearOfStudyList";
             this.get_IDYearOfStudyList.Click += new System.EventHandler(this.get_IDYearOfStudyList_Click);
             // 
-            // ButtonPanel
-            // 
-            this.ButtonPanel.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonPanel.Controls.Add(this.panel1);
-            this.ButtonPanel.Controls.Add(this.panel2);
-            this.ButtonPanel.Controls.Add(this.Clear_Button);
-            this.ButtonPanel.Controls.Add(this.Add_Button);
-            this.ButtonPanel.Controls.Add(this.Cancel_Button);
-            resources.ApplyResources(this.ButtonPanel, "ButtonPanel");
-            this.ButtonPanel.Name = "ButtonPanel";
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Name = "panel1";
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Name = "panel2";
-            // 
             // Clear_Button
             // 
             this.Clear_Button.BackColor = System.Drawing.Color.Transparent;
@@ -271,25 +223,15 @@
             this.Cancel_Button.UseVisualStyleBackColor = false;
             this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
-            // ThirdNameErrLbl
-            // 
-            resources.ApplyResources(this.ThirdNameErrLbl, "ThirdNameErrLbl");
-            this.ThirdNameErrLbl.BackColor = System.Drawing.Color.Transparent;
-            this.ThirdNameErrLbl.ForeColor = System.Drawing.Color.Red;
-            this.ThirdNameErrLbl.Name = "ThirdNameErrLbl";
-            this.ThirdNameErrLbl.UseMnemonic = false;
-            // 
             // AddingUserData_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.ThirdNameErrLbl);
-            this.Controls.Add(this.ButtonPanel);
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.InstitutPanel);
             this.Controls.Add(this.BirthDayPanel);
             this.Controls.Add(this.FullNamePanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddingUserData_Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.FullNamePanel.ResumeLayout(false);
@@ -298,10 +240,7 @@
             this.BirthDayPanel.PerformLayout();
             this.InstitutPanel.ResumeLayout(false);
             this.InstitutPanel.PerformLayout();
-            this.ButtonPanel.ResumeLayout(false);
-            this.ButtonPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -319,18 +258,11 @@
         private System.Windows.Forms.ComboBox get_IDInstitutionList;
         private System.Windows.Forms.ComboBox get_IDYearOfStudyList;
         private System.Windows.Forms.TextBox gpaInput;
-        private System.Windows.Forms.Panel ButtonPanel;
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button Add_Button;
         private System.Windows.Forms.Button Cancel_Button;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox Get_GroupID;
         private System.Windows.Forms.ComboBox BirthDateInputDay;
-        private System.Windows.Forms.Label FirstNameErrLbl;
-        private System.Windows.Forms.Label SecondNameErrLbl;
-        private System.Windows.Forms.Label ThirdNameErrLbl;
-        private System.Windows.Forms.Label DateErrLbl;
     }
 }
 

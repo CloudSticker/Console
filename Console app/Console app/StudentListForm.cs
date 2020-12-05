@@ -29,20 +29,6 @@ namespace Console_app
             InitializeComponent();
             AddContextMenu();
             Datas.Filling();
-            this.Cursor = curs;
-            FilterGroupBox.BackColor = Color.FromArgb(25, Color.Black);
-            gpaGrBox.BackColor = Color.FromArgb(25, Color.Black);
-            SearchButton.BackColor = Color.FromArgb(25, Color.Black);
-            StudentListButton.BackColor = Color.FromArgb(25, Color.Black);
-            AddStudentButton.BackColor = Color.FromArgb(25, Color.Black);
-            FullNameCheckBox.BackColor = Color.FromArgb(0, Color.Black);
-            BirthdayDateCheckBox.BackColor = Color.FromArgb(0, Color.Black);
-            avgGPAlblOUT.BackColor = Color.FromArgb(0, Color.Black);
-            minGPAlblOUT.BackColor = Color.FromArgb(0, Color.Black);
-            maxGPAOUT.BackColor = Color.FromArgb(0, Color.Black);
-            SearchButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(40, Color.Black);
-            AddStudentButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(40, Color.Black);
-            StudentListButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(40, Color.Black);
             YearComboBox.DataSource = Datas.Years;
             MounthComboBox.DataSource = Datas.monthList;
 
@@ -174,13 +160,13 @@ namespace Console_app
         ToolStripMenuItem m2 = new ToolStripMenuItem();
         private void AddContextMenu()
         {
-            m.Text = "Edit";
+            m.Text = "Изменить";
             m.Click += new EventHandler(toolChangeItem_Click);
 
-            m1.Text = "Delete";
+            m1.Text = "Удалить";
             m1.Click += new EventHandler(toolDeleteItem_Click);
 
-            m2.Text = "Delete";
+            m2.Text = "Структуры данных";
             m2.Click += new EventHandler(toolChangeSomeItem_Click);
 
             ContextMenuStrip strip = new ContextMenuStrip();
@@ -190,6 +176,7 @@ namespace Console_app
                 column.ContextMenuStrip = strip;
                 column.ContextMenuStrip.Items.Add(m);
                 column.ContextMenuStrip.Items.Add(m1);
+                column.ContextMenuStrip.Items.Add(m2);
             }
         }
 
@@ -200,7 +187,32 @@ namespace Console_app
             Fill_List(RowNum);
         }
         private void toolChangeSomeItem_Click(object sender, EventArgs args)
-        {   
+        {
+            if (RowNum >= 0)
+            {
+                Form1 StartForm = new Form1();
+                StartForm.Show();
+                string path = @"StudentList.txt";
+                string[] l = File.ReadAllLines(path);
+                string[] LineElements;
+                for (int i = 0; i < l.Length; i++)
+                {
+                    LineElements = l[i].Split(' ');
+                    if (LineElements[0] == RowNum.ToString())
+                    {
+                        //FullNameCheckBox.Text = RowNum.ToString();
+                        //BirthdayDateCheckBox.Text = LineElements[1];
+                        for (int j = 6; j >= 0; j--)
+                        {
+                            newdata.Push(LineElements[j]);
+                            //BirthdayDateCheckBox.Text = newdata.Peek();
+                        }
+                        break;
+                    }
+                }
+                StartForm.datatransfer(newdata);
+                this.Visible = false;
+            }
 
         }
 
@@ -421,15 +433,6 @@ namespace Console_app
             }
         }
 
-        private void YESBUTTON_Click(object sender, EventArgs e)
-        {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Heart.wav");
-            player.Play();
-            Thread.Sleep(1000);
-            Ghouse StartNewForm = new Ghouse();
-            StartNewForm.Show();
-            this.Visible = false;
-        }
 
 
         private void YESBUTTON_MouseHover(object sender, EventArgs e)

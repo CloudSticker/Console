@@ -34,11 +34,11 @@ namespace Console_app
             this.FilterGroupBox = new System.Windows.Forms.GroupBox();
             this.BirthdayDateCheckBox = new System.Windows.Forms.CheckBox();
             this.FullNameCheckBox = new System.Windows.Forms.CheckBox();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.MounthComboBox = new System.Windows.Forms.ComboBox();
             this.DayComboBox = new System.Windows.Forms.ComboBox();
             this.YearComboBox = new System.Windows.Forms.ComboBox();
             this.FullNameTextBox = new System.Windows.Forms.TextBox();
-            this.SearchButton = new System.Windows.Forms.Button();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BirthDayDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +55,6 @@ namespace Console_app
             this.maxGPA = new System.Windows.Forms.Label();
             this.minGPAlbl = new System.Windows.Forms.Label();
             this.avgGPAlbl = new System.Windows.Forms.Label();
-            this.YESBUTTON = new System.Windows.Forms.Button();
             this.FilterGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridList)).BeginInit();
             this.gpaGrBox.SuspendLayout();
@@ -69,11 +68,10 @@ namespace Console_app
             this.AddStudentButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.AddStudentButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.AddStudentButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.AddStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddStudentButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddStudentButton.Location = new System.Drawing.Point(7, 171);
+            this.AddStudentButton.Location = new System.Drawing.Point(777, 510);
             this.AddStudentButton.Name = "AddStudentButton";
-            this.AddStudentButton.Size = new System.Drawing.Size(140, 68);
+            this.AddStudentButton.Size = new System.Drawing.Size(454, 37);
             this.AddStudentButton.TabIndex = 0;
             this.AddStudentButton.Text = "Добавить студента";
             this.AddStudentButton.UseVisualStyleBackColor = false;
@@ -85,24 +83,25 @@ namespace Console_app
             this.FilterGroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.FilterGroupBox.Controls.Add(this.BirthdayDateCheckBox);
             this.FilterGroupBox.Controls.Add(this.FullNameCheckBox);
+            this.FilterGroupBox.Controls.Add(this.SearchButton);
             this.FilterGroupBox.Controls.Add(this.MounthComboBox);
             this.FilterGroupBox.Controls.Add(this.DayComboBox);
             this.FilterGroupBox.Controls.Add(this.YearComboBox);
             this.FilterGroupBox.Controls.Add(this.FullNameTextBox);
             this.FilterGroupBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FilterGroupBox.Location = new System.Drawing.Point(172, 14);
+            this.FilterGroupBox.Location = new System.Drawing.Point(3, 12);
             this.FilterGroupBox.Name = "FilterGroupBox";
-            this.FilterGroupBox.Size = new System.Drawing.Size(700, 113);
+            this.FilterGroupBox.Size = new System.Drawing.Size(299, 375);
             this.FilterGroupBox.TabIndex = 1;
             this.FilterGroupBox.TabStop = false;
-            this.FilterGroupBox.Text = "Фильтры";
+            this.FilterGroupBox.Text = "Поиск";
             this.FilterGroupBox.Enter += new System.EventHandler(this.FilterGroupBox_Enter);
             // 
             // BirthdayDateCheckBox
             // 
             this.BirthdayDateCheckBox.AutoSize = true;
             this.BirthdayDateCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BirthdayDateCheckBox.Location = new System.Drawing.Point(437, 36);
+            this.BirthdayDateCheckBox.Location = new System.Drawing.Point(56, 123);
             this.BirthdayDateCheckBox.Name = "BirthdayDateCheckBox";
             this.BirthdayDateCheckBox.Size = new System.Drawing.Size(184, 31);
             this.BirthdayDateCheckBox.TabIndex = 2;
@@ -122,11 +121,29 @@ namespace Console_app
             this.FullNameCheckBox.UseVisualStyleBackColor = true;
             this.FullNameCheckBox.CheckedChanged += new System.EventHandler(this.FullNameCheckBox_CheckedChanged);
             // 
+            // SearchButton
+            // 
+            this.SearchButton.BackColor = System.Drawing.Color.Transparent;
+            this.SearchButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SearchButton.FlatAppearance.BorderSize = 0;
+            this.SearchButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.SearchButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.SearchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.SearchButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SearchButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.SearchButton.Location = new System.Drawing.Point(6, 300);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(284, 46);
+            this.SearchButton.TabIndex = 5;
+            this.SearchButton.Text = "Сортировать";
+            this.SearchButton.UseVisualStyleBackColor = false;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            // 
             // MounthComboBox
             // 
             this.MounthComboBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MounthComboBox.FormattingEnabled = true;
-            this.MounthComboBox.Location = new System.Drawing.Point(448, 71);
+            this.MounthComboBox.Location = new System.Drawing.Point(26, 201);
             this.MounthComboBox.Name = "MounthComboBox";
             this.MounthComboBox.Size = new System.Drawing.Size(120, 34);
             this.MounthComboBox.TabIndex = 1;
@@ -139,7 +156,7 @@ namespace Console_app
             // 
             this.DayComboBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DayComboBox.FormattingEnabled = true;
-            this.DayComboBox.Location = new System.Drawing.Point(574, 70);
+            this.DayComboBox.Location = new System.Drawing.Point(26, 241);
             this.DayComboBox.Name = "DayComboBox";
             this.DayComboBox.Size = new System.Drawing.Size(120, 34);
             this.DayComboBox.TabIndex = 1;
@@ -151,7 +168,7 @@ namespace Console_app
             // 
             this.YearComboBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.YearComboBox.FormattingEnabled = true;
-            this.YearComboBox.Location = new System.Drawing.Point(322, 71);
+            this.YearComboBox.Location = new System.Drawing.Point(26, 160);
             this.YearComboBox.Name = "YearComboBox";
             this.YearComboBox.Size = new System.Drawing.Size(120, 34);
             this.YearComboBox.TabIndex = 1;
@@ -163,25 +180,6 @@ namespace Console_app
             this.FullNameTextBox.Name = "FullNameTextBox";
             this.FullNameTextBox.Size = new System.Drawing.Size(250, 34);
             this.FullNameTextBox.TabIndex = 0;
-            // 
-            // SearchButton
-            // 
-            this.SearchButton.BackColor = System.Drawing.Color.Transparent;
-            this.SearchButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SearchButton.FlatAppearance.BorderSize = 0;
-            this.SearchButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.SearchButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.SearchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SearchButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.SearchButton.Location = new System.Drawing.Point(7, 22);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(140, 68);
-            this.SearchButton.TabIndex = 5;
-            this.SearchButton.Text = "Найти";
-            this.SearchButton.UseVisualStyleBackColor = false;
-            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // StudentID
             // 
@@ -247,7 +245,7 @@ namespace Console_app
             // 
             // DataGridList
             // 
-            this.DataGridList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(218)))), ((int)(((byte)(252)))));
+            this.DataGridList.BackgroundColor = System.Drawing.Color.White;
             this.DataGridList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StudentID,
@@ -257,10 +255,10 @@ namespace Console_app
             this.Group,
             this.Cource,
             this.MidCertificateScore});
-            this.DataGridList.Location = new System.Drawing.Point(172, 143);
+            this.DataGridList.Location = new System.Drawing.Point(308, 18);
             this.DataGridList.Name = "DataGridList";
             this.DataGridList.RowHeadersWidth = 45;
-            this.DataGridList.Size = new System.Drawing.Size(700, 486);
+            this.DataGridList.Size = new System.Drawing.Size(923, 486);
             this.DataGridList.TabIndex = 4;
             this.DataGridList.Text = "dataGridView1";
             this.DataGridList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridList_CellClick);
@@ -275,11 +273,10 @@ namespace Console_app
             this.StudentListButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.StudentListButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.StudentListButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.StudentListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StudentListButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StudentListButton.Location = new System.Drawing.Point(7, 96);
+            this.StudentListButton.Location = new System.Drawing.Point(308, 510);
             this.StudentListButton.Name = "StudentListButton";
-            this.StudentListButton.Size = new System.Drawing.Size(140, 68);
+            this.StudentListButton.Size = new System.Drawing.Size(463, 37);
             this.StudentListButton.TabIndex = 6;
             this.StudentListButton.Text = "Список студентов";
             this.StudentListButton.UseVisualStyleBackColor = false;
@@ -296,12 +293,11 @@ namespace Console_app
             this.gpaGrBox.Controls.Add(this.minGPAlbl);
             this.gpaGrBox.Controls.Add(this.avgGPAlbl);
             this.gpaGrBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gpaGrBox.Location = new System.Drawing.Point(7, 246);
+            this.gpaGrBox.Location = new System.Drawing.Point(9, 382);
             this.gpaGrBox.Name = "gpaGrBox";
-            this.gpaGrBox.Size = new System.Drawing.Size(140, 119);
+            this.gpaGrBox.Size = new System.Drawing.Size(293, 119);
             this.gpaGrBox.TabIndex = 7;
             this.gpaGrBox.TabStop = false;
-            this.gpaGrBox.Text = "Ср. баллы";
             // 
             // maxGPAOUT
             // 
@@ -361,34 +357,15 @@ namespace Console_app
             this.avgGPAlbl.TabIndex = 0;
             this.avgGPAlbl.Text = "Ср.балл:";
             // 
-            // YESBUTTON
-            // 
-            this.YESBUTTON.BackColor = System.Drawing.Color.Transparent;
-            this.YESBUTTON.FlatAppearance.BorderSize = 0;
-            this.YESBUTTON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.YESBUTTON.Image = ((System.Drawing.Image)(resources.GetObject("YESBUTTON.Image")));
-            this.YESBUTTON.Location = new System.Drawing.Point(13, 383);
-            this.YESBUTTON.Margin = new System.Windows.Forms.Padding(0);
-            this.YESBUTTON.Name = "YESBUTTON";
-            this.YESBUTTON.Size = new System.Drawing.Size(140, 159);
-            this.YESBUTTON.TabIndex = 8;
-            this.YESBUTTON.UseVisualStyleBackColor = false;
-            this.YESBUTTON.Click += new System.EventHandler(this.YESBUTTON_Click);
-            this.YESBUTTON.MouseLeave += new System.EventHandler(this.YESBUTTON_MouseLeave);
-            this.YESBUTTON.MouseHover += new System.EventHandler(this.YESBUTTON_MouseHover);
-            // 
             // StudentListForm
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Info;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(884, 636);
-            this.Controls.Add(this.YESBUTTON);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(1243, 565);
             this.Controls.Add(this.gpaGrBox);
             this.Controls.Add(this.StudentListButton);
-            this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DataGridList);
             this.Controls.Add(this.FilterGroupBox);
             this.Controls.Add(this.AddStudentButton);
@@ -434,7 +411,6 @@ namespace Console_app
         private System.Windows.Forms.Label maxGPA;
         private System.Windows.Forms.Label minGPAlbl;
         private System.Windows.Forms.Label avgGPAlbl;
-        private System.Windows.Forms.Button YESBUTTON;
 
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
 
