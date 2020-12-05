@@ -21,8 +21,6 @@ namespace Console_app
         public bool IsBirthdayDateActive;
         public int RowNum;
         Stack<string> newdata = new Stack<string>();
-        System.Windows.Forms.Cursor curs = new System.Windows.Forms.Cursor(@"Arrow.cur");
-        System.Windows.Forms.Cursor curs1 = new System.Windows.Forms.Cursor(@"Normal.cur");
         public StudentListForm()
         {
             WorkingFlow Datas = new WorkingFlow();
@@ -138,7 +136,6 @@ namespace Console_app
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Application.Run(new AddingUserData_Form());
             AddingUserData_Form StartNewForm = new AddingUserData_Form();
             StartNewForm.Show();
             this.Visible = false;
@@ -200,12 +197,9 @@ namespace Console_app
                     LineElements = l[i].Split(' ');
                     if (LineElements[0] == RowNum.ToString())
                     {
-                        //FullNameCheckBox.Text = RowNum.ToString();
-                        //BirthdayDateCheckBox.Text = LineElements[1];
                         for (int j = 6; j >= 0; j--)
                         {
                             newdata.Push(LineElements[j]);
-                            //BirthdayDateCheckBox.Text = newdata.Peek();
                         }
                         break;
                     }
@@ -230,12 +224,9 @@ namespace Console_app
                     LineElements = l[i].Split(' ');
                     if (LineElements[0] == RowNum.ToString())
                     {
-                        //FullNameCheckBox.Text = RowNum.ToString();
-                        //BirthdayDateCheckBox.Text = LineElements[1];
                         for (int j = 6; j >= 0; j--)
                         {
                             newdata.Push(LineElements[j]);
-                            //BirthdayDateCheckBox.Text = newdata.Peek();
                         }
                         break;
                     }
@@ -336,9 +327,6 @@ namespace Console_app
                         {
                             data.Add(LineElements);
                         }
-
-
-
                     }
                     else if (IsBirthdayDateActive)
                     {
@@ -400,7 +388,6 @@ namespace Console_app
 
         private void DayComboBox_Leave(object sender, EventArgs e)
         {
-            // DayComboBox.DataSource = Datas.CheckBirthDate(MounthComboBox.SelectedIndex, YearComboBox.Text);
         }
 
         private void StudentListButton_Click(object sender, EventArgs e)
@@ -425,7 +412,6 @@ namespace Console_app
             {
                 string[] s = data[e.RowIndex];
                 RowNum = Convert.ToInt32(DataGridList["StudentID", e.RowIndex].Value);
-                //FullNameCheckBox.Text = Convert.ToString(DataGridList["StudentID", e.RowIndex].Value);
             }
             else
             {
@@ -437,7 +423,6 @@ namespace Console_app
 
         private void YESBUTTON_MouseHover(object sender, EventArgs e)
         {
-            this.Cursor = curs1;
         }
         private class RowComparer : System.Collections.IComparer
         {
@@ -460,13 +445,11 @@ namespace Console_app
                 DataGridViewRow DataGridViewRow1 = (DataGridViewRow)x;
                 DataGridViewRow DataGridViewRow2 = (DataGridViewRow)y;
 
-                // Try to sort based on the Last Name column.
 
                 int CompareResult = System.DateTime.Compare(
                     DateTime.ParseExact(DataGridViewRow1.Cells[2].Value.ToString(), "dd.MM.yyyy", CultureInfo.InvariantCulture),
                     DateTime.ParseExact(DataGridViewRow2.Cells[2].Value.ToString(), "dd.MM.yyyy", CultureInfo.InvariantCulture));
 
-                // If the Last Names are equal, sort based on the First Name.
                 if (CompareResult == 0)
                 {
                     CompareResult = System.DateTime.Compare(
@@ -475,7 +458,7 @@ namespace Console_app
                 }
                 return CompareResult * sortOrderModifier;
             }
-        }//класс для сортировки по дате
+        }
 
         private class RowComparerID : System.Collections.IComparer
         {
@@ -497,8 +480,6 @@ namespace Console_app
             {
                 DataGridViewRow DataGridViewRow1 = (DataGridViewRow)x;
                 DataGridViewRow DataGridViewRow2 = (DataGridViewRow)y;
-
-                // Try to sort based on the Last Name column.
                 int CompareResult;
                 if (Convert.ToInt32(DataGridViewRow1.Cells[0].Value) > Convert.ToInt32(DataGridViewRow2.Cells[0].Value))
                 {
@@ -580,7 +561,6 @@ namespace Console_app
 
         private void YESBUTTON_MouseLeave(object sender, EventArgs e)
         {
-            this.Cursor = curs;
         }
     }
 
